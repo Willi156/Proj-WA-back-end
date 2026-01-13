@@ -4,7 +4,15 @@ import cors from "cors";
 import pg from "pg";
 
 const app = express();
-app.use(cors());
+pp.use(cors({
+  origin: [
+    "http://localhost:4200",                 // dev locale Angular
+    "https://critiverse-3c820.web.app",        // Firebase hosting (se già pubblicato)
+  ],
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  credentials: false // true solo se usi cookie/sessioni
+}));
+
 app.use(express.json());
 
 const client = new pg.Client({
