@@ -4,7 +4,7 @@ import cors from "cors";
 import pg from "pg";
 
 const app = express();
-pp.use(cors({
+app.use(cors({
   origin: [
     "http://localhost:4200",                 // dev locale Angular
     "https://critiverse-3c820.web.app",        // Firebase hosting (se già pubblicato)
