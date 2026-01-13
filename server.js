@@ -12,13 +12,14 @@ const client = new pg.Client({
   ssl: { rejectUnauthorized: false }
 });
 
-client.connect();
+await client.connect();
 
-// Test endpoint
 app.get("/api/test", async (req, res) => {
   const result = await client.query("SELECT NOW()");
   res.json({ serverTime: result.rows[0] });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("Server running on port " + PORT));
+const port = process.env.PORT || 3000;
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Server in ascolto su 0.0.0.0:${port}`);
+});
