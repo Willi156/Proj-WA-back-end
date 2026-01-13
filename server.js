@@ -3,7 +3,7 @@ import express from "express";
 import cors from "cors";
 import pg from "pg";
 
-await client.connect();
+//await client.connect();
 
 
 const app = express();
