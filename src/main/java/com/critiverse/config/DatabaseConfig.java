@@ -24,7 +24,7 @@ public class DatabaseConfig {
     public DataSource dataSource() {
         String databaseUrl = System.getenv("DATABASE_URL");
         try {
-            if (databaseUrl != null && databaseUrl.startsWith("postgres://")) {
+            if (databaseUrl != null && (databaseUrl.startsWith("postgres://") || databaseUrl.startsWith("postgresql://"))) {
                 log.info("Detected DATABASE_URL environment variable, configuring DataSource from it");
                 URI dbUri = new URI(databaseUrl);
                 String userInfo = dbUri.getUserInfo();
@@ -56,6 +56,17 @@ public class DatabaseConfig {
         String user = env.getProperty("spring.datasource.username");
         String pass = env.getProperty("spring.datasource.password");
         String driver = env.getProperty("spring.datasource.driver-class-name", "org.postgresql.Driver");
+        // Normalize URL: if it's missing the jdbc: prefix but uses postgresql:// or postgres://, add jdbc:
+        if (url != null && !url.startsWith("jdbc:")) {
+            if (url.startsWith("postgresql://") || url.startsWith("postgres://")) {
+                if (url.contains("?")) {
+                    url = "jdbc:" + url;
+                } else {
+                    url = "jdbc:" + url + "?sslmode=require";
+                }
+                log.info("Normalized spring.datasource.url to jdbc form: {}", url);
+            }
+        }
         DataSourceBuilder<?> builder = DataSourceBuilder.create();
         builder.driverClassName(driver);
         builder.url(url);
