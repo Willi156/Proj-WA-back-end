@@ -1,8 +1,11 @@
 package com.critiverse.dao;
 
 import com.critiverse.model.Utente;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
@@ -14,6 +17,7 @@ import java.util.Optional;
 public class JdbcUtenteDao implements UtenteDao {
 
     private final JdbcTemplate jdbc;
+    private static final Logger log = LoggerFactory.getLogger(JdbcUtenteDao.class);
 
     public JdbcUtenteDao(JdbcTemplate jdbc) {
         this.jdbc = jdbc;
@@ -32,8 +36,12 @@ public class JdbcUtenteDao implements UtenteDao {
 
     @Override
     public Optional<Utente> findFirst() {
-        List<Utente> list = jdbc.query("SELECT * FROM utente ORDER BY id ASC LIMIT 1", new UtenteRowMapper());
-        if (list.isEmpty()) return Optional.empty();
-        return Optional.of(list.get(0));
+        try {
+            List<Utente> list = jdbc.query("SELECT id, nome, email FROM utente ORDER BY id ASC LIMIT 1", new UtenteRowMapper());
+            return list.stream().findFirst();
+        } catch (DataAccessException ex) {
+            log.error("Error querying first utente", ex);
+            return Optional.empty();
+        }
     }
 }
