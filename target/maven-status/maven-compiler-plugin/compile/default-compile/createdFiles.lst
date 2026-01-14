@@ -1,0 +1,7 @@
+com\critiverse\model\Utente.class
+com\critiverse\dao\JdbcUtenteDao.class
+com\critiverse\CritiverseApplication.class
+com\critiverse\dao\JdbcUtenteDao$UtenteRowMapper.class
+com\critiverse\controller\UtenteController.class
+com\critiverse\config\CorsConfig.class
+com\critiverse\dao\UtenteDao.class
