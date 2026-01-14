@@ -42,7 +42,8 @@ public class JdbcUtenteDao implements UtenteDao {
             return list.stream().findFirst();
         } catch (DataAccessException ex) {
             log.error("Error querying first utente", ex);
-            return Optional.empty();
+            throw ex;
+            
         }
     }
 }

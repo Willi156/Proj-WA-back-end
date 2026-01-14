@@ -1,14 +1,14 @@
 package com.critiverse.controller;
 
-import com.critiverse.dao.UtenteDao;
-import com.critiverse.model.Utente;
+import java.time.Instant;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.Instant;
+import com.critiverse.dao.UtenteDao;
+import com.critiverse.model.Utente;
 
 @RestController
 @RequestMapping("/api")
@@ -27,10 +27,14 @@ public class UtenteController {
 
     @GetMapping("/utente/first")
     public ResponseEntity<?> firstUtente() {
+        try{
         java.util.Optional<Utente> maybe = utenteDao.findFirst();
         if (maybe.isPresent()) {
             return ResponseEntity.ok(maybe.get());
         }
         return ResponseEntity.status(404).body(java.util.Map.of("message", "Nessun utente trovato"));
+        } catch (Exception e){
+            return ResponseEntity.status(500).body(java.util.Map.of("message", "Errore interno del server"));
+        }
     }
 }
