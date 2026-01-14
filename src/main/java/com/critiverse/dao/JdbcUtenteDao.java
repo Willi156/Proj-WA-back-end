@@ -54,7 +54,7 @@ public class JdbcUtenteDao implements UtenteDao {
     public Optional<Utente> findByUsernameAndPassword(String username, String password) {
         try {
             List<Utente> list = jdbc.query(
-                    "SELECT id, nome, cognome, email, username, ruolo FROM utente WHERE username = ? AND password = ? LIMIT 1",
+                    "SELECT id, nome, cognome, email, username, ruolo, password FROM utente WHERE username = ? AND password = ? LIMIT 1",
                     new Object[]{username, password}, new UtenteRowMapper());
             return list.stream().findFirst();
         } catch (DataAccessException ex) {
