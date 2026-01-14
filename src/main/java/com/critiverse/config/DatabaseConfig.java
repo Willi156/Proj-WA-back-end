@@ -25,7 +25,6 @@ public class DatabaseConfig {
         String databaseUrl = System.getenv("DATABASE_URL");
         try {
             if (databaseUrl != null && (databaseUrl.startsWith("postgres://") || databaseUrl.startsWith("postgresql://"))) {
-                log.info("Detected DATABASE_URL environment variable, configuring DataSource from it");
                 URI dbUri = new URI(databaseUrl);
                 String userInfo = dbUri.getUserInfo();
                 String username = null;
@@ -38,6 +37,8 @@ public class DatabaseConfig {
                 String host = dbUri.getHost();
                 int port = dbUri.getPort();
                 String path = dbUri.getPath(); // includes leading '/'
+                // Log only host/port/db, not full URL or credentials
+                log.info("Detected DATABASE_URL, configuring DataSource for host={} port={} db={}", host, port, path);
                 String jdbcUrl = String.format("jdbc:postgresql://%s:%d%s?sslmode=require", host, port, path);
 
                 DataSourceBuilder<?> builder = DataSourceBuilder.create();
@@ -64,7 +65,13 @@ public class DatabaseConfig {
                 } else {
                     url = "jdbc:" + url + "?sslmode=require";
                 }
-                log.info("Normalized spring.datasource.url to jdbc form: {}", url);
+                // parse minimal info for logging
+                try {
+                    URI u = new URI(url.substring(5)); // strip leading jdbc:
+                    log.info("Normalized spring.datasource.url for host={} port={} db={}", u.getHost(), u.getPort(), u.getPath());
+                } catch (Exception ignore) {
+                    log.info("Normalized spring.datasource.url to jdbc form (details omitted)");
+                }
             }
         }
         DataSourceBuilder<?> builder = DataSourceBuilder.create();
