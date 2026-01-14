@@ -5,4 +5,5 @@ import java.util.Optional;
 
 public interface UtenteDao {
     Optional<Utente> findFirst();
+    Optional<Utente> findByUsernameAndPassword(String username, String password);
 }

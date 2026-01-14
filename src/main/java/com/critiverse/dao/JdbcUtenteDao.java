@@ -46,8 +46,20 @@ public class JdbcUtenteDao implements UtenteDao {
             return list.stream().findFirst();
         } catch (DataAccessException ex) {
             log.error("Error querying first utente", ex);
-            throw ex;
-            
+            return Optional.empty();
+        }
+    }
+
+    @Override
+    public Optional<Utente> findByUsernameAndPassword(String username, String password) {
+        try {
+            List<Utente> list = jdbc.query(
+                    "SELECT id, nome, cognome, email, username, ruolo FROM utente WHERE username = ? AND password = ? LIMIT 1",
+                    new Object[]{username, password}, new UtenteRowMapper());
+            return list.stream().findFirst();
+        } catch (DataAccessException ex) {
+            log.error("Error querying utente by username/password", ex);
+            return Optional.empty();
         }
     }
 }
