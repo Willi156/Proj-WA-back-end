@@ -31,6 +31,10 @@ public class JdbcUtenteDao implements UtenteDao {
             u.setId(rs.getLong("id"));
             u.setNome(rs.getString("nome"));
             u.setEmail(rs.getString("email"));
+            u.setCognome(rs.getString("cognome"));
+            u.setUsername(rs.getString("username"));
+            u.setPassword(rs.getString("password"));
+            u.setRuolo(rs.getString("ruolo"));
             return u;
         }
     }
@@ -38,7 +42,7 @@ public class JdbcUtenteDao implements UtenteDao {
     @Override
     public Optional<Utente> findFirst() {
         try {
-            List<Utente> list = jdbc.query("SELECT id, nome, email FROM utente ORDER BY id ASC LIMIT 1", new UtenteRowMapper());
+            List<Utente> list = jdbc.query("SELECT id, nome, email, cognome, username, password, ruolo FROM utente ORDER BY id ASC LIMIT 1", new UtenteRowMapper());
             return list.stream().findFirst();
         } catch (DataAccessException ex) {
             log.error("Error querying first utente", ex);
