@@ -1,17 +1,5 @@
 package com.critiverse.dao;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.List;
-import java.util.Optional;
-
-import org.slf4j.Logger;
-
-import com.critiverse.model.Contenuto;
-package com.critiverse.dao;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -25,6 +13,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import com.critiverse.model.Contenuto;
+
 
 @Repository
 public class JdbcContenutoDao implements ContenutoDao {
