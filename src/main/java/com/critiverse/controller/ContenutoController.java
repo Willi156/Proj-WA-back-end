@@ -29,8 +29,9 @@ public class ContenutoController {
     }
 
     @PostMapping("/newContenuto")
-    public ResponseEntity<?> createContenuto(@RequestBody ContenutoRequest req) {
+    public ResponseEntity<?> createContenuto(@RequestBody Contenuto req) {
         try {
+           
             Optional<Contenuto> created = contenutoDao.newContenuto(
                     req.getTitolo(),
                     req.getDescrizione(),

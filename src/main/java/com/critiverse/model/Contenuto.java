@@ -1,7 +1,5 @@
 package com.critiverse.model;
 
-import java.util.Date;
-
 public class Contenuto{
      private Long id;
     private String titolo;
@@ -9,7 +7,7 @@ public class Contenuto{
     private String genere;
     private String link;
     private String tipo;
-    private Date annoPubblicazione;
+    private String annoPubblicazione;
     
 
     public Contenuto() {}
@@ -32,8 +30,8 @@ public class Contenuto{
     public String getTipo() { return tipo; }
     public void setTipo(String tipo) { this.tipo = tipo; }
 
-    public Date getAnnoPubblicazione() { return annoPubblicazione; }
-    public void setAnnoPubblicazione(Date annoPubblicazione) { this.annoPubblicazione = annoPubblicazione; }
+    public String getAnnoPubblicazione() { return annoPubblicazione; }
+    public void setAnnoPubblicazione(String annoPubblicazione) { this.annoPubblicazione = annoPubblicazione; }
 
     
 }

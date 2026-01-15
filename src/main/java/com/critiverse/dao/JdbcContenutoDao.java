@@ -4,9 +4,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,7 +23,6 @@ public class JdbcContenutoDao implements ContenutoDao {
 
     private final JdbcTemplate jdbc;
     private static final Logger log = LoggerFactory.getLogger(JdbcContenutoDao.class);
-    private static final SimpleDateFormat DATE_FMT = new SimpleDateFormat("yyyy-MM-dd");
 
     public JdbcContenutoDao(JdbcTemplate jdbc) {
         this.jdbc = jdbc;
@@ -42,8 +38,7 @@ public class JdbcContenutoDao implements ContenutoDao {
             c.setGenere(rs.getString("genere"));
             c.setLink(rs.getString("link"));
             c.setTipo(rs.getString("tipo"));
-            Date d = rs.getDate("anno_pubblicazione");
-            c.setAnnoPubblicazione(d);
+            c.setAnnoPubblicazione(rs.getString("anno_pubblicazione"));
             return c;
         }
     }
@@ -51,16 +46,7 @@ public class JdbcContenutoDao implements ContenutoDao {
     @Override
     public Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, String annoPubblicazione) {
         try {
-            Date anno = null;
-            if (annoPubblicazione != null && !annoPubblicazione.isBlank()) {
-                try {
-                    anno = DATE_FMT.parse(annoPubblicazione);
-                } catch (ParseException e) {
-                    log.warn("Failed to parse annoPubblicazione '{}', expected yyyy-MM-dd", annoPubblicazione);
-                }
-            }
-
-            final Date finalAnno = anno;
+           
             final String sql = "INSERT INTO contenuto (titolo, descrizione, genere, link, tipo, anno_pubblicazione) VALUES (?, ?, ?, ?, ?, ?)";
 
             KeyHolder keyHolder = new GeneratedKeyHolder();
@@ -71,11 +57,7 @@ public class JdbcContenutoDao implements ContenutoDao {
                 ps.setString(3, genere);
                 ps.setString(4, link);
                 ps.setString(5, tipo);
-                if (finalAnno != null) {
-                    ps.setDate(6, new java.sql.Date(finalAnno.getTime()));
-                } else {
-                    ps.setDate(6, null);
-                }
+                ps.setString(6, annoPubblicazione);
                 return ps;
             }, keyHolder);
 
