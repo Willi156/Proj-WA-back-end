@@ -6,7 +6,7 @@ public class ContenutoRequest {
 	private String genere;
 	private String link;
 	private String tipo;
-	private String annoPubblicazione; // expected yyyy-MM-dd
+	private Integer annoPubblicazione; // expected yyyy-MM-dd
 
 	public String getTitolo() { return titolo; }
 	public void setTitolo(String titolo) { this.titolo = titolo; }
@@ -23,6 +23,6 @@ public class ContenutoRequest {
 	public String getTipo() { return tipo; }
 	public void setTipo(String tipo) { this.tipo = tipo; }
 
-	public String getAnnoPubblicazione() { return annoPubblicazione; }
-	public void setAnnoPubblicazione(String annoPubblicazione) { this.annoPubblicazione = annoPubblicazione; }
+	public Integer getAnnoPubblicazione() { return annoPubblicazione; }
+	public void setAnnoPubblicazione(Integer annoPubblicazione) { this.annoPubblicazione = annoPubblicazione; }
 }

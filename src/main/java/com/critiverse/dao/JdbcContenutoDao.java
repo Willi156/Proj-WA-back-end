@@ -38,13 +38,13 @@ public class JdbcContenutoDao implements ContenutoDao {
             c.setGenere(rs.getString("genere"));
             c.setLink(rs.getString("link"));
             c.setTipo(rs.getString("tipo"));
-            c.setAnnoPubblicazione(rs.getString("anno_pubblicazione"));
+            c.setAnnoPubblicazione(rs.getInt("anno_pubblicazione"));
             return c;
         }
     }
 
     @Override
-    public Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, String annoPubblicazione) {
+    public Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione) {
         try {
            
             final String sql = "INSERT INTO contenuto (titolo, descrizione, genere, link, tipo, anno_pubblicazione) VALUES (?, ?, ?, ?, ?, ?)";
@@ -57,7 +57,11 @@ public class JdbcContenutoDao implements ContenutoDao {
                 ps.setString(3, genere);
                 ps.setString(4, link);
                 ps.setString(5, tipo);
-                ps.setString(6, annoPubblicazione);
+                if (annoPubblicazione != null) {
+                    ps.setInt(6, annoPubblicazione);
+                } else {
+                    ps.setNull(6, java.sql.Types.INTEGER);
+                }
                 return ps;
             }, keyHolder);
 
