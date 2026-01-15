@@ -29,7 +29,7 @@ public class ContenutoController {
     }
 
     @PostMapping("/newContenuto")
-    public ResponseEntity<?> createContenuto(@RequestBody Contenuto req) {
+    public ResponseEntity<?> createContenuto(@RequestBody ContenutoRequest req) {
         try {
             Optional<Contenuto> created = contenutoDao.newContenuto(
                     req.getTitolo(),
@@ -37,7 +37,7 @@ public class ContenutoController {
                     req.getGenere(),
                     req.getLink(),
                     req.getTipo(),
-                    req.getAnnoPubblicazione().toString());
+                    req.getAnnoPubblicazione());
 
             return created.<ResponseEntity<?>>map(c -> {
                 try {
