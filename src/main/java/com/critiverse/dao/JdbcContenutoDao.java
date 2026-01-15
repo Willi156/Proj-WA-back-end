@@ -62,4 +62,17 @@ public class JdbcContenutoDao implements ContenutoDao {
             return Optional.empty();
         }
     }
+
+    @Override
+    public List<Contenuto> findAll() {
+        try {
+            final String sql = "SELECT id, titolo, descrizione, genere, link, tipo, anno_pubblicazione FROM contenuto ORDER BY id";
+            return jdbc.query(sql, new ContenutoRowMapper());
+        } catch (DataAccessException ex) {
+            log.error("Error fetching all contenuti", ex);
+            return List.of();
+        }
+    }
+
+    
 }

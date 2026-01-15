@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -49,6 +50,16 @@ public class ContenutoController {
             }).orElseGet(() -> ResponseEntity.status(500).body(Map.of("message", "Failed to create contenuto")));
         } catch (Exception ex) {
             log.error("Error creating contenuto", ex);
+            return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
+        }
+    }
+
+    @GetMapping("/contenuti")
+    public ResponseEntity<?> getAllContenuti() {
+        try {
+            return ResponseEntity.ok(contenutoDao.findAll());
+        } catch (Exception ex) {
+            log.error("Error fetching contenuti", ex);
             return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
         }
     }
