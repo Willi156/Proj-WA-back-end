@@ -8,12 +8,20 @@ import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.Logger;
+
+import com.critiverse.model.Contenuto;
+package com.critiverse.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Optional;
+
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.support.GeneratedKeyHolder;
-import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import com.critiverse.model.Contenuto;
@@ -38,7 +46,11 @@ public class JdbcContenutoDao implements ContenutoDao {
             c.setGenere(rs.getString("genere"));
             c.setLink(rs.getString("link"));
             c.setTipo(rs.getString("tipo"));
-            c.setAnnoPubblicazione(rs.getInt("anno_pubblicazione"));
+            // anno_pubblicazione is stored as integer year
+            int anno = rs.getInt("anno_pubblicazione");
+            if (!rs.wasNull()) {
+                c.setAnnoPubblicazione(anno);
+            }
             return c;
         }
     }
@@ -46,31 +58,14 @@ public class JdbcContenutoDao implements ContenutoDao {
     @Override
     public Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione) {
         try {
-           
-            final String sql = "INSERT INTO contenuto (titolo, descrizione, genere, link, tipo, anno_pubblicazione) VALUES (?, ?, ?, ?, ?, ?)";
+            final String insertSql = "INSERT INTO contenuto (titolo, descrizione, genere, link, tipo, anno_pubblicazione) VALUES (?, ?, ?, ?, ?, ?) RETURNING id";
 
-            KeyHolder keyHolder = new GeneratedKeyHolder();
-            jdbc.update((java.sql.Connection con) -> {
-                PreparedStatement ps = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-                ps.setString(1, titolo);
-                ps.setString(2, descrizione);
-                ps.setString(3, genere);
-                ps.setString(4, link);
-                ps.setString(5, tipo);
-                if (annoPubblicazione != null) {
-                    ps.setInt(6, annoPubblicazione);
-                } else {
-                    ps.setNull(6, java.sql.Types.INTEGER);
-                }
-                return ps;
-            }, keyHolder);
-
-            Number key = keyHolder.getKey();
-            if (key == null) {
+            Long id = jdbc.queryForObject(insertSql, new Object[] { titolo, descrizione, genere, link, tipo, annoPubblicazione }, Long.class);
+            if (id == null) {
+                log.warn("INSERT returned null id for titolo='{}' tipo='{}'", titolo, tipo);
                 return Optional.empty();
             }
 
-            Long id = key.longValue();
             List<Contenuto> list = jdbc.query("SELECT id, titolo, descrizione, genere, link, tipo, anno_pubblicazione FROM contenuto WHERE id = ?", new Object[] { id }, new ContenutoRowMapper());
             return list.stream().findFirst();
         } catch (DataAccessException ex) {
