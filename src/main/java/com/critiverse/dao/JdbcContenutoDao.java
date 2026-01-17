@@ -77,7 +77,7 @@ public class JdbcContenutoDao implements ContenutoDao {
             if ("film".equalsIgnoreCase(tipo)) {
                 tableName = "film";
                 insertSpecificSql = "INSERT INTO film (id_contenuto, casa_produzione) VALUES (?, ?)";
-                jdbc.update(insertSpecificSql, idContenuto, casaProduzione);
+                jdbc.update(insertSpecificSql, idContenuto, "pippo");
             } else if ("gioco".equalsIgnoreCase(tipo)) {
                 tableName = "gioco";
                 insertSpecificSql = "INSERT INTO gioco (id_contenuto, casa_editrice) VALUES (?, ?)";
@@ -85,7 +85,7 @@ public class JdbcContenutoDao implements ContenutoDao {
             } else if ("serie_tv".equalsIgnoreCase(tipo) || "serietv".equalsIgnoreCase(tipo)) {
                 tableName = "serie_tv";
                 insertSpecificSql = "INSERT INTO serie_tv (id_contenuto, in_corso, stagioni) VALUES (?, ?, ?)";
-                jdbc.update(insertSpecificSql, idContenuto, inCorso, stagioni);
+                jdbc.update(insertSpecificSql, idContenuto, inCorso, 3);
             } else {
                 log.warn("Unknown tipo='{}', skipping specific table insertion", tipo);
             }
