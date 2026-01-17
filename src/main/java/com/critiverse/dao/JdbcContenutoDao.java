@@ -45,7 +45,7 @@ public class JdbcContenutoDao implements ContenutoDao {
     }
 
     @Override
-    public Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione) {
+    public Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione, String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni) {
         try {
             final String insertSql = "INSERT INTO contenuto (titolo, descrizione, genere, link, tipo, anno_pubblicazione) VALUES (?, ?, ?, ?, ?, ?) RETURNING id";
 
@@ -55,11 +55,47 @@ public class JdbcContenutoDao implements ContenutoDao {
                 return Optional.empty();
             }
 
+            // Insert into specific table based on tipo
+            if (tipo != null) {
+                insertIntoSpecificTable(id, tipo, casaProduzione, casaEditrice, inCorso, stagioni);
+            }
+
             List<Contenuto> list = jdbc.query("SELECT id, titolo, descrizione, genere, link, tipo, anno_pubblicazione FROM contenuto WHERE id = ?", new Object[] { id }, new ContenutoRowMapper());
             return list.stream().findFirst();
         } catch (DataAccessException ex) {
             log.error("Error inserting contenuto", ex);
             return Optional.empty();
+        }
+    }
+
+    private void insertIntoSpecificTable(Long idContenuto, String tipo, String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni) {
+        try {
+            String tableName = null;
+            String insertSpecificSql = null;
+
+            // Determina la tabella in base al tipo e prepara l'INSERT con colonne specifiche
+            if ("film".equalsIgnoreCase(tipo)) {
+                tableName = "film";
+                insertSpecificSql = "INSERT INTO film (id_contenuto, casa_produzione) VALUES (?, ?)";
+                jdbc.update(insertSpecificSql, idContenuto, casaProduzione);
+            } else if ("gioco".equalsIgnoreCase(tipo)) {
+                tableName = "gioco";
+                insertSpecificSql = "INSERT INTO gioco (id_contenuto, casa_editrice) VALUES (?, ?)";
+                jdbc.update(insertSpecificSql, idContenuto, casaEditrice);
+            } else if ("serie_tv".equalsIgnoreCase(tipo) || "serietv".equalsIgnoreCase(tipo)) {
+                tableName = "serie_tv";
+                insertSpecificSql = "INSERT INTO serie_tv (id_contenuto, in_corso, stagioni) VALUES (?, ?, ?)";
+                jdbc.update(insertSpecificSql, idContenuto, inCorso, stagioni);
+            } else {
+                log.warn("Unknown tipo='{}', skipping specific table insertion", tipo);
+            }
+
+            if (insertSpecificSql != null) {
+                log.info("Inserted into {} table with id_contenuto={}", tableName, idContenuto);
+            }
+        } catch (DataAccessException ex) {
+            log.error("Error inserting into specific table for tipo='{}', id_contenuto={}", tipo, idContenuto, ex);
+            // Non rilanciamo l'eccezione per non bloccare l'inserimento principale
         }
     }
 

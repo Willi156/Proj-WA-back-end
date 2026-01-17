@@ -33,13 +33,17 @@ public class ContenutoController {
     public ResponseEntity<?> createContenuto(@RequestBody Contenuto req) {
         try {
            
-            Optional<Contenuto> created = contenutoDao.newContenuto(
+                Optional<Contenuto> created = contenutoDao.newContenuto(
                     req.getTitolo(),
                     req.getDescrizione(),
                     req.getGenere(),
                     req.getLink(),
                     req.getTipo(),
-                    req.getAnnoPubblicazione());
+                    req.getAnnoPubblicazione(),
+                    req.getCasaProduzione(),
+                    req.getCasaEditrice(),
+                    req.getInCorso(),
+                    req.getStagioni());
 
             return created.<ResponseEntity<?>>map(c -> {
                 try {

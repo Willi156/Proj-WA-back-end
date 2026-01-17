@@ -8,6 +8,12 @@ public class Contenuto{
     private String link;
     private String tipo;
     private Integer annoPubblicazione;
+
+    // Optional type-specific fields (nullable)
+	private String casaProduzione;
+	private String casaEditrice;
+	private Boolean inCorso;
+	private Integer stagioni;
     
 
     public Contenuto() {}
@@ -33,5 +39,15 @@ public class Contenuto{
     public Integer getAnnoPubblicazione() { return annoPubblicazione; }
     public void setAnnoPubblicazione(Integer annoPubblicazione) { this.annoPubblicazione = annoPubblicazione; }
 
-    
+    public String getCasaProduzione() { return casaProduzione; }
+    public void setCasaProduzione(String casaProduzione) { this.casaProduzione = casaProduzione; }
+
+    public String getCasaEditrice() { return casaEditrice; }
+    public void setCasaEditrice(String casaEditrice) { this.casaEditrice = casaEditrice; }
+
+    public Boolean getInCorso() { return inCorso; }
+    public void setInCorso(Boolean inCorso) { this.inCorso = inCorso; }
+
+    public Integer getStagioni() { return stagioni; }
+    public void setStagioni(Integer stagioni) { this.stagioni = stagioni; }
 }
