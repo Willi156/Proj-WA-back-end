@@ -32,7 +32,11 @@ public class ContenutoController {
     @PostMapping("/newContenuto")
     public ResponseEntity<?> createContenuto(@RequestBody Contenuto req) {
         try {
-           
+            // Diagnostic log: inspect incoming payload mapping
+            log.debug("Received new contenuto payload: titolo={}, descrizione={}, genere={}, link={}, tipo={}, annoPubblicazione={}, casaProduzione={}, casaEditrice={}, inCorso={}, stagioni={}",
+                    req.getTitolo(), req.getDescrizione(), req.getGenere(), req.getLink(), req.getTipo(), req.getAnnoPubblicazione(),
+                    req.getCasaProduzione(), req.getCasaEditrice(), req.getInCorso(), req.getStagioni());
+
                 Optional<Contenuto> created = contenutoDao.newContenuto(
                     req.getTitolo(),
                     req.getDescrizione(),

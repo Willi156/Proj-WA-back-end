@@ -72,20 +72,25 @@ public class JdbcContenutoDao implements ContenutoDao {
         try {
             String tableName = null;
             String insertSpecificSql = null;
+            // Normalize string inputs and log values for debugging
+            String normCasaProduzione = normalizeString(casaProduzione);
+            String normCasaEditrice = normalizeString(casaEditrice);
+            log.debug("Preparing specific insert: tipo={}, id={}, casaProduzione={}, casaEditrice={}, inCorso={}, stagioni={}",
+                    tipo, idContenuto, normCasaProduzione, normCasaEditrice, inCorso, stagioni);
 
             // Determina la tabella in base al tipo e prepara l'INSERT con colonne specifiche
             if ("film".equalsIgnoreCase(tipo)) {
                 tableName = "film";
                 insertSpecificSql = "INSERT INTO film (id_contenuto, casa_produzione) VALUES (?, ?)";
-                jdbc.update(insertSpecificSql, idContenuto, "pippo");
+                jdbc.update(insertSpecificSql, idContenuto, normCasaProduzione);
             } else if ("gioco".equalsIgnoreCase(tipo)) {
                 tableName = "gioco";
                 insertSpecificSql = "INSERT INTO gioco (id_contenuto, casa_editrice) VALUES (?, ?)";
-                jdbc.update(insertSpecificSql, idContenuto, casaEditrice);
+                jdbc.update(insertSpecificSql, idContenuto, normCasaEditrice);
             } else if ("serie_tv".equalsIgnoreCase(tipo) || "serietv".equalsIgnoreCase(tipo)) {
                 tableName = "serie_tv";
                 insertSpecificSql = "INSERT INTO serie_tv (id_contenuto, in_corso, stagioni) VALUES (?, ?, ?)";
-                jdbc.update(insertSpecificSql, idContenuto, inCorso, 3);
+                jdbc.update(insertSpecificSql, idContenuto, inCorso, stagioni);
             } else {
                 log.warn("Unknown tipo='{}', skipping specific table insertion", tipo);
             }
@@ -97,6 +102,14 @@ public class JdbcContenutoDao implements ContenutoDao {
             log.error("Error inserting into specific table for tipo='{}', id_contenuto={}", tipo, idContenuto, ex);
             // Non rilanciamo l'eccezione per non bloccare l'inserimento principale
         }
+    }
+
+    private String normalizeString(String s) {
+        if (s == null) return null;
+        String trimmed = s.trim();
+        if (trimmed.isEmpty()) return null;
+        if ("null".equalsIgnoreCase(trimmed)) return null;
+        return s;
     }
 
     @Override
