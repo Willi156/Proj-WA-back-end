@@ -66,7 +66,7 @@ public class JdbcContenutoDao implements ContenutoDao {
             }
 
                 final String selectInserted = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, AVG(r.voto) AS avg_voto "
-                    + "FROM contenuto c LEFT JOIN recensioni r ON c.id = r.id_contenuto "
+                    + "FROM contenuto c LEFT JOIN recensione r ON c.id = r.id_contenuto "
                     + "WHERE c.id = ? GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione";
                 List<Contenuto> list = jdbc.query(selectInserted, new Object[] { id }, new ContenutoRowMapper());
             return list.stream().findFirst();
@@ -123,10 +123,10 @@ public class JdbcContenutoDao implements ContenutoDao {
     @Override
     public List<Contenuto> findAll() {
         try {
-            final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, AVG(r.voto) AS avg_voto "
-                    + "FROM contenuto c LEFT JOIN recensioni r ON c.id = r.id_contenuto "
-                    + "GROUP BY r.id_contenuto";
-                    //+ "ORDER BY c.id";
+                final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, AVG(r.voto) AS avg_voto "
+                    + "FROM contenuto c LEFT JOIN recensione r ON c.id = r.id_contenuto "
+                    + "GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione "
+                    + "ORDER BY c.id";
             return jdbc.query(sql, new ContenutoRowMapper());
         } catch (DataAccessException ex) {
             log.error("Error fetching all contenuti", ex);
