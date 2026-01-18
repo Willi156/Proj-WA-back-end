@@ -10,8 +10,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.stereotype.Repository;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Repository;
 
 import com.critiverse.model.Utente;
 
@@ -86,7 +86,7 @@ public class JdbcUtenteDao implements UtenteDao {
         try {
             String hashedPassword = passwordEncoder.encode(password);
             String insertSql = "INSERT INTO utente (nome, cognome, email, username, password, ruolo) VALUES (?, ?, ?, ?, ?, 'USER')";
-            int rowsAffected = jdbc.update(insertSql, nome, cognome, email, username, hashedPassword, "USER");
+            int rowsAffected = jdbc.update(insertSql, nome, cognome, email, username, hashedPassword);
             if (rowsAffected > 0) {
                 String querySql = "SELECT id, nome, cognome, email, username, password, ruolo FROM utente WHERE username = ? LIMIT 1";
                 List<Utente> list = jdbc.query(querySql, new Object[]{username}, new UtenteRowMapper());
