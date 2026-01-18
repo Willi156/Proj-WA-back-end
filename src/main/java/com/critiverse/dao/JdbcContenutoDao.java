@@ -125,8 +125,8 @@ public class JdbcContenutoDao implements ContenutoDao {
         try {
             final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, AVG(r.voto) AS avg_voto "
                     + "FROM contenuto c LEFT JOIN recensioni r ON c.id = r.id_contenuto "
-                    + "GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione "
-                    + "ORDER BY c.id";
+                    + "GROUP BY r.id_contenuto";
+                    //+ "ORDER BY c.id";
             return jdbc.query(sql, new ContenutoRowMapper());
         } catch (DataAccessException ex) {
             log.error("Error fetching all contenuti", ex);
