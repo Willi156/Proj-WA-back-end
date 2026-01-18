@@ -39,6 +39,15 @@ public class JdbcRecensioneDao implements RecensioneDao {
             if (!rs.wasNull()) r.setIdUtente(idUtente);
             long idContenuto = rs.getLong("id_contenuto");
             if (!rs.wasNull()) r.setIdContenuto(idContenuto);
+            // read username from joined utente table if present
+            String username = null;
+            try {
+                username = rs.getString("username");
+            } catch (SQLException e) {
+                // column may not be present in some queries
+                username = null;
+            }
+            r.setUsername(username);
             return r;
         }
     }
@@ -46,7 +55,9 @@ public class JdbcRecensioneDao implements RecensioneDao {
     @Override
     public List<Recensione> findByContenutoId(Long contenutoId) {
         try {
-            final String sql = "SELECT id, titolo, testo, voto, data, id_utente, id_contenuto FROM recensione WHERE id_contenuto = ? ORDER BY data DESC";
+                final String sql = "SELECT r.id, r.titolo, r.testo, r.voto, r.data, r.id_utente, r.id_contenuto, u.username "
+                    + "FROM recensione r LEFT JOIN utente u ON r.id_utente = u.id "
+                    + "WHERE r.id_contenuto = ? ORDER BY r.data DESC";
             return jdbc.query(sql, new RecensioneRowMapper(), contenutoId);
         } catch (DataAccessException ex) {
             log.error("Error fetching recensioni for contenutoId={}", contenutoId, ex);
