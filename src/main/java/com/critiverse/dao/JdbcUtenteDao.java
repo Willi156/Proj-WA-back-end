@@ -62,4 +62,16 @@ public class JdbcUtenteDao implements UtenteDao {
             return Optional.empty();
         }
     }
+
+    @Override
+    public Optional<Boolean> checkUsernameExists(String username) {
+        try {
+            String sql = "SELECT EXISTS(SELECT 1 FROM utente WHERE username = ? LIMIT 1) AS user_exists";
+            Boolean exists = jdbc.queryForObject(sql, new Object[]{username}, Boolean.class);
+            return Optional.ofNullable(exists);
+        } catch (DataAccessException ex) {
+            log.error("Error checking if username exists", ex);
+            return Optional.empty();
+        }
+    }
 }

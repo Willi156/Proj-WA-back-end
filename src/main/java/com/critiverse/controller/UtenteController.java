@@ -37,4 +37,19 @@ public class UtenteController {
             return ResponseEntity.status(500).body(java.util.Map.of("message", "Errore interno del server"));
         }
     }
+
+    @GetMapping("/utente/checkUsernameExists")
+    public ResponseEntity<?> checkUsernameExists(@org.springframework.web.bind.annotation.RequestParam(name = "username", required = true) String username) {
+        try{
+        java.util.Optional<Boolean> maybe = utenteDao.checkUsernameExists(username);
+        if (maybe.isPresent()) {
+            return ResponseEntity.ok(maybe.get());
+        }
+        return ResponseEntity.status(404).body(java.util.Map.of("message", "Nessun utente trovato"));
+        } catch (Exception e){
+            return ResponseEntity.status(500).body(java.util.Map.of("message", "Errore interno del server"));
+        }
+    }
+
+
 }
