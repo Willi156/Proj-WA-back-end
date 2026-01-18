@@ -10,6 +10,7 @@ public class Recensione{
     private Date data;
     private Long idUtente;
     private Long idContenuto;
+    private String username;
     
 
     public Recensione() {}
@@ -34,5 +35,8 @@ public class Recensione{
 
     public Long getIdContenuto() { return idContenuto; }
     public void setIdContenuto(Long idContenuto) { this.idContenuto = idContenuto; }
+
+    public String getUsername() { return username; }
+    public void setUsername(String username) { this.username = username; }
     
 }
