@@ -8,6 +8,8 @@ public class Contenuto{
     private String link;
     private String tipo;
     private Integer annoPubblicazione;
+    // Average rating (nullable) retrieved from recensioni
+    private Double mediaVoti;
 
     // Optional type-specific fields (nullable)
 	private String casaProduzione;
@@ -50,4 +52,7 @@ public class Contenuto{
 
     public Integer getStagioni() { return stagioni; }
     public void setStagioni(Integer stagioni) { this.stagioni = stagioni; }
+
+    public Double getMediaVoti() { return mediaVoti; }
+    public void setMediaVoti(Double mediaVoti) { this.mediaVoti = mediaVoti; }
 }

@@ -40,6 +40,11 @@ public class JdbcContenutoDao implements ContenutoDao {
             if (!rs.wasNull()) {
                 c.setAnnoPubblicazione(anno);
             }
+            // avg_voto may be returned by queries that join recensioni
+            double avg = rs.getDouble("avg_voto");
+            if (!rs.wasNull()) {
+                c.setMediaVoti(avg);
+            }
             return c;
         }
     }
@@ -60,7 +65,10 @@ public class JdbcContenutoDao implements ContenutoDao {
                 insertIntoSpecificTable(id, tipo, casaProduzione, casaEditrice, inCorso, stagioni);
             }
 
-            List<Contenuto> list = jdbc.query("SELECT id, titolo, descrizione, genere, link, tipo, anno_pubblicazione FROM contenuto WHERE id = ?", new Object[] { id }, new ContenutoRowMapper());
+                final String selectInserted = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, AVG(r.voto) AS avg_voto "
+                    + "FROM contenuto c LEFT JOIN recensioni r ON c.id = r.id_contenuto "
+                    + "WHERE c.id = ? GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione";
+                List<Contenuto> list = jdbc.query(selectInserted, new Object[] { id }, new ContenutoRowMapper());
             return list.stream().findFirst();
         } catch (DataAccessException ex) {
             log.error("Error inserting contenuto", ex);
@@ -115,7 +123,10 @@ public class JdbcContenutoDao implements ContenutoDao {
     @Override
     public List<Contenuto> findAll() {
         try {
-            final String sql = "SELECT id, titolo, descrizione, genere, link, tipo, anno_pubblicazione FROM contenuto ORDER BY id";
+            final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, AVG(r.voto) AS avg_voto "
+                    + "FROM contenuto c LEFT JOIN recensioni r ON c.id = r.id_contenuto "
+                    + "GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione "
+                    + "ORDER BY c.id";
             return jdbc.query(sql, new ContenutoRowMapper());
         } catch (DataAccessException ex) {
             log.error("Error fetching all contenuti", ex);
