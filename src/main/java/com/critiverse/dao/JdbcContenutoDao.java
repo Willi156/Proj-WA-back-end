@@ -134,5 +134,18 @@ public class JdbcContenutoDao implements ContenutoDao {
         }
     }
 
-    
+    @Override
+    public List<Contenuto> findByTipo(String tipo) {
+        try {
+                final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, AVG(r.voto) AS avg_voto "
+                    + "FROM contenuto c LEFT JOIN recensione r ON c.id = r.id_contenuto "
+                    + "GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione "
+                    + "ORDER BY c.id" 
+                    + " WHERE c.tipo = ?";
+            return jdbc.query(sql, new ContenutoRowMapper(), tipo);
+        } catch (DataAccessException ex) {
+            log.error("Error fetching all contenuti", ex);
+            return List.of();
+        }
+    }
 }

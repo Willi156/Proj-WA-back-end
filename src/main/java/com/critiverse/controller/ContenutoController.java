@@ -8,8 +8,8 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -66,6 +66,36 @@ public class ContenutoController {
     public ResponseEntity<?> getAllContenuti() {
         try {
             return ResponseEntity.ok(contenutoDao.findAll());
+        } catch (Exception ex) {
+            log.error("Error fetching contenuti", ex);
+            return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
+        }
+    }
+
+    @GetMapping("/contenuti/giochi")
+    public ResponseEntity<?> getAllGiochi() {
+        try {
+            return ResponseEntity.ok(contenutoDao.findByTipo("GIOCO"));
+        } catch (Exception ex) {
+            log.error("Error fetching contenuti", ex);
+            return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
+        }
+    }
+
+     @GetMapping("/contenuti/film")
+    public ResponseEntity<?> getAllFilm() {
+        try {
+            return ResponseEntity.ok(contenutoDao.findByTipo("FILM"));
+        } catch (Exception ex) {
+            log.error("Error fetching contenuti", ex);
+            return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
+        }
+    }
+
+     @GetMapping("/contenuti/serie_tv")
+    public ResponseEntity<?> getAllSerieTv() {
+        try {
+            return ResponseEntity.ok(contenutoDao.findByTipo("SERIE_TV"));
         } catch (Exception ex) {
             log.error("Error fetching contenuti", ex);
             return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));

@@ -10,4 +10,5 @@ public interface ContenutoDao {
             String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni);
 
     List<Contenuto> findAll();
+    List<Contenuto> findByTipo(String tipo);
 }
