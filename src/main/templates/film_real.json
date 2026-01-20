@@ -1,0 +1,802 @@
+[
+  {
+    "titolo": "Predator: Badlands",
+    "anno": 2025,
+    "descrizione": "Nel futuro, su un pianeta remoto, un giovane Predatore, emarginato dal suo clan, trova un alleato improbabile in Thia e intraprende un viaggio pericoloso alla ricerca del nemico supremo.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1242898",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Icefall",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1242501",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Avatar - Fuoco e cenere",
+    "anno": 2025,
+    "descrizione": "In seguito alla devastante guerra contro la RDA e alla perdita del loro figlio maggiore, Jake Sully e Neytiri affrontano una nuova minaccia su Pandora: il Popolo della Cenere, una tribù Na'vi violenta e assetata di potere guidata dagli spietati Varang. La famiglia di Jake deve lottare per la propria sopravvivenza e per il futuro di Pandora in un conflitto che li spinge ai loro limiti emotivi e fisici.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/83533",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Bingo Bongo",
+    "anno": 1982,
+    "descrizione": "Un'équipe scientifica trova nella giungla un novello Tarzan e lo trasferisce a Milano, dove la creatura si invaghisce di una bella scienziata, impara la lingua dell'uomo e incita gli animali ad una sommossa.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/62029",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Der Tiger - Viaggio all'inferno",
+    "anno": 2025,
+    "descrizione": "Fronte Orientale, 1943: l'equipaggio di un carro armato Tiger viene mandato in una pericolosa missione, oltre le linee nemiche. Attraversando la letale terra di nessuno, dovranno affrontare non solo il nemico, ma anche i propri demoni interiori.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1252037",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Zootropolis 2",
+    "anno": 2025,
+    "descrizione": "Dopo aver risolto il caso più importante nella storia di Zootropolis, i poliziotti alle prime armi Judy Hopps e Nick Wilde scoprono che la loro collaborazione non è così solida come pensavano quando il capo Bogo ordina loro di unirsi al programma di consulenza \"Partners in Crisis\". Ma non ci vuole molto perché la loro collaborazione venga messa a dura prova quando si ritrovano sulle tracce tortuose di un mistero legato all'arrivo di un serpente velenoso nella metropoli degli animali.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1084242",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Una di famiglia",
+    "anno": 2025,
+    "descrizione": "La trama segue Millie, una donna che cerca un nuovo inizio e trova lavoro come domestica per una coppia benestante ed elitaria. Ma come spesso accade nei thriller, le apparenze ingannano. Millie scoprirà presto che dietro la facciata di questa ricca famiglia perfetta si nascondono segreti oscuri e pericolosi.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1368166",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Baahubali: The Epic",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1511417",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Demon Slayer: Kimetsu no Yaiba - Il Castello dell’Infinito",
+    "anno": 2025,
+    "descrizione": "Lo scontro sta per raggiungere il suo apice! Chi ne uscirà vincitore?",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1311031",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Trap House",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/628847",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "La guerra dei mondi",
+    "anno": 2025,
+    "descrizione": "Will Radford è un analista di sicurezza informatica di alto livello per la Homeland Security che monitora le potenziali minacce alla sicurezza nazionale attraverso un programma di sorveglianza di massa, finché un giorno un attacco da parte di un'entità sconosciuta lo porta a chiedersi se il governo gli stia nascondendo qualcosa... e al resto del mondo.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/755898",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "People we meet on vacation - Un amore in vacanza",
+    "anno": 2026,
+    "descrizione": "Poppy è uno spirito libero, mentre Alex è organizzato. Dopo anni di vacanze estive insieme, questi amici agli antipodi iniziano a chiedersi se potrebbero essere la coppia perfetta.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1034716",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Erbsünde - Veil of Sin",
+    "anno": 2024,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1301122",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "전지적 독자 시점",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1131759",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "L'illusione perfetta - Now You See Me: Now You Don't",
+    "anno": 2025,
+    "descrizione": "I maghi del crimine sono tornati! Al loro fianco, una nuova generazione di illusionisti riscrive le regole dello spettacolo con numeri mozzafiato, colpi di scena e sorprese che sfidano l’immaginazione. Un'esperienza visiva che sul grande schermo si trasforma in spettacolo puro.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/425274",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Five Nights at Freddy's 2",
+    "anno": 2025,
+    "descrizione": "È passato un anno dall'incubo soprannaturale alla Freddy Fazbear's Pizza. Le storie su ciò che è accaduto lì sono state trasformate in una leggenda locale che ha ispirato il primo Fazfest della città. L'ex guardia di sicurezza Mike (Josh Hutcherson) e l'agente di polizia Vanessa (Elizabeth Lail) hanno nascosto alla sorella undicenne di Mike, Abby (Piper Rubio), la verità sul destino dei suoi amici animatronici. Ma quando Abby sgattaiola fuori per ricongiungersi con Freddy, Bonnie, Chica e Foxy, si scatenerà una serie di eventi terrificanti, che riveleranno oscuri segreti sulla vera origine di Freddy's e sveleranno un orrore a lungo dimenticato e nascosto per decenni.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1228246",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Risqué",
+    "anno": 2025,
+    "descrizione": "Dopo essere stata licenziata da uno strip club, una ballerina vendicativa escogita una rapina ad alto rischio con le sue colleghe spogliarelliste per abbattere il loro capo corrotto e gli uomini che le sottovalutano.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1512623",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "The Shadow's Edge",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1419406",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Rental Family - Nelle vite degli altri",
+    "anno": 2025,
+    "descrizione": "Philip Vandarpleog è un attore americano che vive da otto anni a Tokyo, in Giappone, che considera ormai casa propria. Un tempo celebre perché interpretava un grosso tubetto di dentifricio, supereroe di una pubblicità popolarissima, adesso passa da un’audizione all’altra, mentre il suo agente lo manda a fare la comparsa in eventi come matrimoni e funerali. Ed è proprio a un finto funerale che Philip incontra Shinji, il capo di Rental Family, un’agenzia che procura attori per impersonare parenti e amici che non esistono, e lo scrittura: Philip diventa un giornalista amico di un anziano attore, il padre assente di una bambina sino-americana, il compagno di giochi di un appassionato di videogame.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1208348",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "The Great Flood",
+    "anno": 2025,
+    "descrizione": "In quello che potrebbe essere l'ultimo giorno sulla Terra, una lotta per la sopravvivenza in un appartamento allagato diventa ben presto l'unica speranza per l'umanità.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/982843",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Una battaglia dopo l’altra",
+    "anno": 2025,
+    "descrizione": "Un gruppo di ex rivoluzionari si riunisce quando un loro perfido nemico riemerge dal loro passato, dopo sedici anni di silenzio. Il gruppo avrà il duro compito di salvare la figlia di uno di loro, prima che accada l'inevitabile.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1054867",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "야당",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1137179",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "ปัง",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1491902",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "TRON: Ares",
+    "anno": 2025,
+    "descrizione": "Ares, un programma altamente sofisticato, viene inviato dal mondo digitale al mondo reale per una missione pericolosa, segnando il primo incontro dell'umanità con esseri dotati di intelligenza artificiale.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/533533",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Muzzle: City of Wolves",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1439112",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Night of the Zoopocalypse",
+    "anno": 2025,
+    "descrizione": "Un lupo e un leone di montagna si alleano quando un meteorite scatena un virus che trasforma gli animali dello zoo in zombie. Uniscono le forze con altri sopravvissuti per salvare lo zoo e impedire al folle leader mutante di diffondere il virus.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1205229",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "The Old Woman with the Knife",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1247002",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "The Pearl Comb",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1445698",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Avatar - La via dell'acqua",
+    "anno": 2022,
+    "descrizione": "Jake vive felicemente la sua vita insieme a Neytiri ma Pandora nasconde ancora numerosi misteri. Quando una vecchia, familiare minaccia torna ad affacciarsi per terminare quel che era stato iniziato un tempo, Jake dovrà nuovamente collaborare con l'esercito dei Na'vi per proteggere il loro incredibile pianeta. In veste di patriarca si ritroverà a dover combattere una dura guerra contro gli umani. Jake e Neytiri saranno pertanto costretti a lasciare la loro casa ed esplorare varie regioni di Pandora...",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/76600",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "xXx",
+    "anno": 2002,
+    "descrizione": "Tatuato. Rasato a zero. Sper-muscoloso. Dall'aria spavalda e scostante. Una pubblicità ambulante per l'anti-autoritarismo. Estremo in ogni sua manifestazione, proprio come la lettera per cui inizia il suo nome... una lettera che porta tatuata sul collo in triplice copia. Xander Cage è XXX. Si guadagna da vivere in modo discutibile, vendendo in Internet video delle proprie bizzarre gesta.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/7451",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "JUJUTSU KAISEN: Esecuzione",
+    "anno": 2025,
+    "descrizione": "Un velo cala improvvisamente su Shibuya, nel bel mezzo dei festeggiamenti di Halloween, intrappolando all’interno numerosi civili. Satoru Gojo, il più forte degli stregoni, si getta nella mischia, ignaro che stregoni neri e spiriti maledetti tramano per imprigionarlo. Accompagnato dai compagni di classe e da altri stregoni di prima classe, Yuji Itadori si tuffa in uno scontro tra maledizioni senza precedenti: l’incidente di Shibuya.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1539104",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Greenland 2: Migration",
+    "anno": 2026,
+    "descrizione": "Avendo trovato la sicurezza del bunker della Groenlandia dopo che la cometa Clarke ha decimato la Terra, la famiglia Garrity deve ora rischiare tutto per intraprendere un pericoloso viaggio attraverso la terra desolata d'Europa per trovare una nuova casa.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/840464",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "The Avengers",
+    "anno": 2012,
+    "descrizione": "I supereroi più famosi si riuniscono in una squadra di personaggi Marvel leggendari come Iron Man, l'incredibile Hulk, Thor, Captain America, Occhio di Falco e Vedova Nera. Quando la comparsa di un nemico inatteso minaccia la tranquillità e la sicurezza del mondo, Nick Fury, direttore dell'agenzia internazionale per il mantenimento della pace conosciuta come S.H.I.E.L.D., si trova ad aver bisogno di una squadra che salvi il pianeta dall'orlo del disastro. Inizia così, da un capo all'altro della terra, un audace lavoro di reclutamento. Dopo aver riunito la squadra, Nick Fury e il suo fidato assistente, l'Agente Coulson, dovranno convincere i supereroi a convivere e lavorare insieme, utilizzando i loro incredibili poteri contro il pericoloso Loki che è riuscito ad accedere al Tesseract e ai suoi poteri illimitati.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/24428",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Die Schule der magischen Tiere 3",
+    "anno": 2024,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1181765",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Vieja loca",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1255674",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Sisu: Il vendicatore",
+    "anno": 2025,
+    "descrizione": "Tornando alla casa dove la sua famiglia è stata brutalmente assassinata durante la guerra, 'l'uomo che si rifiuta di morire' la smonta, la carica su un camion ed è determinato a ricostruirla in un luogo sicuro in loro onore. Quando il comandante dell'Armata Rossa che ha ucciso la sua famiglia torna determinato a portare a termine il lavoro, ne segue un inseguimento incessante e mozzafiato attraverso il paese — una lotta all'ultimo sangue.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1223601",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Avatar",
+    "anno": 2009,
+    "descrizione": "Jake Sully è un marine costretto su una sedia a rotelle che accetta di trasferirsi sul pianeta Pandora in sostituzione del fratello morto, la cui missione era quella di esplorare il pianeta. Essendo l'atmosfera del pianeta tossica per gli umani sono stati creati degli esseri simili ai nativi Na'vi che possono essere 'guidati' dagli umani. Pandora è un enorme giacimento di un minerale prezioso per la Terra dove le fonti di energia sono azzerate. Gli indigeni Na'vi non hanno intenzione di essere colonizzati. Il compito iniziale dell'avatar di Jake sarà quello di conoscerne usi e costumi e di farsi accettare all'interno delle comunità indigene. Jake conosce così Neytiri, una guerriera Na'vi figlia del capo tribù. Da lei impara a divenire un guerriero molto diverso dal marine che è stato e se ne innamora ricambiato.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/19995",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Worldbreaker",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1196067",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "KPop Demon Hunters",
+    "anno": 2025,
+    "descrizione": "Quando non fanno il tutto esaurito negli stadi, le superstar del K-pop Rumi, Mira e Zoey usano i loro poteri segreti per proteggere i fan da minacce soprannaturali.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/803796",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Anaconda",
+    "anno": 2025,
+    "descrizione": "Doug (Jack Black) e Griff (Paul Rudd) sono migliori amici fin dall’infanzia e hanno sempre sognato di rifare il loro film preferito di tutti i tempi: il “classico” cinematografico Anaconda. Quando una crisi di mezza età li spinge a buttarsi finalmente nell’impresa, partono per le profondità dell’Amazzonia per iniziare le riprese. Ma le cose si fanno serie quando appare improvvisamente una vera anaconda gigante, trasformando il loro set caotico e comico in in una trappola mortale. Il film che muoiono dalla voglia di girare? Potrebbe letteralmente ucciderli...",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1234731",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "28 anni dopo - Il tempio delle ossa",
+    "anno": 2026,
+    "descrizione": "Il dottor Kelson si ritrova coinvolto in una nuova e sconvolgente relazione, con conseguenze che potrebbero cambiare il mondo così come lo conoscono, e l'incontro di Spike con Jimmy Crystal si trasforma in un incubo da cui non può sfuggire.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1272837",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Voice of Shadows",
+    "anno": 2024,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1327881",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Reflection in a Dead Diamond",
+    "anno": 2025,
+    "descrizione": "In un grand hotel sulla Costa azzurra, l'anziano agente speciale John rimane affascinato da una giovane donna e ricorda i suoi giorni da spia negli anni '60. Quando la donna scompare misteriosamente, l'uomo è preda delle sue fantasie e rivive le avventure del passato, tra furti di gioielli, rapimenti e torture, arrivando a temere che forse i suoi nemici del passato sono tornati. John vive la sua vita, o forse ha sempre fatto parte di un mondo di fantasia, segnato dall'immaginario del cinema d'avventura d'un tempo?",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1013446",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Delivery Run",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1336189",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "The Running Man",
+    "anno": 2025,
+    "descrizione": "The Running Man è il programma televisivo più seguito al mondo: un reality show estremo in cui i concorrenti, chiamati “Runner”, devono rispettare una sola regola per restare vivi: fuggire per 30 giorni, in diretta TV, braccati da killer professionisti, detti “Cacciatori”, mentre il pubblico, incollato agli schermi, esulta a ogni esecuzione. Ben Richards (Glen Powell) non è un eroe. È un uomo qualunque, costretto a una scelta impossibile: entrare nel gioco per salvare la figlia malata. A convincerlo è Dan Killian (Josh Brolin), il carismatico e spietato produttore dello show, maestro nel trasformare la sofferenza in spettacolo, la paura in share, la morte in intrattenimento. Ma Ben non segue il copione. Corre, lotta, resiste. E contro ogni previsione diventa un idolo: il pubblico lo acclama, gli ascolti volano. Più il successo cresce, più il gioco si fa mortale. Ora Ben non deve affrontare solo i suoi inseguitori... ma un’intera nazione che vuole vederlo cadere.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/798645",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "No Other Choice - Non c'è altra scelta",
+    "anno": 2025,
+    "descrizione": "Man-su, specialista nella produzione di carta con venticinque anni di esperienza, è così soddisfatto della vita da potersi dire sinceramente: “Ho tutto”. Finché un giorno viene improvvisamente informato dalla sua azienda di essere stato licenziato. Sentendosi come se gli avessero reciso la testa con un’ascia, Man-su giura di trovare un nuovo lavoro entro i successivi tre mesi per il bene della famiglia. Nonostante la sua ferma determinazione, trascorre oltre un anno passando da un colloquio all’altro, finendo per lavorare in un negozio al dettaglio. Si ritrova a rischio di perdere quella stessa casa che ha faticato così tanto per comprare. Disperato, si presenta senza preavviso alla Moon Paper per consegnare il curriculum, ma viene umiliato dal responsabile di linea Sun-chul. Sapendo di essere più qualificato di chiunque altro per lavorare lì, prende una decisione: se non c’è un posto vacante per me, dovrò farmi assumere creandone uno.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/639988",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "No Me Sigas",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/772462",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "The Unholy Trinity",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1195518",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Song Sung Blue - Una melodia d'amore",
+    "anno": 2025,
+    "descrizione": "Ispirato a una storia vera, due musicisti in difficoltà (Hugh Jackman e Kate Hudson) danno vita a una gioiosa tribute band dedicata a Neil Diamond, dimostrando che non è mai troppo tardi per innamorarsi e inseguire i propri sogni.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1371185",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Secret Pleasures",
+    "anno": 2002,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/252969",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Frankenstein",
+    "anno": 2025,
+    "descrizione": "Il dottor Victor Frankenstein, uno scienziato geniale ma egoista, dà vita a una creatura in un mostruoso esperimento che porterà alla rovina sia del creatore che della sua tragica creazione.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1062722",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Chainsaw Man - Il film: La storia di Reze",
+    "anno": 2025,
+    "descrizione": "Denji è diventato Chainsaw Man, il ragazzo con il cuore del demone Pochita, ed è entrato nella Quarta divisione speciale dei Devil Hunters. Dopo un appuntamento con Makima, la ragazza dei suoi sogni, Denji cerca riparo per la pioggia. Lì incontra Reze, una ragazza che lavora in un bar.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1218925",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Marty Supreme",
+    "anno": 2025,
+    "descrizione": "Marty Mauser (Timothée Chalamet) è un venditore di scarpe con un’irrefrenabile ossessione per il ping pong che si muove nella New York degli anni ’50 fra truffe, scommesse, passioni proibite e sogni di gloria. Un’esistenza rocambolesca per un personaggio larger than life, eccentrico e ambiziosissimo, smodato e leggendario.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1317288",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "749局",
+    "anno": 2024,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1033462",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Mission Impossible - The Final Reckoning",
+    "anno": 2025,
+    "descrizione": "La fine del mondo è vicina ma Ethan Hunt non è lontano e riparte da dove aveva lasciato. Recuperata una preziosa chiave crociata, deve raggiungere adesso il Sevastopol, un sottomarino nucleare russo, distrutto dall'Intelligenza Artificiale, che giace sotto la calotta polare. La chiave gli permetterà di recuperare il 'codice sorgente' dell'IA e di disinnescarla. Ormai autonoma e 'cosciente', l'Entità accede a qualsiasi sistema operativo, manipola fatti, dati e persone ed è determinata a sterminare la razza umana. Mentre Hunt cerca una soluzione, l'IA prende progressivamente il controllo delle armi di distruzione di massa. Il tempo stringe, non resta che correre. Ancora e ancora.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/575265",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Interstellar",
+    "anno": 2014,
+    "descrizione": "In seguito alla scoperta di un cunicolo spazio-temporale, un gruppo di esploratori si avventura in una eroica missione per tentare di superare i limiti della conquista spaziale e oltrepassare le distanze che fino a quel momento avevano reso impraticabili i viaggi interstellari. L'obiettivo è quello di trovare nuovi luoghi dove coltivare il granoturco, l'unica coltivazione rimasta dopo un drastico cambiamento climatico che ha colpito soprattutto l'agricoltura.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/157336",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Hunting Season",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1387382",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Ben - Rabbia animale",
+    "anno": 2026,
+    "descrizione": "Per le vacanze Lucy torna a casa dalla famiglia: il padre non udente Adam, la sorella minore Erin e il loro insolito animale domestico, uno scimpanzé di nome Ben. Quando Adam viene chiamato fuori città per lavoro, Lucy organizza una festa in piscina. Ma ciò che doveva essere un pomeriggio spensierato si trasforma rapidamente in un incubo quando Ben, contratto la rabbia, si trasforma in una creatura aggressiva e letale.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1315303",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Wicked - Parte 2",
+    "anno": 2025,
+    "descrizione": "Elphaba, ormai demonizzata come la Strega Malvagia dell'Ovest, vive in esilio nella foresta di Oz, continuando la sua lotta per la libertà degli animali di Oz e cercando disperatamente di rivelare la verità sul Mago.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/967941",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "F1 - Il film",
+    "anno": 2025,
+    "descrizione": "La leggenda delle corse automobilistiche Sonny Hayes viene convinto a uscire dal ritiro per guidare un team di Formula 1 in difficoltà e fare da mentore a un giovane pilota promettente, mentre insegue un'altra possibilità di gloria.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/911430",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Ne Zha - L'ascesa del guerriero di fuoco",
+    "anno": 2025,
+    "descrizione": "Ne Zha, un giovane ribelle dai poteri sovrannaturali, stringe un’alleanza instabile con il principe dei draghi, Ao Bing, in una battaglia epica per proteggere i loro rispettivi clan. Ma dopo lo scontro, i loro corpi sono sull’orlo della distruzione. Ne Zha deve così intraprendere una pericolosa missione alla ricerca di un elisir capace di salvare il corpo di Ao Bing. Durante questo viaggio tra mostri epici e leggende, Ne Zha scoprirà una cospirazione che minaccia di scatenare una guerra devastante tra il bene e il male — e dovrà affrontare forze oscure e inganni per proteggere ciò che ha di più caro.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/980477",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Fight Club",
+    "anno": 1999,
+    "descrizione": "Un uomo di trent'anni è insofferente su tutto e la notte non riesce più a dormire. In cerca di qualche luogo dove scaricare la propria ansia si mette a frequentare quei corsi dove gruppi di malati gravi si riuniscono e confessano agli altri le rispettive situazioni. Mentre si lascia andare alla commozione e al pianto di fronte a quello che vede, l'uomo fa la conoscenza prima di Marla Singer poi di Tyler Durden. Lei è una ragazza a sua volta alla deriva, incapace di scelte o decisioni; lui è un tipo deciso e vigoroso con un'idea precisa in testa. Tyler fa saltare per aria l'appartamento dell'uomo e i due vanno a vivere insieme in una casa fatiscente. Deciso a coinvolgerlo nel suo progetto, Tyler lo fa entrare in un 'Fight Club', uno stanzone sotterraneo dove ci si riunisce per picchiarsi e in questo modo sentirsi di nuovo vivi...",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/550",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Dust Bunny",
+    "anno": 2025,
+    "descrizione": "Aurora, una bambina di dieci anni, chiede al suo vicino sicario di uccidere il mostro sotto il suo letto che, secondo lei, ha divorato la sua famiglia. Per proteggerla, il vicino deve affrontare un'ondata di assassini, accettando al contempo che alcuni mostri siano reali.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1043197",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "I peccatori",
+    "anno": 2025,
+    "descrizione": "Tornati nella regione natia con un discreto bottino e con abbondanti alcolici dalla malavita di Chicago, i gemelli Smoke e Stack trasformano una baracca in un locale di ballo e gioco clandestino per la popolazione nera. La festa notturna innesca una gioia contagiosa, ma presto si avvicinano tre bianchi che chiedono insistentemente di poter entrare. Sarà presto chiara la loro intenzione.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1233413",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "ಕಾಂತಾರ: ಅಧ್ಯಾಯ - ೧",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1083637",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Zootropolis",
+    "anno": 2016,
+    "descrizione": "Il mondo animale è cambiato: non è più diviso in due fra docili prede e feroci predatori, ma armoniosamente coabitato da entrambi. Judy è una coniglietta dalle grandi ambizioni che sogna di diventare poliziotta, poiché le è stato insegnato che tutto è possibile in questo nuovo mondo. Nick è una volpe che vive di espedienti nella capitale, Zootropolis, dove Judy, dopo un estenuante training in accademia, approda come ausiliaria del traffico. Toccherà a loro, inaspettatamente uniti, risolvere il mistero dei 14 animali scomparsi che tutta la città sta cercando e sventare i piani di chi vuole impossessarsi del potere locale, secondo l'atavico principio divide et impera.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/269149",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Jurassic World - La rinascita",
+    "anno": 2025,
+    "descrizione": "Cinque anni dopo gli eventi di \"Jurassic World - Il Dominio\", l'ecologia del pianeta si è dimostrata in gran parte inospitale per i dinosauri. Quelli rimasti vivono in ambienti equatoriali isolati con climi simili a quelli in cui prosperavano un tempo. Le tre creature più gigantesche di quella biosfera tropicale possiedono la chiave per un farmaco che porterà miracolosi benefici salvavita all'umanità.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1234821",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Il padrino",
+    "anno": 1972,
+    "descrizione": "Anni Quaranta. Come è consuetudine, durante il rinfresco per festeggiare le nozze della figlia Conny con Carlo, il \"padrino\" don Vito Corleone promette assistenza e protezione a familiari e amici. Invia il figliastro Tom Hagen in California per convincere in ogni modo il produttore Jack Woltz a scritturare il cantante Johnny nel suo prossimo film. Woltz non acconsente. Tom allora lo costringe ad accettare con un \"avvertimento\": l'uccisione del suo cavallo di razza preferito. Sollozzo, a nome della potente \"famiglia\" Tartaglia, chiede a Corleone finanziamenti e appoggi per il traffico di droga. Il rifiuto scatena una lotta cruenta tra le due cosche: lo stesso don Vito viene ferito gravemente; il figlio minore Michael lo salva da un secondo attentato. Michael, poi, scavalcando l'irruento fratello Sonny e Tom, temporeggiatore, organizza un incontro con Sollozzo e con il corrotto capitano di polizia McCluskey uccidendoli entrambi.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/238",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "I Fantastici 4: Gli inizi",
+    "anno": 2025,
+    "descrizione": "Sullo sfondo di un vivace mondo retro-futuristico ispirato agli anni ’60, ecco la Prima Famiglia Marvel composta da Reed Richards/Mister Fantastic, Sue Storm/Donna Invisibile, Johnny Storm/Torcia Umana e Ben Grimm/la Cosa alle prese con la sfida più difficile mai affrontata. Costretti a bilanciare il loro ruolo di eroi con la forza del loro legame familiare, i protagonisti devono difendere la Terra da una vorace divinità spaziale chiamata Galactus e dal suo enigmatico Araldo, Silver Surfer. E se il piano di Galactus di divorare l'intero pianeta e tutti i suoi abitanti non fosse già abbastanza terribile, la situazione diventa all’improvviso una questione molto personale.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/617126",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Piccole cose come queste",
+    "anno": 2024,
+    "descrizione": "Irlanda, 1985. Bill Furlong (Cillian Murphy), uomo taciturno e padre devoto, scopre alcuni segreti custoditi dal convento della sua città.  Mentre i ricordi più dolorosi del suo passato tornano a galla, sarà il momento per Bill di decidere se voltarsi dall'altra parte o sfidare il silenzio di un'intera comunità",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1102493",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Exit 8",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1408208",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Mondo Erotico",
+    "anno": 1977,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/275039",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Wake Up Dead Man - Knives Out",
+    "anno": 2025,
+    "descrizione": "Il detective Benoit Blanc fa squadra con un giovane prete zelante per indagare su un crimine perfettamente impossibile nella chiesa di una piccola città dal passato oscuro.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/812583",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Dragon Trainer",
+    "anno": 2025,
+    "descrizione": "Sulla selvaggia isola di Berk, dove vichinghi e draghi sono stati acerrimi nemici per generazioni, Hiccup è diverso dagli altri. Figlio geniale ma sottovalutato dal capo Stoick l'Immenso, Hiccup sfida secoli di tradizione stringendo un'insolita amiciza con Sdentato, un temibile drago Furia Buia. Questo legame inaspettato rivela la vera natura dei draghi, mettendo in discussione le fondamenta stesse della società vichinga.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1087192",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Un'ultima avventura: Stranger Things 5: dietro le quinte",
+    "anno": 2026,
+    "descrizione": "Uno sguardo esclusivo su anni di impegno e creazioni fino al capitolo finale della serie dei Duffer che definisce un'intera generazione.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1610413",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Dracula - L’amore perduto",
+    "anno": 2025,
+    "descrizione": "Transilvania, XV secolo. Il principe Vladimir, dopo la perdita improvvisa della sua amata, rinnega Dio, ereditando così una maledizione eterna: diventare un vampiro. Condannato a vagare nei secoli, sfida il destino e la morte stessa, guidato da un’unica speranza: ritrovare l’amore perduto.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1246049",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "లైలా",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1403735",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Merkin Penal",
+    "anno": 2014,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1433667",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Troll 2",
+    "anno": 2025,
+    "descrizione": "Dopo che un pericoloso nuovo troll devasta la loro terra, Nora, Andreas e il maggiore Kris affrontano la loro missione più pericolosa di sempre.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1180831",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Superman",
+    "anno": 2025,
+    "descrizione": "Rivelatosi già tre anni prima a un mondo abitato da metaumani, Superman è intervenuto in un conflitto armato tra due nazioni, per fermare un massacro. Questo ha dato vita a un incidente geopolitico complesso: la nazione da lui ostacolata è storicamente alleata degli Stati Uniti, di cui Superman è cittadino. Un metaumano proveniente da quella nazione arriva così a Metropolis e sconfigge Superman. Volato al sicuro in Antartide, Superman chiama in soccorso il supercane Krypto che lo trascina al sicuro nella Fortezza della Solitudine. Nel frattempo, Lex Luthor, coinvolto anche nella guerra dove Superman è intervenuto, porta avanti un insidioso piano per scoprire i segreti della sua nemesi, screditarne l'immagine e avere finalmente l'autorizzazione del governo per eliminarlo.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1061474",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Wildcat",
+    "anno": 2025,
+    "descrizione": "Una ex squadra delle operazioni speciali si riunisce per un'ultima missione: una rapina ad alto rischio per salvare la giovane figlia del loro comandante.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1448560",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "È colpa mia?",
+    "anno": 2023,
+    "descrizione": "Noah deve lasciare la sua città, il fidanzato e gli amici per trasferirsi nella villa di William Leister, il nuovo ricco marito di sua madre Rafaela. D'altra parte, 17 anni, orgogliosa e indipendente, Noah resiste a vivere in una villa circondata dal lusso. Lì incontra Nick, il suo nuovo fratellastro, e lo scontro tra le loro forti personalità diventa evidente fin dal primo momento.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1010581",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "The Family Plan 2",
+    "anno": 2025,
+    "descrizione": "Ora che i suoi giorni da assassino sono solo un ricordo, tutto quello che Dan vuole per Natale è passare dei bei momenti con i suoi figli. Ma quando scopre che sua figlia ha altri programmi, prenota un viaggio di famiglia a Londra, facendo finire tutti nel mirino di un nemico inaspettato.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1363123",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Kulong",
+    "anno": 2024,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1266990",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "A Legend",
+    "anno": 2024,
+    "descrizione": "Un archeologo notò che la consistenza delle reliquie scoperte durante lo scavo di un ghiacciaio assomigliava molto a un ciondolo di giada visto in uno dei suoi sogni. Lui e il suo team intraprendono quindi una spedizione nelle profondità del ghiacciaio.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1116465",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Hamnet - Nel nome del figlio",
+    "anno": 2025,
+    "descrizione": "In un bosco, una giovane donna dorme rannicchiata nella culla formata dalla radice emersa di un albero secolare: è vestita di rosso cupo, accompagnata da un falco che risponde ai suoi richiami, conosce erbe e pozioni, si dice non sia nata da sua madre ma da una donna venuta da lontano. Si chiama Agnes e quando Will la vede se ne innamora subito. Will è il giovane William Shakespeare, che riesce a sposarla nonostante l’ostilità delle famiglie e ad avere con lei tre figli, Susannah e i gemelli Judith e Hamnet. Ma un lutto li colpisce, quando il drammaturgo lavora già a Londra, e Hamnet diventa Hamlet. Tratta dal romanzo del 2020 di Maggie O’Farrell, la storia di Agnes (più che di William), intessuta di magia e femminilità.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/858024",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "ది రాజాసాబ్",
+    "anno": 2026,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1022453",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "The Beldham",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1090983",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Le ali della libertà",
+    "anno": 1994,
+    "descrizione": "Siamo nel 1946. Processato per l'omicidio della moglie e del suo amante, Andy, un bancario del New England, viene condannato a un doppio ergastolo e recluso nel penitenziario di Shawshank. All'inizio è vittima delle violenze dei reclusi, poi però diventa il consulente finanziario delle guardie. Scopre così che il direttore falsifica i libri contabili intestando i conti a un fittizio Randall Stevens. Fuggito di prigione attraverso un tunnel costruito negli anni, Andy assume l'identità di Randall Stevens, denuncia il direttore e va in Messico.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/278",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "The Internship",
+    "anno": 2026,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1584215",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Biancaneve",
+    "anno": 2025,
+    "descrizione": "Una rivisitazione musicale live-action del classico film del 1937. La magica avventura musicale torna alla storia senza tempo con gli amati personaggi Mammolo, Dotto, Cucciolo, Brontolo, Gongolo, Pisolo e Eolo.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/447273",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Rebuilding",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1211442",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "SpongeBob - Un’avventura da pirati",
+    "anno": 2025,
+    "descrizione": "SpongeBob e i suoi amici di Bikini Bottom salpano per la loro più grande, nuovissima e imperdibile avventura cinematografica di sempre. Mosso dal desiderio di dimostrare a tutti, soprattutto a Mr.Krabs di avere il cuore di un vero eroe, SpongeBob si mette sulle tracce dell’Olandese Volante, un leggendario pirata fantasma. Inizia così un’avventura tra mostri, pirati e risate, che lo trascinerà nelle profondità più oscure dell’oceano… dove nessuna spugna ha mai osato mettere piede.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/991494",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Dhurandhar",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1291608",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "노이즈",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1194963",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Hitpig!",
+    "anno": 2024,
+    "descrizione": "Un cacciatore di taglie suino accetta la sua prossima vittima: Pickles, un elefante ingenuo ed esuberante. Sebbene inizialmente si prefigga di catturare il vivace pachiderma, l'improbabile coppia si ritrova ad attraversare il globo in un'avventura che tira fuori il meglio di entrambi.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/756397",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "शहँशाह",
+    "anno": 1988,
+    "descrizione": "",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/62201",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Bugonia",
+    "anno": 2025,
+    "descrizione": "Due giovani ossessionati dalle teorie del complotto rapiscono l’influente CEO di una grande azienda, convinti che sia un’aliena decisa a distruggere il pianeta Terra.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/701387",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Altered",
+    "anno": 2025,
+    "descrizione": "In un presente alternativo, gli esseri umani geneticamente modificati dominano la società. Gli emarginati Leon e Chloe lottano per ottenere giustizia contro i politici corrotti che sfruttano le disparità genetiche, rischiando il tutto per tutto per sfidare un sistema oppressivo e iniquo.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1309012",
+    "casa_produzione": "TMDB"
+  },
+  {
+    "titolo": "Eroi cercasi",
+    "anno": 2025,
+    "descrizione": "Uno psicanalista che deve svolgere lavori socialmente utili aiuta un agente distrutto dall'infedeltà. Insieme affrontano il pericolo e scoprono seconde opportunità.",
+    "genere": "Movie",
+    "link": "https://www.themoviedb.org/movie/1589891",
+    "casa_produzione": "TMDB"
+  }
+]

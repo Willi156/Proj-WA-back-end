@@ -1,0 +1,902 @@
+[
+  {
+    "titolo": "Stranger Things",
+    "anno": 2016,
+    "descrizione": "La scomparsa di un ragazzino in una cittadina porta alla luce un mistero in cui si mescolano esperimenti segreti, spaventose forze soprannaturali e una strana bambina.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/66732",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Rookie",
+    "anno": 2018,
+    "descrizione": "La serie segue John Nolan, un uomo di quarant'anni, che si sposta dalla sua confortevole vita in città a Los Angeles per perseguire il suo sogno di diventare un agente del dipartimento di polizia di Los Angeles. Nolan deve però navigare nel pericoloso, umoristico e imprevedibile mondo di un poliziotto \"giovane\".",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/79744",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Law & Order - Unità vittime speciali",
+    "anno": 1999,
+    "descrizione": "Le indagini dell'Unità Vittime Speciali, una nuova squadra speciale della Polizia di New York che si occupa di crimini a sfondo sessuale. In ogni episodio si segue da una parte l'attività investigativa attuata dalla squadra e dall'altra l'aspetto giudiziario con l'iniziativa processuale condotta dalla procura distrettuale.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/2734",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Jujutsu Kaisen",
+    "anno": 2020,
+    "descrizione": "Itadori Yuji è un ragazzo dall'incredibile possanza fisica, malgrado viva una vita comune da liceale. Per salvare un amico attaccato da una Maledizione, un giorno, ingoia il dito dello Spettro Bifronte, accogliendo così la Maledizione nella sua stessa anima. Condivide da allora il suo corpo con lo Spettro Bifronte. Sotto la guida del più potente degli stregoni, Gojo Satoru, Itadori è ammesso alla Tokyo Metropolitan Technical High School of Sorcery, un'organizzazione che combatte le Maledizioni... e inizia così il racconto eroico di un ragazzo che diviene una Maledizione per esorcizzare le Maledizioni, vita da cui non potrà mai tornare indietro.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/95479",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Supernatural",
+    "anno": 2005,
+    "descrizione": "Supernatural è una serie televisiva statunitense di genere paranormale e drammatico creata da Eric Kripke e prodotta dal 2005 al 2020 per quindici stagioni. La serie segue i fratelli Sam e Dean Winchester, che viaggiano attraverso l'America in una Chevy Impala nera del 1967 indagando e combattendo eventi paranormali e altri eventi inspiegabili, molti dei quali basati su leggende metropolitane americane e folklore, nonché su creature soprannaturali classiche come vampiri, lupi mannari e fantasmi.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1622",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Grey's Anatomy",
+    "anno": 2005,
+    "descrizione": "Meredith Grey è una giovane ragazza di Boston che, dopo la laurea in medicina, riesce ad entrare nel gruppo di tirocinanti di chirurgia del Seattle Grace Hospital. Si trasferisce così a Seattle, nella vecchia casa appartenuta alla madre. Qui si ritrova a condividere questa nuova esperienza insieme ad un gruppo di giovani coetanei, tutti alle prese con i più svariati problemi. Meredith è figlia di Ellis Grey, una famosa dottoressa specialista in chirurgia generale, e sente molto il peso del suo cognome. La sera prima di iniziare il tirocinio, Meredith incontra in un pub Derek, un affascinante uomo con cui passa la notte; solo il giorno dopo scopre che in realtà lui è Derek Shepherd, neurochirurgo dell'ospedale, nonché suo supervisore. Meredith deve così districarsi tra lo studio e il lavoro per poter diventare un chirurgo, e i sentimenti che prova per Derek.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1416",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Fallout",
+    "anno": 2024,
+    "descrizione": "Basato su una delle serie di videogiochi più grandi di sempre, Fallout è la storia di chi ha e chi non ha, in un mondo in cui non è rimasto quasi più nulla da possedere. 200 anni dopo l'apocalisse, gli abitanti dei lussuosi rifugi antiatomici sono costretti a tornare nell'irradiato paesaggio infernale che i loro antenati si sono lasciati alle spalle, rimanendo sconvolti dalla scoperta di un universo incredibilmente complesso, gioiosamente bizzarro e altamente violento che li attende.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/106379",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "I Simpson",
+    "anno": 1989,
+    "descrizione": "I Simpson (The Simpsons) è una popolare sitcom animata creata dal fumettista statunitense Matt Groening alla fine degli anni ottanta per la Fox Broadcasting Company. È una parodia satirica della società e dello stile di vita statunitensi, personificati dalla famiglia protagonista, di cui fanno parte Homer, Marge e i loro tre figli Bart, Lisa e Maggie.\n\nAmbientato in una cittadina statunitense chiamata Springfield, lo show tratta in chiave umoristica molti aspetti della condizione umana, così come la cultura, la società in generale e la stessa televisione.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/456",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "NCIS - Unità anticrimine",
+    "anno": 2003,
+    "descrizione": "L'NCIS (Naval Criminal Investigative Service) è un nucleo di agenti investigativi speciali incaricati di indagare su crimini che coinvolgono personale della Marina Militare americana o ai corpi dei Marines. L'agente speciale dell'NCIS Leroy Jethro Gibbs, un ex sergente d'artiglieria dei Marines le cui doti da investigatore sono senza eguali, conduce questa squadra di personalità colorite.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/4614",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Il Trono di Spade",
+    "anno": 2011,
+    "descrizione": "Nell'immaginario mondo di Westeros, in un tempo dal sapore medievale, s'intrecciano le vicende di alcune casate che lottano per la supremazia: i Baratheon, i Lannister, gli Stark, i Targaryen sono solo alcune delle famiglie che, tra guerre manifeste e intrighi clandestini, in un interminabile rovescio di fortune e alleanze, cercano di trionfare sugli avversari e prendere possesso del Trono di Spade, simbolo del potere e del comando. Tratto dal ciclo di romanzi Cronache del ghiaccio e del fuoco di George R. R. Martin.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1399",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Good Doctor",
+    "anno": 2017,
+    "descrizione": "Le vicende di Shaun Murphy, un giovane chirurgo autistico con la Sindrome del savant, proveniente da una cittadina nel Wyoming, Casper, dove ha vissuto un'infanzia travagliata.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/71712",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Dr. House - Medical Division",
+    "anno": 2004,
+    "descrizione": "Gregory House è un medico burbero, di un'onestà quasi brutale, scorbutico nei confronti dei pazienti con i quali, se potesse, eviterebbe persino di parlare. Afflitto da dolori cronici a una gamba, è costretto a camminare aiutandosi con un bastone.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1408",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Shameless",
+    "anno": 2011,
+    "descrizione": "Ecco a voi Frank Gallagher: l'orgoglioso patriarca della classe operaia di una variegata prole di sei intelligenti, vivaci e indipendenti figli che senza di lui... starebbero meglio. I Gallagher sono irriverenti, affettuosi, resistenti e sono assolutamente, selvaggiamente e impenitentemente spudorati.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/34307",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Law & Order - I due volti della giustizia",
+    "anno": 1990,
+    "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/549",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "La sua verità",
+    "anno": 2026,
+    "descrizione": "Due coniugi separati da tempo, lui poliziotto, lei giornalista, competono per risolvere un caso di omicidio in cui ciascuno ritiene che l'altro sia il principale sospettato.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/259731",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "霹靂布袋戲",
+    "anno": 1988,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/19530",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Homeland - Caccia alla spia",
+    "anno": 2011,
+    "descrizione": "Nicholas Brody, un sergente dei Marine ritenuto scomparso in azione nella guerra d'Iraq, viene liberato dopo otto anni di prigionia. Una volta ritornato a casa, l'intera nazione lo elegge immediatamente ad eroe di guerra. Carrie Mathison, un'analista della CIA, è l'unica a credere che in realtà egli rappresenti una seria minaccia per il Paese: identifica infatti in Brody uno sconosciuto prigioniero di guerra americano che ha saputo essersi convertito all'Islam ed essere passato al servizio di al-Qaida. Rendendosi conto delle difficoltà di provare la sua tesi e di convincere i suoi superiori a mettere sotto sorveglianza il sergente, Carrie inizia ad indagare segretamente sulla figura di Nicholas Brody, per prevenire un altro attacco terroristico sul suolo americano.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1407",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Criminal Minds",
+    "anno": 2005,
+    "descrizione": "Criminal Minds è una serie poliziesca incentrata sull'Unità di analisi criminale (BAU) che ha sede presso l'accademia dell'FBI a Quantico, in Virginia. L'unità è composta da psichiatri, psicologi e criminologi in grado di “pensare” come gli S.I., sigla che utilizzano per indicare i “soggetti ignoti” che compiono delitti seriali sui quali sono chiamati ad indagare. La squadra interviene in ogni località degli Stati Uniti ogni qual volta si sospetti che i delitti possano essere opera di un serial killer, lavora stilando un profilo psicologico del S.I. in modo da anticiparne le mosse e catturarlo. La squadra è formata da diversi elementi, ognuno con un suo ruolo ben preciso: c'è chi ha l'incarico di indagare sul campo parlando con le famiglie e relazionandosi con le forze di polizia locale, chi si immedesima nel killer per comprenderlo, chi fa ricerche sui soggetti coinvolti. Ovviamente vengono analizzate anche le relazioni tra i vari personaggi.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/4057",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Blacklist",
+    "anno": 2013,
+    "descrizione": "Raymond “Red” Reddington (interpretato da James Spader) è un genio del crimine internazionale ricercato dalle polizie di tutto il mondo e si presenta improvvisamente nel quartier generale dell’FBI per costituirsi: per salvarsi da pene carcerarie che lo chiuderebbero a vita in prigione, offre il suo aiuto per catturare i nomi contenuti in una sua speciale black list dove sarebbero contenuti i contatti dei più pericolosi terroristi in circolazione, criminali dalle mille false identità sconosciuti e imprendibili per la stessa FBI. Reddington pone una condizione alla sua offerta d’aiuto: darà informazioni solo a Elizabeth Keen (Megan Boone), una giovane profiler dell’FBI assunta da un giorno all’intelligence, che sarà catapultata al centro di un torbido intrigo.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/46952",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "L'ispettore Barnaby",
+    "anno": 1997,
+    "descrizione": "L'ispettore capo Tom Barnaby della polizia di Midsomer e il suo fidato sergente, Gavin Troy, , devono investigare sugli omicidi che avvengono nei villaggi dell'immaginaria contea inglese di Midsomer. Le storie sono ambientate nel presente ed hanno una struttura di \"giallo classico\", in cui l'indagine e le deduzioni prevalgono sull'azione e sulla violenza.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/764",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Spartacus: House of Ashur",
+    "anno": 2025,
+    "descrizione": "E se Ashur fosse sopravvissuto e avesse ottenuto il ludus dove un tempo aveva sanguinato? Con Achillia, una gladiatrice, scatena spettacoli che sfidano Roma e sconvolgono l'élite.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/240459",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Dexter",
+    "anno": 2006,
+    "descrizione": "Dexter Morgan, all'apparenza un tranquillo e metodico tecnico della polizia scientifica di Miami, è in realtà un feroce e spietato serial killer, che però agisce seguendo un proprio rigoroso codice: uccidere soltanto criminali che sono sfuggiti alla giustizia.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1405",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "I Griffin",
+    "anno": 1999,
+    "descrizione": "La famiglia protagonista del cartone è la dissacrante rappresentazione della tipica American way of life. Le loro vicende sono fuori dalla realtà, con continui flashback in vari punti della storia che esplicano i comportamenti dei personaggi. Le trame degli episodi molto spesso non seguono un senso logico, ma sono sempre dotate di una forte vena umoristico-demenziale, l'inserimento, con il passare delle stagioni, di nuovi personaggi, ha ulteriormente scavato in questo punto, riuscendo nell'intento di far guadagnare alla serie una popolarità smisurata.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1434",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Friends",
+    "anno": 1994,
+    "descrizione": "Una delle commedie televisive più amate di sempre su un gruppo di sei amici trentenni, la trama si svolge prevalentemente in due appartamenti e un Coffee-Bar: Monica, Rachel, Phoebe, Chandler, Ross e Joey condividono sogni, amori, delusioni e speranze fra gag esilaranti e battute dal ritmo serratissimo.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1668",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Breaking Bad",
+    "anno": 2008,
+    "descrizione": "Un insegnante di chimica con un cancro allo stadio terminale comincia a produrre e spacciare metanfetamina con un suo ex studente per assicurare un futuro alla famiglia.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1396",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Walking Dead",
+    "anno": 2010,
+    "descrizione": "In un futuro post apocalittico, il mondo è popolato di zombie assassini in cerca di vittime. Un gruppo di sopravvissuti è in viaggio per trovare un posto sicuro dove vivere.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1402",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Fargo",
+    "anno": 2014,
+    "descrizione": "Una serie antologica, ispirata all'omonimo film del 1996. In ogni stagione, nuovi personaggi vengono coinvolti nelle indagini per omicidio in diverse città del Midwest, con crimini apparentemente non correlati tra loro.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/60622",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "CSI: Scena del crimine",
+    "anno": 2000,
+    "descrizione": "CSI: Scena del crimine (CSI: Crime Scene Investigation) è un telefilm prodotto dal network statunitense CBS le cui vicende ruotano attorno alle indagini della squadra della polizia scientifica di Las Vegas. Le indagini vengono svolte in maniera scientifica e razionale e la ricerca delle prove, con l'ausilio di tutti i mezzi offerti dalla tecnologia, è sempre l'obiettivo principale del team di investigatori. Visto il successo del telefilm sono stati creati ben due spin-off che vanno in onda contemporaneamente, CSI: Miami e CSI:NY.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1431",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Mentalist",
+    "anno": 2008,
+    "descrizione": "Un mentalist è in grado di manipolare il pensiero e il comportamento degli altri. The Mentalist è Patrick Jane, un famoso sensitivo, la cui moglie e il cui figlio vengono brutalmente assassinati da un inafferrabile serial killer chiamato John il Rosso. Sconvolto, Patrick ammette che le sue facoltà paranormali sono un imbroglio, decide di cambiare vita e di utilizzare le sue straordinarie capacità di osservazione e di analisi - qualità che gli avevano permesso di far credere di possedere doti paranormali - per assicurare i criminali alla giustizia.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/5920",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Pitt",
+    "anno": 2025,
+    "descrizione": "Lo staff del Trauma Medical Center di Pittsburgh lavora ininterrottamente per salvare vite in un reparto di emergenza sovraffollato e senza fondi.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/250307",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Lost",
+    "anno": 2004,
+    "descrizione": "48 persone sopravvivono ad un tremendo disastro aereo e si ritrovano dispersi su un'isola dell'Oceano Pacifico che sembra completamente disabitata. Ognuno di loro ha una sua storia, ognuno di loro nasconde dei segreti. Ma tutti quanti sono consapevoli che, se vogliono continuare a vivere, debbono collaborare, superare le avversità e le divisioni personali e sperare in un soccorso che potrebbe anche non arrivare mai. Il gruppo, mentre affronta l'inclemenza del tempo e l'ambiente ostile, scopre, con il passare del tempo, che anche l'isola nasconde dei segreti.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/4607",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Vikings",
+    "anno": 2013,
+    "descrizione": "L'eroe Ragnar Lothbrok ha l'obiettivo di estendere il regno vichingo, sfidando un re privo di ambizioni.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/44217",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Smallville",
+    "anno": 2001,
+    "descrizione": "16 ottobre 1989: una catastrofica pioggia di meteoriti contenenti un minerale radioattivo, la kryptonite, si abbatte sulla cittadina di Smallville, nel Kansas. Due coniugi, Jonathan e Martha Kent, trovano in un campo un bambino nei pressi di una astronave e decidono di prenderlo con sé e crescerlo come un figlio. Dieci anni più tardi Clark Kent, il bambino divenuto ormai un adolescente, e l'amica Chloe Sullivan, entrambi giornalisti in erba del liceo di Smallville, indagano su alcuni eventi inspiegabili che si verificano nella cittadina e che sono causati dai frammenti dei meteoriti ancora presenti, che hanno modificato geneticamente alcuni abitanti dotandoli di strani poteri.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/4604",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Flash",
+    "anno": 2014,
+    "descrizione": "Barry Allen, un assistente di scena del crimine legale per il dipartimento di polizia di Central City, viene colpito da un fulmine durante un temporale generatosi dall'esplosione di un acceleratore di particelle dello STAR Labs. In coma per nove mesi, Barry si risveglia nello STAR Labs, sotto le cure del suo idolo scienziato, il dottor Harrison Wells, insieme ai suoi collaboratori, la dottoressa Caitlin Snow e Cisco Ramon. Barry impara rapidamente che può muoversi a velocità straordinarie, e che oltre a lui ci sono altri \"metaumani\" creati dall'esplosione.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/60735",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "X-Files",
+    "anno": 1993,
+    "descrizione": "X-Files è una serie fantascientifica americana che descrive la riapertura dei casi irrisolti e dimenticati in archivio perchè collegati a fenomeni paranormali da parte dei due investigatori del FBI  Fox Mulder e Dana Scully.\n\nScully è la scettica, meticolosa e scientifica agente assegnata per controbilanciare (e smontare) il lavoro dell'agente Molder e le sue scoperte spesso scomode, così da poterlo riassegnare ai casi \"normali\".",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/4087",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Landman",
+    "anno": 2024,
+    "descrizione": "Nelle città in rapida espansione del Texas occidentale, dove irrefrenabili miliardari stanno alimentando il più grande boom economico della storia, Tommy Norris è un anonimo gestore di crisi per la compagnia petrolifera di Monty Miller, un titano del locale sistema industriale con il quale ha una lunga relazione personale e professionale che coinvolge anche la moglie di quest'ultimo, Cami.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/157741",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Eşref Rüya",
+    "anno": 2025,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/283123",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Office (US)",
+    "anno": 2005,
+    "descrizione": "Questa commedia di successo racconta le manie di impiegati insoddisfatti e del loro goffo capo Michael Scott all'industria cartiera Dunder Mifflin.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/2316",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Bones",
+    "anno": 2005,
+    "descrizione": "La dottoressa Temperance Brennan è un'antropologa eccezionale, di fama riconosciuta, che lavora con il suo staff nel \"Jeffersonian Institute\", una ragazza molto intelligente, ma decisamente asociale e goffa nelle relazioni interpersonali; è proprio per la sua eccezionale devozione al lavoro che Temperance viene contattata dall'FBI per aiutare un loro agente, Seeley Booth, a risolvere un caso di omicidio il cui unico indizio è lo scheletro della vittima. Grazie al suo brillante intuito ed alla sua precisione assoluta, Temperance aiuta Seeley a risolvere il caso (non prima di essersi guadagnata da quest'ultimo il soprannome di \"Bones\", ossa per l'appunto, da cui deriva il nome della serie), ma non sarà la loro unica collaborazione; proprio grazie all'eccezionale affiatamento dimostrato dai due, l'FBI decide che l'agente Booth ricorra più volte all'aiuto della dottoressa Brennan per risolvere i casi più difficili e per i due l'esperienza sarà, oltre che una strepitosa collaborazione di lavoro, anche un vero e proprio viaggio di vita dove ognuno, tra un caso e l'altro, imparerà un po' dall'altro.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1911",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Peaky Blinders",
+    "anno": 2013,
+    "descrizione": "La storia di una famiglia criminale nella Birmingham del 1919, Inghilterra, centrata sulle vicende di una gang che nasconde delle lame di rasoio nelle visiere dei propri cappelli e del loro capo Tommy Shelby, che aspira a trovare il suo posto nel mondo.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/60574",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Malhação",
+    "anno": 1995,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/14424",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Tomorrow Is Ours - Il domani è nostro",
+    "anno": 2017,
+    "descrizione": "La serie si svolge a Sète in Francia sul mare e segue la vita quotidiana delle famiglie Delcourt, Vallorta, Lazzari, Beddiar, Moreno e Raynaud tra storie d'amore, piccoli e grandi fastidi, tutto punteggiato da intrighi che mescolano ritorni, segreti, tentati omicidi, sequestri e storie di vendetta.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/72879",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "IT: Welcome to Derry",
+    "anno": 2025,
+    "descrizione": "Nel 1962, nella piccola cittadina di Derry, nel Maine, quattro ragazzini vivono vicino alla base della aeronautica militare che ospita un bunker destinato a progetti speciali. Partono alla ricerca di uno dei loro amici che è misteriosamente scomparso. Quattro mesi dopo, il maggiore Leroy Hanlon atterra a Derry e, mentre attende l'arrivo di sua moglie Charlotte e del loro figlio dodicenne Will, iniziano ad accadere cose preoccupanti in città.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/200875",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Due uomini e mezzo",
+    "anno": 2003,
+    "descrizione": "Due fratelli, Charlie e Alan, per necessità si trovano a condividere lo stesso tetto, una grande villa sulla spiaggia. I due, però, sono molto differenti tra loro , sia per carattere che per stile di vita. Da un lato c'è Charlie (proprietario della casa) che di professione fa il compositore musicale per jingle pubblicitari e con un carattere molto estroverso, sicuro di se, estremamente viziato e con un gran successo con il sesso femminile. Dall'altro c'è Alan, che di professione fa il chiropratico e che invece sembra essere l'esatto opposto; uomo mite, tranquillo, molto preciso, separato e con un figlio di dieci anni di nome Jake al seguito. I due uomini e mezzo quindi danno vita a storie comiche nelle quali spesso entra prepotentemente anche la madre dei fratelli, Evelyn, una ricca agente immobiliare ma con la quale i due, sia Charlie che Alan, hanno un rapporto conflittuale.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/2691",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "La regina del flow",
+    "anno": 2018,
+    "descrizione": "Dopo aver trascorso diciassette anni in prigione ingiustamente, una talentuosa cantautrice cerca vendetta sugli uomini che l'hanno affondata e ucciso la sua famiglia.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/80240",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Yellowstone",
+    "anno": 2018,
+    "descrizione": "Segui il mondo violento della famiglia Dutton, che controlla il più grande ranch attiguo degli Stati Uniti. Guidata dal loro patriarca John Dutton, la famiglia difende la loro proprietà dagli attacchi costanti di sviluppatori di terreni, una riserva indiana e il primo Parco Nazionale d'America.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/73586",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Modern Family",
+    "anno": 2009,
+    "descrizione": "La serie racconta le vicende di sei genitori più cinque figli: Jay Pritchett, un uomo di mezz’età sposato con una colombiana molto più giovane di lui; i suoi due figli (avuti durante il primo matrimonio): Claire, casalinga con marito e prole, e Mitchell, fidanzato con un altro uomo e di ritorno dal Vietnam dopo l’adozione di una bambina. Tre famiglie piuttosto diverse tra loro ma unite da un filo sottile, forte e profondo, che decidono di rivelare le proprie vite a una troupe intenzionata a realizzarne un documentario.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1421",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Suits",
+    "anno": 2011,
+    "descrizione": "Alla Pearson Hardman di New York c'è un nuovo socio, Harvey Specter, un brillante e giovane avvocato, cinico e deciso con una grande passione per la mondanità. La sua nomina a socio senior però lo costringe ad assumere un giovane associato, cosa che Harvey odia in quanto non adatto ai lavori di coppia. Un incontro fortuito però gli cambierà la vita, Harvey infatti incontra Mike Ross, un uomo che ha dovuto abbandonare il college e che guadagna la giornata in maniera piuttosto brillante. Harvey nota sin da subito le grandi qualità di Mike e lo presenta allo Studio senza precisare che Mike in realtà non è un vero avvocato.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/37680",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "FROM",
+    "anno": 2022,
+    "descrizione": "In una città da incubo nel centro dell’America che intrappola tutti coloro che entrano, i residenti riluttanti combattono per rimanere in vita e cercano una via d’uscita. Ma sono afflitti dalle minacce della foresta circostante, comprese le terrificanti creature notturne.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/124364",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Kamen Rider",
+    "anno": 1971,
+    "descrizione": "Le Kamen Rider Series (仮面ライダーシリーズ Kamen Raidā Shirīzu) è un franchise di serie tokusatsu e manga scritto e illustrato da Shōtarō Ishinomori. Le serie di Kamen Rider in genere vedono le imprese di un supereroe motociclista dall'aspetto di un insetto che combatte contro mostri umanoidi definiti Kaijin (怪人). Il franchise iniziò nel 1971 con la serie Kamen Rider che vedeva lo studente universitario Takeshi Hongo e il fotografo Hayato Ichimonji combattere contro l'organizzazione criminale Shocker. Nel corso degli anni, molte serie televisive e film sui Kamen Rider vennero prodotti dalla Toei.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/2661",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "サザエさん",
+    "anno": 1969,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/153485",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "South Park",
+    "anno": 1997,
+    "descrizione": "Stanley \"Stan\" Marsh, Eric Cartman e Kyle Broflosky e Kenneth \"Kenny\" McCormick, quattro ragazzi che frequentano la scuola elementare e vivono nella cittadina di South Park, in Colorado. Pestiferi, osceni e sfacciatamente intelligenti i ragazzacci affrontano temi di attualità con immediatezza e sana cattiveria sfatando tabù e demonizzando la società americana. Le loro \"armi\" sono la parodia, la commedia nera e il linguaggio scurrile.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/2190",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Prison Break",
+    "anno": 2005,
+    "descrizione": "Condannato a morte per l'omicidio di un potente uomo di Washington, Lincoln Burrows si dice vittima di un complotto. L'unico a credere in lui è il fratello Michael Scofield, ingegnere edile, che ha architettato un piano per farlo evadere, ma per metterlo in pratica deve farsi rinchiudere nello stesso carcere. Da qui inizia una lunga, rocambolesca fuga per la libertà per Michael, suo fratello e gli altri che si uniranno a loro.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/2288",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Nintama Rantarou",
+    "anno": 1993,
+    "descrizione": "Rantarou, Shinbei e Kirimaru sono apprendisti ninja nel Ninja Gakuen, dove quelli di primo grado sono chiamati \"Nintamas\" (contrazione delle parole ninja+tama (uovo)). Devono imparare tutto ciò che un ninja deve sapere, ma per i nostri eroi sono più interessanti i soldi, il cibo o il gioco. La serie mostra le avventure quotidiane dei nostri eroi, segmentate in modo cartoon, come 2 piccoli episodi in uno show di 30 minuti. Il cast include anche gli insegnanti (Doi-sensei e il crossdressing Yamada-sensei), i nintama kunoichis, i cattivi (Dokutake ninjas) e persino i membri della famiglia di tutto il cast..",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/34860",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Following",
+    "anno": 2013,
+    "descrizione": "Ryan Hardy, un ex agente dell'FBI esperto nell'elaborazione di profili psicologici, ritorna in attività quando il diabolico assassino seriale che aveva arrestato nove anni prima, Joe Carroll, evade dalla prigione nella quale era rinchiuso.  Prima e durante la prigionia, Carroll sfrutta i social media per alimentare una setta e una sorta di culto degli omicidi seriali che ha come filo conduttore i romanzi di Edgar Allan Poe.  Ryan Hardy, dopo aver individuato i suoi primi potenziali bersagli, l'ex moglie Claire Matthews e l'unica donna a essergli sopravvissuta, la dottoressa Sarah Fuller, affiancato dagli agenti Debra Parker e Mike Weston, si ritrova a guidare una task force per catturare i killer sparsi negli Stati Uniti, seguaci dell'assassino e inseriti in diversi rami della società.  Ognuno di loro deve seguire, secondo le istruzioni di Joe Carroll, una vittima in particolare e svolgere il suo compito in un preciso istante; ognuna di queste persone è chiamatafollower.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/45094",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Државни посао",
+    "anno": 2012,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/46831",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Lucifer",
+    "anno": 2016,
+    "descrizione": "Annoiato e infelice come Signore dell'Inferno, Lucifer ha abbandonato il  trono e si è ritirato a Los Angeles, dove il Lux è il suo esclusivo  nightclub. Affascinante, carismatico e diabolicamente attraente, Lucifer  si sta godendo la sua nuova vita quando il brutale omicidio di una  ragazza fuori dal suo locale scatena in lui sentimenti mai provati  prima. Il delitto attira l'attenzione della detective Chloe Decker,  affascinata dal talento di Lucifer nel tirare i segreti fuori dalle  persone e dal suo desiderio di fare giustizia. Mentre lavorano insieme  per risolvere il caso, Lucifer è colpito invece dalla bontà di Chloe.  Abituato a trattare con la peggiore feccia dell'umanità, lui apprezza  l'apparente purezza della donna e comincia a chiedersi se ci sia ancora  speranza per la sua anima.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/63174",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Vampire Diaries",
+    "anno": 2009,
+    "descrizione": "The Vampire Diaries è una serie televisiva statunitense di genere fantasy creata da Kevin Williamson e Julie Plec, che ha debuttato il 10 settembre 2009 sul network The CW. È basata sull'omonima serie di libri di Lisa Jane Smith, dal titolo italiano Il diario del vampiro.\n\nLa protagonista è Elena Gilbert, una normale ragazza adolescente che vive a Mystic Falls, in Virginia. La sua vita viene sconvolta quando scopre che il suo ragazzo, Stefan Salvatore, è un vampiro, e che è stata adottata. Stefan si accorge che Elena è identica alla prima donna della sua vita, la vampira che trasformò lui e suo fratello Damon Salvatore nel 1864: Katherine Pierce. I due fratelli si innamorano anche di Elena ed entrano a far parte della sua vita. Il loro scopo è proteggerla dal vampiro Originale Klaus e da altre forze che ambiscono al pieno controllo della ragazza, che ha scoperto di essere un essere soprannaturale, più precisamente una doppelgänger di Amara, il primo essere immortale insieme a Silas, di cui lo stesso Stefan è doppelgänger. Vengono spesso coinvolti anche gli amici e i compagni di Elena per via della loro soprannaturalità.\n\nLa serie ha ricevuto un'ottima accoglienza da parte del pubblico, vincendo quattro People's Choice Awards, uno nel 2010, uno nel 2012 e due nel 2014, e ventuno Teen Choice Awards, sette nel 2010, cinque nel 2011, sei nel 2012 e tre nel 2013.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/18165",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Witcher",
+    "anno": 2019,
+    "descrizione": "Geralt di Rivia, un cacciatore di mostri mutante, viaggia verso il suo destino in un mondo turbolento in cui le persone spesso si dimostrano più perverse delle bestie.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/71912",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "I Soprano",
+    "anno": 1999,
+    "descrizione": "La famiglia Soprano, i cui avi italiani sono originari di Avellino, vanta importanti contatti con le cosche newyorkesi e mantiene relazioni affaristiche con la Camorra napoletana. Il boss è soggetto ad attacchi di panico che lo portano sul lettino di una psicoanalista, alla quale confida ben presto i suoi turbamenti legati alla famiglia, in particolare nel rapporto col terribile personaggio della madre Livia: i suoi guai però passano anche attraverso il complesso legame con la moglie Carmela (connivente ma estranea alle imprese criminali del marito), i figli adolescenti, lo zio (fratello del padre) che non lo considera come boss e lo contrasta in ogni modo. A questi problemi personali si aggiungono quelli \"lavorativi\", in cui Tony deve destreggiarsi fra l'FBI, traditori della sua stessa famiglia e boss in ascesa di famiglie rivali.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1398",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "American Dad!",
+    "anno": 2005,
+    "descrizione": "La serie si concentra su una sconclusionata famiglia americana, gli Smith, padre madre (Francine), figlia universitaria e figlio adolescente e Stan, l'inquilino. Il padre è una caricatura di agente della CIA in perenne lotta con i figli e salvato dal buon senso della moglie...",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1433",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Witcher",
+    "anno": 2019,
+    "descrizione": "Geralt di Rivia, un cacciatore di mostri mutante, viaggia verso il suo destino in un mondo turbolento in cui le persone spesso si dimostrano più perverse delle bestie.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/71912",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Hell's Paradise",
+    "anno": 2023,
+    "descrizione": "Il temuto ninja Gabimaru, considerato imbattibile, aspetta in prigione l’arrivo di un boia in grado di ucciderlo. Il desiderio di farla finita sembra ormai più forte della voglia di lottare, ma la proposta della carnefice Asaemon risveglierà in lui la furia di un tempo: la possibilità di tornare a vivere con sua moglie, l’unica luce nella sua vita, se accetterà di avventurarsi in una terra magica e letale per recuperare il segreto della vita eterna per lo shogun!",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/117465",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Државни посао",
+    "anno": 2012,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/46831",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Tomorrow Is Ours - Il domani è nostro",
+    "anno": 2017,
+    "descrizione": "La serie si svolge a Sète in Francia sul mare e segue la vita quotidiana delle famiglie Delcourt, Vallorta, Lazzari, Beddiar, Moreno e Raynaud tra storie d'amore, piccoli e grandi fastidi, tutto punteggiato da intrighi che mescolano ritorni, segreti, tentati omicidi, sequestri e storie di vendetta.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/72879",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Chicago P.D.",
+    "anno": 2014,
+    "descrizione": "La serie racconta le vicende del Distretto 21 del Dipartimento di Polizia di Chicago, composto da due gruppi differenti: l'Unità di pattuglia, che vigila le pericolose strade della città, e l'Unità di Intelligence, che combatte il crimine organizzato, il traffico di droga e si occupa dei casi di omicidio più complessi.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/58841",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Raw",
+    "anno": 1993,
+    "descrizione": "Le migliori Superstar sono in azione ogni lunedì notte a Monday Night Raw, lo show più longevo della WWE.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/4656",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "康熙來了",
+    "anno": 2004,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/6836",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Salatut elämät",
+    "anno": 1999,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/14610",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "S.W.A.T.",
+    "anno": 2017,
+    "descrizione": "Un sergente S.W.A.T. della zona, l’ex Marine Daniel Harrelson, viene incaricato di dirigere un’unità tattica specializzata che rappresenta l’ultima tappa delle forze dell’ordine di Los Angeles, nella première di S.W.A.T. Diviso tra la lealtà per il luogo dove è cresciuto e la fedeltà ai suoi fratelli in blu, Hondo ha tutto ciò che serve per essere un leader eccellente e per fare da tramite tra i suoi due mondi.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/71790",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Chicago Fire",
+    "anno": 2012,
+    "descrizione": "Nessun lavoro è più stressante e pericoloso, ma al tempo stesso stimolante e coinvolgente di quello dei vigili del fuoco, soccorritori e paramedici della squadra di Chicago Firehouse 51. La squadra è formata da uomini e donne di eccezionale coraggio, pronti a buttarsi a capofitto nelle situazioni di estremo pericolo, quando tutti gli altri se la danno a gambe. Ma l'enorme responsabilità del loro lavoro comporta anche un pesante tributo a livello personale. Certo da una parte sono compensati da un'eccellente reputazione che fa crescere notevolmente il loro ego, ma dall'altra sono soggetti a una fortissima pressione quando, in una manciata di secondi si trovano a dover prendere decisioni da cui dipende la vita o la morte delle persone che stanno soccorrendo. Inoltre ogni volta si rischia di entrare in conflitto con le decisioni degli altri membri della squadra, con cui occorre operare in perfetta sintonia. Ogni volta che un membro della squadra incappa in un evento dalla tragica conclusione, viene sovrastato da un enorme senso di colpa e rimorso, difficile da elaborare e rimuovere. Quando poi è il momento di agire per soccorrere un compagno, ogni membro della squadra deve riuscire a mettere da parte la propria diversità di vedute, rischiando la propria vita per salvare senza alcuna esitazione quella altrui...",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/44006",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Spartacus",
+    "anno": 2010,
+    "descrizione": "Tradito dai Romani; obbligato alla schiavitù; rinato come Gladiatore. Strappato dalla sua patria e dall'amore della sua vita, Spartaco è condannato a morire nel mondo brutale dell'arena, dove sangue e morte sono intrattenimento di prima categoria.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/46296",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "9-1-1",
+    "anno": 2018,
+    "descrizione": "Le esperienze ad alta tensione di un gruppo di professionisti che operano nell'ambito dei servizi di emergenza - poliziotti, paramedici, vigili del fuoco. Uomini e donne chiamati nelle situazioni più scioccanti, imprevedibili, intense ed emozionanti, i quali mettono le proprie vite in pericolo per salvare il prossimo. Mentre lo fanno, il sergente Athena Grant, il capitano dei vigili del fuoco Bobby Nash, l'operatrice del 911 Abby Clark e i loro colleghi devono cercare inoltre di bilanciare gli impegni e le difficoltà della loro professione con le rispettive vite private.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/75219",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Castle - Detective tra le righe",
+    "anno": 2009,
+    "descrizione": "Richard Castle è uno scrittore di romanzi gialli che ha appena \"ucciso\" il suo personaggio più noto e si ritrova senza ispirazione, almeno fino a quando non è coinvolto in un caso di omicidio e rimane affascinato dalla detective Beckett, una donna con una tragica storia alle spalle che presto diventerà, suo malgrado, la musa ispiratrice di Castle.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1419",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "24",
+    "anno": 2001,
+    "descrizione": "24 è incentrata su una giornata dell'agente federale Jack Bauer del CTU (una fittizia agenzia governativa anti-terrorismo) di Los Angeles. Bauer è un agente dai metodi decisamente discutibili, che spesso si trova ad operare al di sopra delle regole, ma è sempre pronto a sacrificarsi e ad agire in prima persona per il bene della nazione.\n\nOgni stagione della serie è caratterizzata da una minaccia per la sicurezza degli Stati Uniti d'America, che può essere di diversa forma (un attentato, un ordigno nucleare, un'epidemia batteriologica...), che il protagonista deve cercare di sventare, il tutto in 24 ore.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1973",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Doraemon",
+    "anno": 2005,
+    "descrizione": "La trama segue le avventure del giovane e sfortunato Nobita Nobi, il quale, con l'aiuto di un gatto robot di nome Doraemon, cerca di cambiare il suo futuro e diventare una persona migliore.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/65733",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Pokémon",
+    "anno": 1997,
+    "descrizione": "Pokémon è una serie animata giapponese con protagonista Ash Ketchum, un ragazzo il cui sogno è quello di diventare il miglior allenatore di Pokémon del mondo. Il giorno del suo decimo compleanno deve recarsi dal Professor Oak per ricevere il suo primo Pokémon, ma giunge in ritardo al laboratorio dello scienziato, che ha già terminato i Pokémon da consegnare agli aspiranti allenatori. Gli rimane tuttavia un Pikachu. Insieme a lui Ash decide di iniziare la sua avventura alla ricerca dei 150 pokemon sparsi per il mondo.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/60572",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "La regina del flow",
+    "anno": 2018,
+    "descrizione": "Dopo aver trascorso diciassette anni in prigione ingiustamente, una talentuosa cantautrice cerca vendetta sugli uomini che l'hanno affondata e ucciso la sua famiglia.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/80240",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Tonight Show Starring Johnny Carson",
+    "anno": 1962,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/2261",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "SPY×FAMILY",
+    "anno": 2022,
+    "descrizione": "Twilight, una delle migliori spie al mondo, ha trascorso la vita ad affrontare missioni sotto copertura per rendere il mondo un posto migliore. Un giorno però riceve un compito particolarmente difficile, per riuscire nella sua nuova missione dovrà formare una famiglia temporanea e iniziare una nuova vita!",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/120089",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Doctor Who",
+    "anno": 2005,
+    "descrizione": "Il Dottore appare e sembra umano. È affascinante, arguto, e potrebbe essere scambiato per un qualsiasi uomo incontrato per strada. Ma è un Signore del tempo, ha più di 900 anni, è un alieno con due cuori e fa parte di una civiltà che possiede la tecnologia per viaggiare nel tempo. Il Dottore salva i pianeti per vivere, o meglio per hobby, ed è molto bravo in questo: salva pianeti e civiltà dal male dall'inizio del tempo. Ma chi sa chi è veramente?",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/57243",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Young Sheldon",
+    "anno": 2017,
+    "descrizione": "Sheldon Cooper, un giovane genio del Texas orientale, all'età di nove anni si trova a frequentare il liceo. La sua infanzia trascorre in una famiglia in cui si trova poco a suo agio, tra una madre fervente cristiana rinata, un padre alcolizzato e i due fratelli che non perdono occasione di prenderlo in giro o renderlo vittima dei loro scherzi.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/71728",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "CSI: Miami",
+    "anno": 2002,
+    "descrizione": "Si tratta del primo spin-off della serie TV CSI - Scena del crimine, le cui vicende ruotano attorno alle indagini della squadra del turno di giorno della polizia scientifica di Miami. Sebbene la serie sia accomunata a CSI - Scena del crimine per quanto riguarda il metodo di indagine e ricerca delle prove, talvolta CSI: Miami si avvicina alle serie poliziesche in senso stretto in quanto è caratterizzata da un ruolo più preponderante dell'azione vera e propria, che in alcuni episodi ruba la scena all'analisi scientifica.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1620",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "CID",
+    "anno": 1998,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/15226",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Yalı Çapkını",
+    "anno": 2022,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/210865",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "The Tonight Show Starring Jimmy Fallon",
+    "anno": 2014,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/59941",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "24",
+    "anno": 2001,
+    "descrizione": "24 è incentrata su una giornata dell'agente federale Jack Bauer del CTU (una fittizia agenzia governativa anti-terrorismo) di Los Angeles. Bauer è un agente dai metodi decisamente discutibili, che spesso si trova ad operare al di sopra delle regole, ma è sempre pronto a sacrificarsi e ad agire in prima persona per il bene della nazione.\n\nOgni stagione della serie è caratterizzata da una minaccia per la sicurezza degli Stati Uniti d'America, che può essere di diversa forma (un attentato, un ordigno nucleare, un'epidemia batteriologica...), che il protagonista deve cercare di sventare, il tutto in 24 ore.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1973",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "All Her Fault",
+    "anno": 2025,
+    "descrizione": "Marissa e Peter Irvine si ritrovano catapultati nel peggior incubo di ogni genitore quando il loro giovane figlio, Milo, viene rapito dopo un incontro di gioco con un compagno di classe della sua nuova scuola…",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/246386",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Raw",
+    "anno": 1993,
+    "descrizione": "Le migliori Superstar sono in azione ogni lunedì notte a Monday Night Raw, lo show più longevo della WWE.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/4656",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "9-1-1",
+    "anno": 2018,
+    "descrizione": "Le esperienze ad alta tensione di un gruppo di professionisti che operano nell'ambito dei servizi di emergenza - poliziotti, paramedici, vigili del fuoco. Uomini e donne chiamati nelle situazioni più scioccanti, imprevedibili, intense ed emozionanti, i quali mettono le proprie vite in pericolo per salvare il prossimo. Mentre lo fanno, il sergente Athena Grant, il capitano dei vigili del fuoco Bobby Nash, l'operatrice del 911 Abby Clark e i loro colleghi devono cercare inoltre di bilanciare gli impegni e le difficoltà della loro professione con le rispettive vite private.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/75219",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Rick and Morty",
+    "anno": 2013,
+    "descrizione": "Rick è uno scienziato che si è trasferito dalla famiglia di sua figlia Beth, una veterinaria e cardiochirurga per equini. Passa la maggior parte del suo tempo inventando vari gadget high-tech e portando con sé il giovane nipote Morty (e successivamente la nipote Summer) in pericolose e fantastiche avventure attraverso il loro e altri universi paralleli. Questi eventi, aggiunti alla già strana famiglia di Morty, gli causano parecchi disagi sia a scuola che nella vita privata.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/60625",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Seinfeld",
+    "anno": 1989,
+    "descrizione": "Jerry Seinfeld è un comico newyorkese dalla personalità nevrotica. Nelle vicende quotidiane, è accompagnato dall'amico George Costanza, sempre sull'orlo della bancarotta e un disastro con le donne, il bizzarro vicino Cosmo Kramer ed Elaine, ex fidanzata di Jerry e sua migliore amica.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/1400",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "ちびまる子ちゃん",
+    "anno": 1990,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/57775",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "真情",
+    "anno": 1995,
+    "descrizione": "",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/15844",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Doraemon",
+    "anno": 1979,
+    "descrizione": "Nobita è uno studente delle elementari svogliato che ha una cotta per una sua compagna di classe di nome Shizuka, ma a causa della suo carattere timido e insicuro non ha il coraggio di rivelarle i suoi veri sentimenti. Le sue giornate le trascorre soprattutto a scuola o al parco assieme a due suoi coetanei di nome Gian e Suneo che però si prendono spesso gioco di lui mettendolo nei guai. Le cose inizieranno a cambiare con l'arrivo di Doraemon, un gatto robot proveniente dal futuro per eliminare la pigrizia di Nobita che causerà molti problemi ai suoi discendenti. Per aiutarlo gli presterà alcuni gadget provenienti dal futuro in grado di fare cose straordinarie, ma Nobita tenderà ad abusarne causando dei problemi ancora peggiori dei precedenti.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/57911",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "SPY×FAMILY",
+    "anno": 2022,
+    "descrizione": "Twilight, una delle migliori spie al mondo, ha trascorso la vita ad affrontare missioni sotto copertura per rendere il mondo un posto migliore. Un giorno però riceve un compito particolarmente difficile, per riuscire nella sua nuova missione dovrà formare una famiglia temporanea e iniziare una nuova vita!",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/120089",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Hijack",
+    "anno": 2023,
+    "descrizione": "Dopo che un gruppo di dirottatori ha preso il controllo, Idris Elba e i passeggeri a bordo con lui si preparano ad affrontare il viaggio più importante della loro vita. Sam tenterà ogni strategia a sua disposizione per fermarli, mentre la posta in gioco sale di secondo in secondo.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/198102",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "PAW Patrol - La squadra dei cuccioli",
+    "anno": 2013,
+    "descrizione": "I protagonisti di Paw Patrol sono una squadra di pronto intervento formata da sei cagnolini: \"Marshall\",  cane pompiere. \"Rubble\",  cane scavatore. \"Chase\", cane polizziotto/spia. \"Rocky\", cane riciclatore. \"Zuma\",  cane acquatico. \"Skype\",  cane da salvataggio aereo e in fine \"Ryder\" ragazzino di 10 anni, capo della squadra dei cuccioli.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/57532",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "Indagini ad alta quota",
+    "anno": 2003,
+    "descrizione": "Indagini ad alta quota (Mayday in lingua originale, conosciuto anche come Air Emergency o Air Crash Investigation) è un programma televisivo documentaristico canadese prodotto dalla Cineflix. Il programma analizza incidenti, mancati incidenti (near miss), dirottamenti e attentati aerei realmente accaduti per mezzo di ricostruzioni sceneggiate e immagini generate al computer e basandosi su rapporti ufficiali e testimonianze oculari. In ogni episodio esperti di aviazione, piloti, testimoni e investigatori sono intervistati sulle cause dell'incidente analizzato e sulle modalità di investigazione. Ripercorrendo la sequenza di eventi a partire dalle prove disponibili, ciascun documentario si propone di ricostruire con precisione la dinamica degli eventi e al contempo di illustrare le raccomandazioni e le prescrizioni introdotte a seguito degli incidenti stessi, per evitare il ripetersene.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/90",
+    "stagioni": 1,
+    "in_corso": false
+  },
+  {
+    "titolo": "I sette quadranti di Agatha Christie",
+    "anno": 2026,
+    "descrizione": "Quando una sontuosa festa in campagna finisce con un omicidio, una giovane aristocratica arguta decide di risolvere il mistero in questo adattamento del romanzo di Agatha Christie.",
+    "genere": "TV",
+    "link": "https://www.themoviedb.org/tv/250505",
+    "stagioni": 1,
+    "in_corso": false
+  }
+]

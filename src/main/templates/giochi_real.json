@@ -1,0 +1,1489 @@
+[
+  {
+    "titolo": "Grand Theft Auto V",
+    "anno": 2013,
+    "descrizione": "grand-theft-auto-v",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 5",
+      "Xbox Series S/X",
+      "PlayStation 3",
+      "PC",
+      "PlayStation 4",
+      "Xbox 360",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "The Witcher 3: Wild Hunt",
+    "anno": 2015,
+    "descrizione": "the-witcher-3-wild-hunt",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 5",
+      "Xbox Series S/X",
+      "macOS",
+      "PlayStation 4",
+      "Nintendo Switch",
+      "PC",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Portal 2",
+    "anno": 2011,
+    "descrizione": "portal-2",
+    "genere": "Shooter",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 3",
+      "PC",
+      "Xbox 360",
+      "Linux",
+      "macOS",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Counter-Strike: Global Offensive",
+    "anno": 2012,
+    "descrizione": "counter-strike-global-offensive",
+    "genere": "Shooter",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "Linux",
+      "Xbox 360",
+      "PlayStation 3"
+    ]
+  },
+  {
+    "titolo": "Tomb Raider (2013)",
+    "anno": 2013,
+    "descrizione": "tomb-raider",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 3",
+      "Xbox 360",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Portal",
+    "anno": 2007,
+    "descrizione": "portal",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "macOS",
+      "PC",
+      "Android",
+      "PlayStation 3",
+      "Xbox 360",
+      "Linux",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "titolo": "Left 4 Dead 2",
+    "anno": 2009,
+    "descrizione": "left-4-dead-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox 360",
+      "Linux",
+      "PC",
+      "macOS"
+    ]
+  },
+  {
+    "titolo": "The Elder Scrolls V: Skyrim",
+    "anno": 2011,
+    "descrizione": "the-elder-scrolls-v-skyrim",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "Xbox Series S/X",
+      "PlayStation 5",
+      "Xbox One",
+      "PlayStation 4",
+      "Nintendo Switch",
+      "Xbox 360",
+      "PlayStation 3"
+    ]
+  },
+  {
+    "titolo": "Red Dead Redemption 2",
+    "anno": 2018,
+    "descrizione": "red-dead-redemption-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "BioShock Infinite",
+    "anno": 2013,
+    "descrizione": "bioshock-infinite",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "Xbox 360",
+      "Nintendo Switch",
+      "Linux",
+      "PC",
+      "PlayStation 3",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Half-Life 2",
+    "anno": 2004,
+    "descrizione": "half-life-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "macOS",
+      "Xbox 360",
+      "Linux",
+      "Xbox",
+      "Android"
+    ]
+  },
+  {
+    "titolo": "Borderlands 2",
+    "anno": 2012,
+    "descrizione": "borderlands-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 3",
+      "macOS",
+      "PC",
+      "Android",
+      "Linux",
+      "PS Vita",
+      "Xbox 360"
+    ]
+  },
+  {
+    "titolo": "Life is Strange",
+    "anno": 2015,
+    "descrizione": "life-is-strange-episode-1-2",
+    "genere": "Adventure",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "iOS",
+      "PC",
+      "Linux",
+      "PlayStation 3",
+      "macOS",
+      "Xbox 360",
+      "Android",
+      "PlayStation 4",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "BioShock",
+    "anno": 2007,
+    "descrizione": "bioshock",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 3",
+      "macOS",
+      "PC",
+      "Xbox 360"
+    ]
+  },
+  {
+    "titolo": "Destiny 2",
+    "anno": 2017,
+    "descrizione": "destiny-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "Xbox One",
+      "PC",
+      "Web",
+      "Xbox Series S/X",
+      "PlayStation 5"
+    ]
+  },
+  {
+    "titolo": "God of War (2018)",
+    "anno": 2018,
+    "descrizione": "god-of-war-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Fallout 4",
+    "anno": 2015,
+    "descrizione": "fallout-4",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "PC",
+      "PlayStation 5",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "PAYDAY 2",
+    "anno": 2013,
+    "descrizione": "payday-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "PC",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Limbo",
+    "anno": 2010,
+    "descrizione": "limbo",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "Android",
+      "PS Vita",
+      "PlayStation 4",
+      "PlayStation 3",
+      "Xbox 360",
+      "Linux",
+      "macOS",
+      "iOS",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "titolo": "Team Fortress 2",
+    "anno": 2007,
+    "descrizione": "team-fortress-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "DOOM (2016)",
+    "anno": 2016,
+    "descrizione": "doom",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "PlayStation 4",
+      "Nintendo Switch",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Cyberpunk 2077",
+    "anno": 2020,
+    "descrizione": "cyberpunk-2077",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Nintendo Switch",
+      "PlayStation 4",
+      "PC",
+      "Xbox Series S/X",
+      "PlayStation 5",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Terraria",
+    "anno": 2011,
+    "descrizione": "terraria",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox 360",
+      "Wii U",
+      "Nintendo 3DS",
+      "Xbox One",
+      "PlayStation 4",
+      "iOS",
+      "PC",
+      "macOS",
+      "Linux",
+      "Nintendo Switch",
+      "PlayStation 3",
+      "PS Vita",
+      "Android"
+    ]
+  },
+  {
+    "titolo": "Dota 2",
+    "anno": 2013,
+    "descrizione": "dota-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Grand Theft Auto IV",
+    "anno": 2008,
+    "descrizione": "grand-theft-auto-iv",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox 360",
+      "PC",
+      "PlayStation 3",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Warframe",
+    "anno": 2013,
+    "descrizione": "warframe",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "iOS",
+      "Xbox Series S/X",
+      "PlayStation 5",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Rocket League",
+    "anno": 2015,
+    "descrizione": "rocket-league",
+    "genere": "Sports",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Nintendo Switch",
+      "macOS",
+      "PC",
+      "Linux",
+      "Xbox One",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Horizon Zero Dawn",
+    "anno": 2017,
+    "descrizione": "horizon-zero-dawn",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Metro 2033",
+    "anno": 2010,
+    "descrizione": "metro-2033",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "Xbox 360"
+    ]
+  },
+  {
+    "titolo": "Rise of the Tomb Raider",
+    "anno": 2015,
+    "descrizione": "rise-of-the-tomb-raider",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox One",
+      "PC",
+      "macOS",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Batman: Arkham Knight",
+    "anno": 2015,
+    "descrizione": "batman-arkham-knight",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "Nintendo Switch",
+      "Xbox One",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Metal Gear Solid V: The Phantom Pain",
+    "anno": 2015,
+    "descrizione": "metal-gear-solid-v-the-phantom-pain",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "PC",
+      "Xbox One",
+      "PlayStation 3",
+      "Xbox 360"
+    ]
+  },
+  {
+    "titolo": "Grand Theft Auto: San Andreas",
+    "anno": 2004,
+    "descrizione": "grand-theft-auto-san-andreas",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "macOS",
+      "PC",
+      "iOS",
+      "Xbox",
+      "Android",
+      "PlayStation 4",
+      "PlayStation 3",
+      "PlayStation 2",
+      "Xbox 360",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "The Witcher 2: Assassins of Kings Enhanced Edition",
+    "anno": 2012,
+    "descrizione": "the-witcher-2-assassins-of-kings-enhanced-edition",
+    "genere": "RPG",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "macOS",
+      "PC",
+      "Xbox 360"
+    ]
+  },
+  {
+    "titolo": "Apex Legends",
+    "anno": 2019,
+    "descrizione": "apex-legends",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "Nintendo Switch",
+      "macOS",
+      "PC",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "The Witcher: Enhanced Edition Director's Cut",
+    "anno": 2008,
+    "descrizione": "the-witcher-enhanced-edition-directors-cut",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "macOS"
+    ]
+  },
+  {
+    "titolo": "Hollow Knight",
+    "anno": 2017,
+    "descrizione": "hollow-knight",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "Linux",
+      "macOS",
+      "PC",
+      "Nintendo Switch",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Middle-earth: Shadow of Mordor",
+    "anno": 2014,
+    "descrizione": "shadow-of-mordor",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "Xbox One",
+      "Xbox 360",
+      "PlayStation 3",
+      "PlayStation 4",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Half-Life 2: Lost Coast",
+    "anno": 2005,
+    "descrizione": "half-life-2-lost-coast",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "macOS",
+      "Linux",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "The Walking Dead: Season 1",
+    "anno": 2012,
+    "descrizione": "the-walking-dead",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Android",
+      "PS Vita",
+      "macOS",
+      "PC",
+      "iOS",
+      "PlayStation 4",
+      "PlayStation 3",
+      "Xbox 360",
+      "Nintendo Switch",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Little Nightmares",
+    "anno": 2017,
+    "descrizione": "little-nightmares",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "iOS",
+      "PlayStation 4",
+      "PC",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "titolo": "BioShock 2",
+    "anno": 2010,
+    "descrizione": "bioshock-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 3",
+      "Xbox 360",
+      "macOS",
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "titolo": "Half-Life",
+    "anno": 1998,
+    "descrizione": "half-life",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "macOS",
+      "PC",
+      "Dreamcast",
+      "PlayStation 2"
+    ]
+  },
+  {
+    "titolo": "Half-Life 2: Episode One",
+    "anno": 2006,
+    "descrizione": "half-life-2-episode-one",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Android",
+      "Linux",
+      "macOS",
+      "PC",
+      "Xbox 360"
+    ]
+  },
+  {
+    "titolo": "Half-Life 2: Episode Two",
+    "anno": 2007,
+    "descrizione": "half-life-2-episode-two",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Android",
+      "macOS",
+      "PC",
+      "Linux",
+      "Xbox 360"
+    ]
+  },
+  {
+    "titolo": "Half-Life 2: Deathmatch",
+    "anno": 2004,
+    "descrizione": "half-life-2-deathmatch",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Dark Souls III",
+    "anno": 2016,
+    "descrizione": "dark-souls-iii",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox One",
+      "PlayStation 4",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Stardew Valley",
+    "anno": 2016,
+    "descrizione": "stardew-valley",
+    "genere": "RPG",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Nintendo Switch",
+      "Xbox One",
+      "PC",
+      "iOS",
+      "macOS",
+      "Linux",
+      "PlayStation 4",
+      "PS Vita",
+      "Android"
+    ]
+  },
+  {
+    "titolo": "BioShock Remastered",
+    "anno": 2016,
+    "descrizione": "bioshock-remastered",
+    "genere": "Shooter",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "Nintendo Switch",
+      "macOS",
+      "PC",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Mirror's Edge",
+    "anno": 2008,
+    "descrizione": "mirrors-edge",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox 360",
+      "PlayStation 3",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Hotline Miami",
+    "anno": 2012,
+    "descrizione": "hotline-miami",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "Nintendo Switch",
+      "Xbox One",
+      "PlayStation 4",
+      "PS Vita",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Hitman",
+    "anno": 2016,
+    "descrizione": "hitman",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "Linux",
+      "macOS",
+      "PC",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Outlast",
+    "anno": 2013,
+    "descrizione": "outlast",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "macOS",
+      "Nintendo Switch",
+      "PC",
+      "Xbox One",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Deus Ex: Mankind Divided",
+    "anno": 2016,
+    "descrizione": "deus-ex-mankind-divided",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "PC",
+      "Xbox One",
+      "macOS",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Far Cry 3",
+    "anno": 2012,
+    "descrizione": "far-cry-3",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox One",
+      "Xbox 360",
+      "PlayStation 3",
+      "PC",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "PlayerUnknown’s Battlegrounds",
+    "anno": 2017,
+    "descrizione": "playerunknowns-battlegrounds",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "Xbox One",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Path of Exile",
+    "anno": 2013,
+    "descrizione": "path-of-exile",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox One",
+      "PlayStation 4",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Alan Wake",
+    "anno": 2010,
+    "descrizione": "alan-wake",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox 360",
+      "Xbox One",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Marvel's Spider-Man",
+    "anno": 2018,
+    "descrizione": "marvels-spider-man",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "PC",
+      "PlayStation 5"
+    ]
+  },
+  {
+    "titolo": "Wolfenstein: The New Order",
+    "anno": 2014,
+    "descrizione": "wolfenstein-the-new-order",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox One",
+      "PC",
+      "Xbox 360",
+      "PlayStation 3",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Amnesia: The Dark Descent",
+    "anno": 2010,
+    "descrizione": "amnesia-the-dark-descent",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Garry's Mod",
+    "anno": 2004,
+    "descrizione": "garrys-mod",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Spec Ops: The Line",
+    "anno": 2012,
+    "descrizione": "spec-ops-the-line",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox 360",
+      "PlayStation 3",
+      "Xbox One",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Half-Life Deathmatch: Source",
+    "anno": 2006,
+    "descrizione": "half-life-deathmatch-source",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "macOS",
+      "Linux",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Detroit: Become Human",
+    "anno": 2018,
+    "descrizione": "detroit-become-human",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Saints Row: The Third",
+    "anno": 2011,
+    "descrizione": "saints-row-the-third",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "PC",
+      "Xbox One",
+      "Xbox 360",
+      "PlayStation 3"
+    ]
+  },
+  {
+    "titolo": "Prey",
+    "anno": 2017,
+    "descrizione": "prey",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox One",
+      "PC",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Fallout: New Vegas",
+    "anno": 2010,
+    "descrizione": "fallout-new-vegas",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox 360",
+      "PC",
+      "Xbox One",
+      "PlayStation 4",
+      "PlayStation 3"
+    ]
+  },
+  {
+    "titolo": "Borderlands",
+    "anno": 2009,
+    "descrizione": "borderlands",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "Xbox 360",
+      "PlayStation 3"
+    ]
+  },
+  {
+    "titolo": "The Elder Scrolls V: Skyrim Special Edition",
+    "anno": 2016,
+    "descrizione": "the-elder-scrolls-v-skyrim-special-edition",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "PC",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Dishonored 2",
+    "anno": 2016,
+    "descrizione": "dishonored-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox One",
+      "PC",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Dishonored",
+    "anno": 2012,
+    "descrizione": "dishonored",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "PlayStation 3",
+      "Xbox 360",
+      "PC",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Don't Starve Together",
+    "anno": 2016,
+    "descrizione": "dont-starve-together",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "Xbox One",
+      "PlayStation 4",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Hellblade: Senua's Sacrifice",
+    "anno": 2017,
+    "descrizione": "hellblade-senuas-sacrifice",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 4",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Company of Heroes 2",
+    "anno": 2013,
+    "descrizione": "company-of-heroes-2",
+    "genere": "Strategy",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Injustice: Gods Among Us Ultimate Edition",
+    "anno": 2013,
+    "descrizione": "injustice-gods-among-us-ultimate-edition",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "PS Vita",
+      "PC",
+      "Xbox 360",
+      "PlayStation 3"
+    ]
+  },
+  {
+    "titolo": "Grand Theft Auto: Vice City",
+    "anno": 2002,
+    "descrizione": "grand-theft-auto-vice-city",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Android",
+      "macOS",
+      "PC",
+      "iOS",
+      "PlayStation 4",
+      "PS Vita",
+      "PlayStation 2",
+      "Xbox"
+    ]
+  },
+  {
+    "titolo": "Sid Meier's Civilization V",
+    "anno": 2010,
+    "descrizione": "civilization-v",
+    "genere": "Strategy",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "macOS",
+      "Linux"
+    ]
+  },
+  {
+    "titolo": "Hitman: Absolution",
+    "anno": 2012,
+    "descrizione": "hitman-absolution",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 3",
+      "macOS",
+      "PC",
+      "Nintendo Switch",
+      "Xbox 360",
+      "Xbox One",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Assassin’s Creed IV: Black Flag",
+    "anno": 2013,
+    "descrizione": "assassins-creed-iv-black-flag",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox 360",
+      "Xbox One",
+      "PC",
+      "Nintendo Switch",
+      "Wii U",
+      "PlayStation 3",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "L.A. Noire",
+    "anno": 2011,
+    "descrizione": "la-noire",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "PlayStation 3",
+      "Xbox 360",
+      "PC",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "titolo": "Super Meat Boy",
+    "anno": 2010,
+    "descrizione": "super-meat-boy",
+    "genere": "Indie",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "Nintendo Switch",
+      "Wii U",
+      "Xbox 360",
+      "PlayStation 4",
+      "PS Vita",
+      "Android",
+      "Web",
+      "PC",
+      "macOS"
+    ]
+  },
+  {
+    "titolo": "Control",
+    "anno": 2019,
+    "descrizione": "control",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox Series S/X",
+      "PlayStation 5",
+      "Xbox One",
+      "PlayStation 4",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "For Honor",
+    "anno": 2017,
+    "descrizione": "for-honor",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox One",
+      "PlayStation 4",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Star Wars Jedi: Fallen Order",
+    "anno": 2019,
+    "descrizione": "jedi-the-fallen-order",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "PC",
+      "PlayStation 5",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Uncharted 4: A Thief’s End",
+    "anno": 2016,
+    "descrizione": "uncharted-4-a-thiefs-end",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 5",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Counter-Strike: Source",
+    "anno": 2004,
+    "descrizione": "counter-strike-source",
+    "genere": "Shooter",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Dead Space (2008)",
+    "anno": 2008,
+    "descrizione": "dead-space",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 3",
+      "PC",
+      "Xbox One",
+      "Xbox 360"
+    ]
+  },
+  {
+    "titolo": "Mass Effect 2",
+    "anno": 2010,
+    "descrizione": "mass-effect-2",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "Xbox One",
+      "PlayStation 3",
+      "Xbox 360"
+    ]
+  },
+  {
+    "titolo": "Just Cause 3",
+    "anno": 2015,
+    "descrizione": "just-cause-3",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox One",
+      "PlayStation 4",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Death Stranding",
+    "anno": 2019,
+    "descrizione": "death-stranding",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "PlayStation 4"
+    ]
+  },
+  {
+    "titolo": "Metro: Last Light Redux",
+    "anno": 2014,
+    "descrizione": "metro-last-light-redux",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Nintendo Switch",
+      "PC",
+      "Linux",
+      "Xbox One",
+      "PlayStation 4",
+      "macOS"
+    ]
+  },
+  {
+    "titolo": "Borderlands: The Pre-Sequel",
+    "anno": 2014,
+    "descrizione": "borderlands-the-pre-sequel",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Linux",
+      "macOS",
+      "PC",
+      "PlayStation 3",
+      "Xbox 360",
+      "Android"
+    ]
+  },
+  {
+    "titolo": "Counter-Strike",
+    "anno": 2000,
+    "descrizione": "counter-strike",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox",
+      "Linux",
+      "macOS",
+      "PC"
+    ]
+  },
+  {
+    "titolo": "Metro 2033 Redux",
+    "anno": 2014,
+    "descrizione": "metro-redux",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PC",
+      "macOS",
+      "Linux"
+    ]
+  },
+  {
+    "titolo": "Left 4 Dead",
+    "anno": 2008,
+    "descrizione": "left-4-dead",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PC",
+      "Xbox 360",
+      "macOS"
+    ]
+  },
+  {
+    "titolo": "BioShock 2 Remastered",
+    "anno": 2016,
+    "descrizione": "bioshock-2-remastered",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "macOS",
+      "PC",
+      "Xbox One",
+      "Nintendo Switch"
+    ]
+  },
+  {
+    "titolo": "Metal Gear Solid V: Ground Zeroes",
+    "anno": 2014,
+    "descrizione": "metal-gear-solid-v-ground-zeroes",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "Xbox 360",
+      "PC",
+      "PlayStation 3",
+      "PlayStation 4",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "Hades",
+    "anno": 2020,
+    "descrizione": "hades-2018",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 5",
+      "Xbox Series S/X",
+      "PlayStation 4",
+      "Nintendo Switch",
+      "PC",
+      "Xbox One"
+    ]
+  },
+  {
+    "titolo": "NieR:Automata",
+    "anno": 2017,
+    "descrizione": "nierautomata",
+    "genere": "Action",
+    "link": "",
+    "casa_editrice": "Unknown",
+    "piattaforme": [
+      "PlayStation 4",
+      "Nintendo Switch",
+      "PC",
+      "Xbox One"
+    ]
+  }
+]
