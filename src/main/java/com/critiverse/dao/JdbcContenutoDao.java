@@ -35,6 +35,7 @@ public class JdbcContenutoDao implements ContenutoDao {
             c.setGenere(rs.getString("genere"));
             c.setLink(rs.getString("link"));
             c.setTipo(rs.getString("tipo"));
+            c.setImageLink(rs.getString("img_link"));
             // anno_pubblicazione is stored as integer year
             int anno = rs.getInt("anno_pubblicazione");
             if (!rs.wasNull()) {
@@ -50,11 +51,11 @@ public class JdbcContenutoDao implements ContenutoDao {
     }
 
     @Override
-    public Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione, String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni) {
+    public Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione, String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni, String imageLink) {
         try {
-            final String insertSql = "INSERT INTO contenuto (titolo, descrizione, genere, link, tipo, anno_pubblicazione) VALUES (?, ?, ?, ?, ?, ?) RETURNING id";
+            final String insertSql = "INSERT INTO contenuto (titolo, descrizione, genere, link, tipo, anno_pubblicazione, img_link) VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id";
 
-            Long id = jdbc.queryForObject(insertSql, new Object[] { titolo, descrizione, genere, link, tipo, annoPubblicazione }, Long.class);
+            Long id = jdbc.queryForObject(insertSql, new Object[] { titolo, descrizione, genere, link, tipo, annoPubblicazione, imageLink }, Long.class);
             if (id == null) {
                 log.warn("INSERT returned null id for titolo='{}' tipo='{}'", titolo, tipo);
                 return Optional.empty();
@@ -123,9 +124,9 @@ public class JdbcContenutoDao implements ContenutoDao {
     @Override
     public List<Contenuto> findAll() {
         try {
-                final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, AVG(r.voto) AS avg_voto "
+                final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, AVG(r.voto) AS avg_voto "
                     + "FROM contenuto c LEFT JOIN recensione r ON c.id = r.id_contenuto "
-                    + "GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione "
+                    + "GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link "
                     + "ORDER BY c.id";
             return jdbc.query(sql, new ContenutoRowMapper());
         } catch (DataAccessException ex) {
@@ -137,10 +138,10 @@ public class JdbcContenutoDao implements ContenutoDao {
     @Override
     public List<Contenuto> findByTipo(String tipo) {
         try {
-                final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, AVG(r.voto) AS avg_voto "
+                final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, AVG(r.voto) AS avg_voto "
                     + "FROM contenuto c LEFT JOIN recensione r ON c.id = r.id_contenuto "
                     + "WHERE c.tipo = ? "
-                    + "GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione "
+                    + "GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link "
                     + "ORDER BY c.id";
             return jdbc.query(sql, new ContenutoRowMapper(), tipo);
         } catch (DataAccessException ex) {

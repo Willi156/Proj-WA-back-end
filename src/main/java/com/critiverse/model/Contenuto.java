@@ -8,14 +8,16 @@ public class Contenuto{
     private String link;
     private String tipo;
     private Integer annoPubblicazione;
-    // Average rating (nullable) retrieved from recensioni
+    // Valutazione media (nullable) recuperata da recensioni
     private Double mediaVoti;
 
-    // Optional type-specific fields (nullable)
+    // Opzionali
 	private String casaProduzione;
 	private String casaEditrice;
 	private Boolean inCorso;
 	private Integer stagioni;
+
+    private String imageLink;
     
 
     public Contenuto() {}
@@ -55,4 +57,7 @@ public class Contenuto{
 
     public Double getMediaVoti() { return mediaVoti; }
     public void setMediaVoti(Double mediaVoti) { this.mediaVoti = mediaVoti; }
+
+    public String getImageLink() { return imageLink; }
+    public void setImageLink(String imageLink) { this.imageLink = imageLink; }
 }

@@ -35,7 +35,7 @@ public class ContenutoController {
             // Diagnostic log: inspect incoming payload mapping
             log.debug("Received new contenuto payload: titolo={}, descrizione={}, genere={}, link={}, tipo={}, annoPubblicazione={}, casaProduzione={}, casaEditrice={}, inCorso={}, stagioni={}",
                     req.getTitolo(), req.getDescrizione(), req.getGenere(), req.getLink(), req.getTipo(), req.getAnnoPubblicazione(),
-                    req.getCasaProduzione(), req.getCasaEditrice(), req.getInCorso(), req.getStagioni());
+                    req.getCasaProduzione(), req.getCasaEditrice(), req.getInCorso(), req.getStagioni(), req.getImageLink());
 
                 Optional<Contenuto> created = contenutoDao.newContenuto(
                     req.getTitolo(),
@@ -47,7 +47,7 @@ public class ContenutoController {
                     req.getCasaProduzione(),
                     req.getCasaEditrice(),
                     req.getInCorso(),
-                    req.getStagioni());
+                    req.getStagioni(),req.getImageLink());
 
             return created.<ResponseEntity<?>>map(c -> {
                 try {
