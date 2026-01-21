@@ -71,14 +71,11 @@ public class UtenteController {
                 );
             return created.<ResponseEntity<?>>map(c -> {
                 try {
-                    // Invia email di conferma
+                    // Invia email di conferma in modo asincrono (non blocca la risposta)
                     emailService.sendRegistrationEmail(c.getEmail(), c.getUsername());
                     return ResponseEntity.created(new URI("/api/newUtente/" + c.getId())).body(c);
                 } catch (java.net.URISyntaxException e) {
                     return ResponseEntity.status(500).body(Map.of("message", "Failed to build resource URI"));
-                } catch (Exception e) {
-                    // L'utente è stato creato ma la mail non è stata inviata
-                    return ResponseEntity.status(201).body(Map.of("message", "Utente creato ma email non inviata", "utente", c));
                 }
             }).orElseGet(() -> ResponseEntity.status(500).body(Map.of("message", "Failed to create utente")));
         } catch (Exception ex) {
