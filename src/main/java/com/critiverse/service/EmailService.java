@@ -17,7 +17,9 @@ public class EmailService {
     @Async
     public void sendRegistrationEmail(String to, String username) {
         try {
+            System.out.println("Tentativo di invio email a: " + to);
             SimpleMailMessage message = new SimpleMailMessage();
+            message.setFrom("critiversemailservice@gmail.com");
             message.setTo(to);
             message.setSubject("Registrazione completata - Critiverse");
             message.setText("Ciao " + username + ",\n\n" +
@@ -29,7 +31,7 @@ public class EmailService {
             System.out.println("Email inviata con successo a: " + to);
         } catch (Exception e) {
             System.err.println("Errore nell'invio dell'email a " + to + ": " + e.getMessage());
-            // Non propaghiamo l'errore, l'email è una funzionalità secondaria
+            e.printStackTrace();
         }
     }
 }
