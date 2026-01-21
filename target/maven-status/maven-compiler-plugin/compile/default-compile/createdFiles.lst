@@ -10,6 +10,7 @@ com\critiverse\dao\JdbcUtenteDao$UtenteRowMapper.class
 com\critiverse\controller\UtenteController.class
 com\critiverse\dao\JdbcContenutoDao$ContenutoRowMapper.class
 com\critiverse\model\GiocoPiattaforma.class
+com\critiverse\config\AsyncConfig.class
 com\critiverse\config\CorsConfig.class
 com\critiverse\dao\JdbcUtenteDao.class
 com\critiverse\model\Contenuto.class
