@@ -14,15 +14,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.critiverse.dao.UtenteDao;
 import com.critiverse.model.Utente;
+import com.critiverse.service.EmailService;
 
 @RestController
 @RequestMapping("/api")
 public class UtenteController {
 
     private final UtenteDao utenteDao;
+    private final EmailService emailService;
 
-    public UtenteController(UtenteDao utenteDao) {
+    public UtenteController(UtenteDao utenteDao, EmailService emailService) {
         this.utenteDao = utenteDao;
+        this.emailService = emailService;
     }
 
     @GetMapping("/test")
@@ -68,9 +71,14 @@ public class UtenteController {
                 );
             return created.<ResponseEntity<?>>map(c -> {
                 try {
+                    // Invia email di conferma
+                    emailService.sendRegistrationEmail(c.getEmail(), c.getUsername());
                     return ResponseEntity.created(new URI("/api/newUtente/" + c.getId())).body(c);
                 } catch (java.net.URISyntaxException e) {
                     return ResponseEntity.status(500).body(Map.of("message", "Failed to build resource URI"));
+                } catch (Exception e) {
+                    // L'utente è stato creato ma la mail non è stata inviata
+                    return ResponseEntity.status(201).body(Map.of("message", "Utente creato ma email non inviata", "utente", c));
                 }
             }).orElseGet(() -> ResponseEntity.status(500).body(Map.of("message", "Failed to create utente")));
         } catch (Exception ex) {

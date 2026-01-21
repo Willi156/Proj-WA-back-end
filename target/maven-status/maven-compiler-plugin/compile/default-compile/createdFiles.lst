@@ -5,6 +5,7 @@ com\critiverse\dao\JdbcContenutoDao.class
 com\critiverse\model\Film.class
 com\critiverse\model\Piattaforma.class
 com\critiverse\model\Utente.class
+com\critiverse\config\GlobalExceptionHandler.class
 com\critiverse\dao\JdbcUtenteDao$UtenteRowMapper.class
 com\critiverse\controller\UtenteController.class
 com\critiverse\dao\JdbcContenutoDao$ContenutoRowMapper.class
@@ -14,6 +15,7 @@ com\critiverse\dao\JdbcUtenteDao.class
 com\critiverse\model\Contenuto.class
 com\critiverse\model\Recensione.class
 com\critiverse\config\SecurityConfig.class
+com\critiverse\service\EmailService.class
 com\critiverse\dao\JdbcRecensioneDao$RecensioneRowMapper.class
 com\critiverse\config\DatabaseConfig.class
 com\critiverse\controller\ContenutoController.class
