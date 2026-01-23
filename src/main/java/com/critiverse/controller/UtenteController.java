@@ -2,16 +2,19 @@ package com.critiverse.controller;
 
 import java.net.URI;
 import java.time.Instant;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.critiverse.dao.PreferitiDao;
 import com.critiverse.dao.UtenteDao;
 import com.critiverse.model.Utente;
 import com.critiverse.service.EmailService;
@@ -22,10 +25,12 @@ public class UtenteController {
 
     private final UtenteDao utenteDao;
     private final EmailService emailService;
+    private final PreferitiDao preferitiDao;
 
-    public UtenteController(UtenteDao utenteDao, EmailService emailService) {
+    public UtenteController(UtenteDao utenteDao, EmailService emailService, PreferitiDao preferitiDao) {
         this.utenteDao = utenteDao;
         this.emailService = emailService;
+        this.preferitiDao = preferitiDao;
     }
 
     @GetMapping("/test")
@@ -82,6 +87,21 @@ public class UtenteController {
             return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
         }
     }
+
+    @GetMapping("/utente/{id}/preferiti")
+    public ResponseEntity<?> getPreferiti(@PathVariable("id") Long idUtente) {
+        if (idUtente == null) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing required path variable 'id'"));
+        }
+        try {
+            List<Long> contenutoIds = preferitiDao.findContenutoIdsByUtente(idUtente);
+            return ResponseEntity.ok(contenutoIds);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
+        }
+    }
+
+    
 
 
 }
