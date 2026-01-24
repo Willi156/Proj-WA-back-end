@@ -11,7 +11,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
+import com.critiverse.model.Contenuto;
 import com.critiverse.model.Recensione;
+import com.critiverse.model.RecensioneConContenuto;
 
 @Repository
 public class JdbcRecensioneDao implements RecensioneDao {
@@ -52,6 +54,41 @@ public class JdbcRecensioneDao implements RecensioneDao {
         }
     }
 
+    private static final class RecensioneConContenutoRowMapper implements RowMapper<RecensioneConContenuto> {
+        @Override
+        public RecensioneConContenuto mapRow(ResultSet rs, int rowNum) throws SQLException {
+            Recensione recensione = new Recensione();
+            recensione.setId(rs.getLong("r_id"));
+            recensione.setTitolo(rs.getString("r_titolo"));
+            recensione.setTesto(rs.getString("r_testo"));
+            int voto = rs.getInt("r_voto");
+            if (!rs.wasNull()) recensione.setVoto(voto);
+            java.sql.Timestamp ts = rs.getTimestamp("r_data");
+            if (ts != null) recensione.setData(new java.util.Date(ts.getTime()));
+            long idUtente = rs.getLong("r_id_utente");
+            if (!rs.wasNull()) recensione.setIdUtente(idUtente);
+            long idContenuto = rs.getLong("r_id_contenuto");
+            if (!rs.wasNull()) recensione.setIdContenuto(idContenuto);
+            recensione.setUsername(rs.getString("r_username"));
+
+            Contenuto contenuto = new Contenuto();
+            contenuto.setId(rs.getLong("c_id"));
+            contenuto.setTitolo(rs.getString("c_titolo"));
+            contenuto.setDescrizione(rs.getString("c_descrizione"));
+            contenuto.setGenere(rs.getString("c_genere"));
+            contenuto.setLink(rs.getString("c_link"));
+            contenuto.setTipo(rs.getString("c_tipo"));
+            int anno = rs.getInt("c_anno_pubblicazione");
+            if (!rs.wasNull()) contenuto.setAnnoPubblicazione(anno);
+            contenuto.setImageLink(rs.getString("c_img_link"));
+
+            RecensioneConContenuto result = new RecensioneConContenuto();
+            result.setRecensione(recensione);
+            result.setContenuto(contenuto);
+            return result;
+        }
+    }
+
     @Override
     public List<Recensione> findByContenutoId(Long contenutoId) {
         try {
@@ -61,6 +98,24 @@ public class JdbcRecensioneDao implements RecensioneDao {
             return jdbc.query(sql, new RecensioneRowMapper(), contenutoId);
         } catch (DataAccessException ex) {
             log.error("Error fetching recensioni for contenutoId={}", contenutoId, ex);
+            return List.of();
+        }
+    }
+
+    @Override
+    public List<RecensioneConContenuto> findByUtenteIdWithContenuto(Long utenteId) {
+        try {
+            final String sql = "SELECT "
+                    + "r.id AS r_id, r.titolo AS r_titolo, r.testo AS r_testo, r.voto AS r_voto, r.data AS r_data, r.id_utente AS r_id_utente, r.id_contenuto AS r_id_contenuto, u.username AS r_username, "
+                    + "c.id AS c_id, c.titolo AS c_titolo, c.descrizione AS c_descrizione, c.genere AS c_genere, c.link AS c_link, c.tipo AS c_tipo, c.anno_pubblicazione AS c_anno_pubblicazione, c.img_link AS c_img_link "
+                    + "FROM recensione r "
+                    + "LEFT JOIN utente u ON r.id_utente = u.id "
+                    + "JOIN contenuto c ON r.id_contenuto = c.id "
+                    + "WHERE r.id_utente = ? "
+                    + "ORDER BY r.data DESC";
+            return jdbc.query(sql, new RecensioneConContenutoRowMapper(), utenteId);
+        } catch (DataAccessException ex) {
+            log.error("Error fetching recensioni for utenteId={}", utenteId, ex);
             return List.of();
         }
     }
