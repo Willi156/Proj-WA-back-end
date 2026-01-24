@@ -34,7 +34,7 @@ public class JdbcPreferitiDao implements PreferitiDao {
     @Override
     public List<ContenutoSummary> findContenutiByUtente(Long idUtente) {
         try {
-            final String sql = "SELECT c.id, c.titolo, c.tipo FROM preferiti p JOIN contenuti c ON p.id_contenuto = c.id WHERE p.id_utente = ?";
+            final String sql = "SELECT c.id, c.titolo, c.tipo FROM preferiti p JOIN contenuto c ON p.id_contenuto = c.id WHERE p.id_utente = ?";
             return jdbc.query(sql, (rs, rowNum) -> {
                 ContenutoSummary cs = new ContenutoSummary();
                 cs.setId(rs.getLong("id"));
