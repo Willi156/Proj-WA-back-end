@@ -108,12 +108,13 @@ public class UtenteController {
     @PostMapping("/utente/{id}/addPreferito")
     public ResponseEntity<?> addPreferito(
             @PathVariable("id") Long idUtente,
-            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = false) Long idContenuto,
+            //@org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = false) Long idContenuto,
             @org.springframework.web.bind.annotation.RequestBody(required = false) Map<String, Object> body) {
-        if (idContenuto == null && body != null) {
+                Long idContenuto = null;
+        if (body != null) {
             Object val = body.get("contenutoId");
-            if (val instanceof Number) {
-                idContenuto = ((Number) val).longValue();
+            if (val instanceof Number number) {
+                idContenuto = number.longValue();
             }
         }
 
