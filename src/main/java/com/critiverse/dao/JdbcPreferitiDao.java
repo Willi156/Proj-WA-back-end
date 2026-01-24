@@ -52,4 +52,27 @@ public class JdbcPreferitiDao implements PreferitiDao {
             return false;
         }
     }
+
+    @Override
+    public Long findPreferitoId(Long idUtente, Long idContenuto) {
+        try {
+            final String sql = "SELECT id FROM preferiti WHERE id_utente = ? AND id_contenuto = ?";
+            return jdbc.queryForObject(sql, Long.class, idUtente, idContenuto);
+        } catch (DataAccessException ex) {
+            log.debug("Preferito not found for id_utente={}, id_contenuto={}", idUtente, idContenuto);
+            return null;
+        }
+    }
+
+    @Override
+    public boolean deletePreferitoById(Long preferitoId) {
+        try {
+            final String sql = "DELETE FROM preferiti WHERE id = ?";
+            int updated = jdbc.update(sql, preferitoId);
+            return updated > 0;
+        } catch (DataAccessException ex) {
+            log.error("Error deleting preferito by id={}", preferitoId, ex);
+            return false;
+        }
+    }
 }

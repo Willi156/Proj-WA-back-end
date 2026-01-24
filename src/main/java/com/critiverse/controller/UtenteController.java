@@ -151,11 +151,15 @@ public class UtenteController {
             return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters: id or contenutoId"));
         }
         try {
-            boolean deleted = preferitiDao.deletePreferito(idUtente, idContenuto);
+            Long preferitoId = preferitiDao.findPreferitoId(idUtente, idContenuto);
+            if (preferitoId == null) {
+                return ResponseEntity.status(404).body(Map.of("message", "Preferito non trovato"));
+            }
+            boolean deleted = preferitiDao.deletePreferitoById(preferitoId);
             if (deleted) {
                 return ResponseEntity.ok(Map.of("message", "Preferito rimosso"));
             }
-            return ResponseEntity.status(404).body(Map.of("message", "Preferito non trovato"));
+            return ResponseEntity.status(500).body(Map.of("message", "Errore rimozione preferito"));
         } catch (Exception e) {
             log.error("Error while deleting preferito for idUtente={} idContenuto={}", idUtente, idContenuto, e);
             return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));

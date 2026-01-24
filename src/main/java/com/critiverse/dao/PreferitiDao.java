@@ -9,4 +9,8 @@ public interface PreferitiDao {
     boolean addPreferito(Long idUtente, Long idContenuto);
 
     boolean deletePreferito(Long idUtente, Long idContenuto);
+    
+    Long findPreferitoId(Long idUtente, Long idContenuto);
+
+    boolean deletePreferitoById(Long preferitoId);
 }
