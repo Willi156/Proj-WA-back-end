@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +24,8 @@ import com.critiverse.service.EmailService;
 @RestController
 @RequestMapping("/api")
 public class UtenteController {
+
+    private static final Logger log = LoggerFactory.getLogger(UtenteController.class);
 
     private final UtenteDao utenteDao;
     private final EmailService emailService;
@@ -104,9 +108,17 @@ public class UtenteController {
     @PostMapping("/utente/{id}/addPreferito")
     public ResponseEntity<?> addPreferito(
             @PathVariable("id") Long idUtente,
-            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = true) Integer idContenuto) {
+            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = false) Long idContenuto,
+            @org.springframework.web.bind.annotation.RequestBody(required = false) Map<String, Object> body) {
+        if (idContenuto == null && body != null) {
+            Object val = body.get("contenutoId");
+            if (val instanceof Number) {
+                idContenuto = ((Number) val).longValue();
+            }
+        }
+
         if (idUtente == null || idContenuto == null) {
-            return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters"));
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters: id or contenutoId"));
         }
         try {
             boolean inserted = preferitiDao.addPreferito(idUtente, idContenuto);
@@ -115,6 +127,7 @@ public class UtenteController {
             }
             return ResponseEntity.status(200).body(Map.of("message", "Preferito gia' presente"));
         } catch (Exception e) {
+            log.error("Error while adding preferito for idUtente={} idContenuto={}", idUtente, idContenuto, e);
             return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
         }
     }
@@ -122,7 +135,7 @@ public class UtenteController {
     @org.springframework.web.bind.annotation.DeleteMapping("/utente/{id}/removePreferito")
     public ResponseEntity<?> deletePreferito(
             @PathVariable("id") Long idUtente,
-            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = true) Integer idContenuto) {
+            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = true) Long idContenuto) {
         if (idUtente == null || idContenuto == null) {
             return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters"));
         }
