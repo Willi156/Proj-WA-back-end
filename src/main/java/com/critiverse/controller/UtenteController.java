@@ -135,43 +135,20 @@ public class UtenteController {
         }
     }
 
-    // @org.springframework.web.bind.annotation.DeleteMapping("/utente/{id}/removePreferito")
-    // public ResponseEntity<?> deletePreferito(
-    //         @PathVariable("id") Long idUtente,
-    //         @org.springframework.web.bind.annotation.RequestBody(required = false) Map<String, Object> body) {
-    //             Long idContenuto = null;
-    //     if (body != null) {
-    //         Object val = body.get("contenutoId");
-    //         if (val instanceof Number number) {
-    //             idContenuto = number.longValue();
-    //         }
-    //     }
-
-    //     if (idUtente == null || idContenuto == null) {
-    //         return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters: id or contenutoId"));
-    //     }
-    //     try {
-    //         Long preferitoId = preferitiDao.findPreferitoId(idUtente, idContenuto);
-    //         if (preferitoId == null) {
-    //             return ResponseEntity.status(404).body(Map.of("message", "Preferito non trovato"));
-    //         }
-    //         boolean deleted = preferitiDao.deletePreferitoById(preferitoId);
-    //         if (deleted) {
-    //             return ResponseEntity.ok(Map.of("message", "Preferito rimosso"));
-    //         }
-    //         return ResponseEntity.status(500).body(Map.of("message", "Errore rimozione preferito"));
-    //     } catch (Exception e) {
-    //         log.error("Error while deleting preferito for idUtente={} idContenuto={}", idUtente, idContenuto, e);
-    //         return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
-    //     }
-    // }
-
-    @org.springframework.web.bind.annotation.DeleteMapping("/utente/{id}/preferiti/{contenutoId}")
-    public ResponseEntity<?> deletePreferitoByContenuto(
+    @org.springframework.web.bind.annotation.DeleteMapping("/utente/{id}/removePreferito")
+    public ResponseEntity<?> deletePreferito(
             @PathVariable("id") Long idUtente,
-            @PathVariable("contenutoId") Long idContenuto) {
+            @org.springframework.web.bind.annotation.RequestBody(required = false) Map<String, Object> body) {
+                Long idContenuto = null;
+        if (body != null) {
+            Object val = body.get("contenutoId");
+            if (val instanceof Number number) {
+                idContenuto = number.longValue();
+            }
+        }
+
         if (idUtente == null || idContenuto == null) {
-            return ResponseEntity.badRequest().body(Map.of("message", "Missing required path variables: id or contenutoId"));
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters: id or contenutoId"));
         }
         try {
             Long preferitoId = preferitiDao.findPreferitoId(idUtente, idContenuto);
@@ -188,6 +165,29 @@ public class UtenteController {
             return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
         }
     }
+
+    // @org.springframework.web.bind.annotation.DeleteMapping("/utente/{id}/preferiti/{contenutoId}")
+    // public ResponseEntity<?> deletePreferitoByContenuto(
+    //         @PathVariable("id") Long idUtente,
+    //         @PathVariable("contenutoId") Long idContenuto) {
+    //     if (idUtente == null || idContenuto == null) {
+    //         return ResponseEntity.badRequest().body(Map.of("message", "Missing required path variables: id or contenutoId"));
+    //     }
+    //     try {
+    //         Long preferitoId = preferitiDao.findPreferitoId(idUtente, idContenuto);
+    //         if (preferitoId == null) {
+    //             return ResponseEntity.status(404).body(Map.of("message", "Preferito non trovato"));
+    //         }
+    //         boolean deleted = preferitiDao.deletePreferitoById(preferitoId);
+    //         if (deleted) {
+    //             return ResponseEntity.ok(Map.of("message", "Preferito rimosso"));
+    //         }
+    //         return ResponseEntity.status(500).body(Map.of("message", "Errore rimozione preferito"));
+    //     } catch (Exception e) {
+    //         log.error("Error while deleting preferito for idUtente={} idContenuto={}", idUtente, idContenuto, e);
+    //         return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
+    //     }
+    // }
 
     
 
