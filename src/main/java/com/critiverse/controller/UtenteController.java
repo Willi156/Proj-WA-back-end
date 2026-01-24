@@ -143,16 +143,18 @@ public class UtenteController {
                 idContenuto = number.longValue();
             }
         }
+
         if (idUtente == null || idContenuto == null) {
-            return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters"));
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters: id or contenutoId"));
         }
         try {
             boolean deleted = preferitiDao.deletePreferito(idUtente, idContenuto);
             if (deleted) {
-                return ResponseEntity.ok(Map.of("message", "Preferito rimosso"));
+                return ResponseEntity.status(201).body(Map.of("message", "Preferito rimosso"));
             }
-            return ResponseEntity.status(404).body(Map.of("message", "Record non trovato"));
+            return ResponseEntity.status(200).body(Map.of("message", "Preferito non trovato"));
         } catch (Exception e) {
+            log.error("Error while deleting preferito for idUtente={} idContenuto={}", idUtente, idContenuto, e);
             return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
         }
     }
