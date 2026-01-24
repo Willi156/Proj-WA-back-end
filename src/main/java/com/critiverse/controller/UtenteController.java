@@ -104,7 +104,7 @@ public class UtenteController {
     @PostMapping("/utente/{id}/addPreferito")
     public ResponseEntity<?> addPreferito(
             @PathVariable("id") Long idUtente,
-            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = true) Long idContenuto) {
+            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = true) Integer idContenuto) {
         if (idUtente == null || idContenuto == null) {
             return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters"));
         }
@@ -122,7 +122,7 @@ public class UtenteController {
     @org.springframework.web.bind.annotation.DeleteMapping("/utente/{id}/removePreferito")
     public ResponseEntity<?> deletePreferito(
             @PathVariable("id") Long idUtente,
-            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = true) Long idContenuto) {
+            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = true) Integer idContenuto) {
         if (idUtente == null || idContenuto == null) {
             return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters"));
         }

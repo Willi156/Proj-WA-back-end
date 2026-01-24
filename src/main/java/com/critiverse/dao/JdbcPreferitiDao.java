@@ -30,7 +30,7 @@ public class JdbcPreferitiDao implements PreferitiDao {
     }
 
     @Override
-    public boolean addPreferito(Long idUtente, Long idContenuto) {
+    public boolean addPreferito(Long idUtente, Integer idContenuto) {
         try {
             final String sql = "INSERT INTO preferiti (id_utente, id_contenuto) VALUES (?, ?)";
             int updated = jdbc.update(sql, idUtente, idContenuto);
@@ -42,7 +42,7 @@ public class JdbcPreferitiDao implements PreferitiDao {
     }
 
     @Override
-    public boolean deletePreferito(Long idUtente, Long idContenuto) {
+    public boolean deletePreferito(Long idUtente, Integer idContenuto) {
         try {
             final String sql = "DELETE FROM preferiti WHERE id_utente = ? AND id_contenuto = ?";
             int updated = jdbc.update(sql, idUtente, idContenuto);

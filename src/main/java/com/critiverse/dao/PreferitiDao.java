@@ -6,7 +6,7 @@ public interface PreferitiDao {
 
     List<Long> findContenutoIdsByUtente(Long idUtente);
 
-    boolean addPreferito(Long idUtente, Long idContenuto);
+    boolean addPreferito(Long idUtente, Integer idContenuto);
 
-    boolean deletePreferito(Long idUtente, Long idContenuto);
+    boolean deletePreferito(Long idUtente, Integer idContenuto);
 }
