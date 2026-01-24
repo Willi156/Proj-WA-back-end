@@ -10,10 +10,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.critiverse.dao.PreferitiDao;
@@ -22,6 +24,7 @@ import com.critiverse.model.Utente;
 import com.critiverse.service.EmailService;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.PATCH, RequestMethod.DELETE, RequestMethod.OPTIONS})
 @RequestMapping("/api")
 public class UtenteController {
 
@@ -150,9 +153,9 @@ public class UtenteController {
         try {
             boolean deleted = preferitiDao.deletePreferito(idUtente, idContenuto);
             if (deleted) {
-                return ResponseEntity.status(201).body(Map.of("message", "Preferito rimosso"));
+                return ResponseEntity.ok(Map.of("message", "Preferito rimosso"));
             }
-            return ResponseEntity.status(200).body(Map.of("message", "Preferito non trovato"));
+            return ResponseEntity.status(404).body(Map.of("message", "Preferito non trovato"));
         } catch (Exception e) {
             log.error("Error while deleting preferito for idUtente={} idContenuto={}", idUtente, idContenuto, e);
             return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
