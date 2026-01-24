@@ -28,4 +28,28 @@ public class JdbcPreferitiDao implements PreferitiDao {
             return List.of();
         }
     }
+
+    @Override
+    public boolean addPreferito(Long idUtente, Long idContenuto) {
+        try {
+            final String sql = "INSERT INTO preferiti (id_utente, id_contenuto) VALUES (?, ?) ON CONFLICT DO NOTHING";
+            int updated = jdbc.update(sql, idUtente, idContenuto);
+            return updated > 0;
+        } catch (DataAccessException ex) {
+            log.error("Error adding preferito id_utente={}, id_contenuto={}", idUtente, idContenuto, ex);
+            return false;
+        }
+    }
+
+    @Override
+    public boolean deletePreferito(Long idUtente, Long idContenuto) {
+        try {
+            final String sql = "DELETE FROM preferiti WHERE id_utente = ? AND id_contenuto = ?";
+            int updated = jdbc.update(sql, idUtente, idContenuto);
+            return updated > 0;
+        } catch (DataAccessException ex) {
+            log.error("Error deleting preferito id_utente={}, id_contenuto={}", idUtente, idContenuto, ex);
+            return false;
+        }
+    }
 }

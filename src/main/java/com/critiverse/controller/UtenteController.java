@@ -101,6 +101,44 @@ public class UtenteController {
         }
     }
 
+    @PostMapping("/utente/{id}/addPreferito")
+    public ResponseEntity<?> addPreferito(
+            @PathVariable("id") Long idUtente,
+            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = true) Long idContenuto) {
+        if (idUtente == null || idContenuto == null) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters"));
+        }
+        try {
+            boolean inserted = preferitiDao.addPreferito(idUtente, idContenuto);
+            if (inserted) {
+                return ResponseEntity.status(201).body(Map.of("message", "Preferito aggiunto"));
+            }
+            return ResponseEntity.status(200).body(Map.of("message", "Preferito gia' presente"));
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
+        }
+    }
+
+    @org.springframework.web.bind.annotation.DeleteMapping("/utente/{id}/removePreferito")
+    public ResponseEntity<?> deletePreferito(
+            @PathVariable("id") Long idUtente,
+            @org.springframework.web.bind.annotation.RequestParam(name = "contenutoId", required = true) Long idContenuto) {
+        if (idUtente == null || idContenuto == null) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing required parameters"));
+        }
+        try {
+            boolean deleted = preferitiDao.deletePreferito(idUtente, idContenuto);
+            if (deleted) {
+                return ResponseEntity.ok(Map.of("message", "Preferito rimosso"));
+            }
+            return ResponseEntity.status(404).body(Map.of("message", "Record non trovato"));
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
+        }
+    }
+
+    
+
     
 
 
