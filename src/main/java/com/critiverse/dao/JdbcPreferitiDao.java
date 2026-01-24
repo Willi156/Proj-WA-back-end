@@ -32,7 +32,7 @@ public class JdbcPreferitiDao implements PreferitiDao {
     @Override
     public boolean addPreferito(Long idUtente, Long idContenuto) {
         try {
-            final String sql = "INSERT INTO preferiti (id_utente, id_contenuto) VALUES (?, ?) ON CONFLICT DO NOTHING";
+            final String sql = "INSERT INTO preferiti (id_utente, id_contenuto) VALUES (?, ?)";
             int updated = jdbc.update(sql, idUtente, idContenuto);
             return updated > 0;
         } catch (DataAccessException ex) {
