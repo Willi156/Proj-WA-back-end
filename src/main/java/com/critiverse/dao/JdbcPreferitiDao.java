@@ -8,6 +8,8 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import com.critiverse.model.ContenutoSummary;
+
 @Repository
 public class JdbcPreferitiDao implements PreferitiDao {
 
@@ -25,6 +27,23 @@ public class JdbcPreferitiDao implements PreferitiDao {
             return jdbc.queryForList(sql, Long.class, idUtente);
         } catch (DataAccessException ex) {
             log.error("Error fetching preferiti for id_utente={}", idUtente, ex);
+            return List.of();
+        }
+    }
+
+    @Override
+    public List<ContenutoSummary> findContenutiByUtente(Long idUtente) {
+        try {
+            final String sql = "SELECT c.id, c.titolo, c.tipo FROM preferiti p JOIN contenuti c ON p.id_contenuto = c.id WHERE p.id_utente = ?";
+            return jdbc.query(sql, (rs, rowNum) -> {
+                ContenutoSummary cs = new ContenutoSummary();
+                cs.setId(rs.getLong("id"));
+                cs.setTitolo(rs.getString("titolo"));
+                cs.setTipo(rs.getString("tipo"));
+                return cs;
+            }, idUtente);
+        } catch (DataAccessException ex) {
+            log.error("Error fetching preferiti with contenuti for id_utente={}", idUtente, ex);
             return List.of();
         }
     }
