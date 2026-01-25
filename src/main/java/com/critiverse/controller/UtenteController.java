@@ -46,16 +46,20 @@ public class UtenteController {
         return ResponseEntity.ok().body(Map.of("serverTime", Instant.now().toString()));
     }
 
-    @GetMapping("/utente/first")
-    public ResponseEntity<?> firstUtente() {
-        try{
-        Optional<Utente> maybe = utenteDao.findFirst();
-        if (maybe.isPresent()) {
-            return ResponseEntity.ok(maybe.get());
+    @GetMapping("/utente/{id}")
+    public ResponseEntity<?> getUtenteById(@PathVariable("id") Long id) {
+        if (id == null) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing required path variable 'id'"));
         }
-        return ResponseEntity.status(404).body(Map.of("message", "Nessun utente trovato"));
-        } catch (Exception e){
-            return ResponseEntity.status(500).body(java.util.Map.of("message", "Errore interno del server"));
+        try {
+            Optional<Utente> maybe = utenteDao.findById(id);
+            if (maybe.isPresent()) {
+                return ResponseEntity.ok(maybe.get());
+            }
+            return ResponseEntity.status(404).body(Map.of("message", "Utente non trovato"));
+        } catch (Exception e) {
+            log.error("Error fetching utente by id {}", id, e);
+            return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
         }
     }
 
