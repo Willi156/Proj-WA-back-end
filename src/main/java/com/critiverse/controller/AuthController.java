@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.critiverse.dao.RecensioneDao;
+import com.critiverse.dao.UtenteDao;
+import com.critiverse.model.UtenteProxy;
+
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
-
-import com.critiverse.dao.UtenteDao;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -24,9 +26,11 @@ public class AuthController {
     private static final String SESSION_USER_ID = "USER_ID";
 
     private final UtenteDao utenteDao;
+    private final RecensioneDao recensioneDao;
 
-    public AuthController(UtenteDao utenteDao) {
+    public AuthController(UtenteDao utenteDao, RecensioneDao recensioneDao) {
         this.utenteDao = utenteDao;
+        this.recensioneDao = recensioneDao;
     }
 
     @PostMapping("/login")
@@ -75,7 +79,8 @@ public class AuthController {
         return utenteDao.findById(id)
                 .<ResponseEntity<?>>map(u -> {
                     u.setPassword(null);
-                    return ResponseEntity.ok(u);
+                    UtenteProxy proxy = new UtenteProxy(u, recensioneDao::findByUtenteIdWithContenuto);
+                    return ResponseEntity.ok(proxy);
                 })
                 .orElseGet(() -> ResponseEntity.status(401).body(Map.of("message", "Session user not found")));
     }
