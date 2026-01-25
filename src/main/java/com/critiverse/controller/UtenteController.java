@@ -54,6 +54,10 @@ public class UtenteController {
         try {
             Optional<Utente> maybe = utenteDao.findById(id);
             if (maybe.isPresent()) {
+                maybe = maybe.map(u -> {
+                    u.setPassword(null); // Non espone la password
+                    return u;
+                });
                 return ResponseEntity.ok(maybe.get());
             }
             return ResponseEntity.status(404).body(Map.of("message", "Utente non trovato"));
