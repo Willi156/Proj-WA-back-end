@@ -8,6 +8,7 @@ public class Utente {
     private String username;
     private String password;
     private String ruolo;
+    private String immagineProfilo;
 
     public Utente() {}
 
@@ -31,4 +32,7 @@ public class Utente {
 
     public String getRuolo() { return ruolo; }
     public void setRuolo(String ruolo) { this.ruolo = ruolo; }
+
+    public String getImmagineProfilo() { return immagineProfilo; }
+    public void setImmagineProfilo(String immagineProfilo) { this.immagineProfilo = immagineProfilo; }
 }

@@ -38,6 +38,7 @@ public class JdbcUtenteDao implements UtenteDao {
             u.setUsername(rs.getString("username"));
             u.setPassword(rs.getString("password"));
             u.setRuolo(rs.getString("ruolo"));
+            u.setImmagineProfilo(rs.getString("immagine_profilo"));
             return u;
         }
     }
@@ -46,7 +47,7 @@ public class JdbcUtenteDao implements UtenteDao {
     @Override
     public Optional<Utente> findByUsernameAndPassword(String username, String password) {
         try {
-            String sql = "SELECT id, nome, cognome, email, username, ruolo, password FROM utente WHERE username = ? LIMIT 1";
+            String sql = "SELECT id, nome, cognome, email, username, password, ruolo, immagine_profilo FROM utente WHERE username = ? LIMIT 1";
             List<Utente> list = jdbc.query(sql, new Object[]{username}, new UtenteRowMapper());
             return list.stream().filter(u -> {
                 String hashed = u.getPassword();
@@ -78,7 +79,7 @@ public class JdbcUtenteDao implements UtenteDao {
             String insertSql = "INSERT INTO utente (nome, cognome, email, username, password, ruolo) VALUES (?, ?, ?, ?, ?, 'USER')";
             int rowsAffected = jdbc.update(insertSql, nome, cognome, email, username, hashedPassword);
             if (rowsAffected > 0) {
-                String querySql = "SELECT id, nome, cognome, email, username, password, ruolo FROM utente WHERE username = ? LIMIT 1";
+                String querySql = "SELECT id, nome, cognome, email, username, password, ruolo, immagine_profilo FROM utente WHERE username = ? LIMIT 1";
                 List<Utente> list = jdbc.query(querySql, new Object[]{username}, new UtenteRowMapper());
                 return list.stream().findFirst();
             } else {
@@ -93,7 +94,7 @@ public class JdbcUtenteDao implements UtenteDao {
     @Override
     public Optional<Utente> findById(Long id) {
         try {
-            String sql = "SELECT id, nome, cognome, email, username, password, ruolo FROM utente WHERE id = ? LIMIT 1";
+            String sql = "SELECT id, nome, cognome, email, username, password, ruolo, immagine_profilo FROM utente WHERE id = ? LIMIT 1";
             List<Utente> list = jdbc.query(sql, new Object[]{id}, new UtenteRowMapper());
             return list.stream().findFirst();
         } catch (DataAccessException ex) {
