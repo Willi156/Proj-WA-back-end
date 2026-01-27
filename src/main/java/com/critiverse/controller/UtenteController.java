@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -113,6 +114,87 @@ public class UtenteController {
             return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
         }
     }
+
+// inizio prova 
+    @PutMapping("/utente/update/{id}")
+    public ResponseEntity<?> updateUtente(
+            @PathVariable("id") Long id,
+            @RequestBody(required = false) Utente req) {
+        if (id == null) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing required path variable 'id'"));
+        }
+        if (req == null) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing request body"));
+        }
+        if (req.getId() != null && !id.equals(req.getId())) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Path id and body id differ"));
+        }
+        try {
+            Optional<Utente> maybeUpdated = utenteDao.updateUtenteInfo(
+                id,
+                req.getNome(),
+                req.getCognome(),
+                req.getEmail(),
+                req.getImmagineProfilo()
+            );
+            if (maybeUpdated.isEmpty()) {
+                return ResponseEntity.status(404).body(Map.of("message", "Utente non trovato"));
+            }
+            Utente updated = maybeUpdated.get();
+            updated.setPassword(null); // Non esporre la password aggiornata
+            return ResponseEntity.ok(updated);
+        } catch (Exception e) {
+            log.error("Error updating utente with id {}", id, e);
+            return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
+        }
+    }
+
+    @PutMapping("/utente/update/{id}/password")
+    public ResponseEntity<?> updatePassword(
+            @PathVariable("id") Long id,
+            @RequestBody(required = false) Map<String, String> body) {
+        if (id == null) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing required path variable 'id'"));
+        }
+        if (body == null || !body.containsKey("password") || body.get("password") == null) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing password"));
+        }
+        String newPassword = body.get("password");
+        try {
+            boolean updated = utenteDao.updatePassword(id, newPassword);
+            if (!updated) {
+                return ResponseEntity.status(404).body(Map.of("message", "Utente non trovato"));
+            }
+            return ResponseEntity.ok(Map.of("message", "Password aggiornata"));
+        } catch (Exception e) {
+            log.error("Error updating password for utente with id {}", id, e);
+            return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
+        }
+    }
+
+    @PostMapping("/utente/{id}/checkPassword")
+    public ResponseEntity<?> checkPassword(
+            @PathVariable("id") Long id,
+            @RequestBody(required = false) Map<String, String> body) {
+        if (id == null) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing required path variable 'id'"));
+        }
+        if (body == null || !body.containsKey("password") || body.get("password") == null) {
+            return ResponseEntity.badRequest().body(Map.of("message", "Missing password"));
+        }
+        String password = body.get("password");
+        try {
+            Optional<Boolean> maybeValid = utenteDao.verifyPassword(id, password);
+            if (maybeValid.isEmpty()) {
+                return ResponseEntity.status(404).body(Map.of("message", "Utente non trovato"));
+            }
+            return ResponseEntity.ok(maybeValid.get());
+        } catch (Exception e) {
+            log.error("Error checking password for utente with id {}", id, e);
+            return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
+        }
+    }
+    //FINE PROVA
 
     @GetMapping("/utente/{id}/preferitiCompleti")
     public ResponseEntity<?> getPreferitiCompleti(@PathVariable("id") Long idUtente) {

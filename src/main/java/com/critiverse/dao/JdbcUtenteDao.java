@@ -102,4 +102,51 @@ public class JdbcUtenteDao implements UtenteDao {
             return Optional.empty();
         }
     }
+
+    @Override
+    public Optional<Utente> updateUtenteInfo(Long id, String nome, String cognome, String email, String immagineProfilo) {
+        try {
+            String sql = "UPDATE utente SET nome = ?, cognome = ?, email = ?, immagine_profilo = ? WHERE id = ?";
+            int rows = jdbc.update(sql, nome, cognome, email, immagineProfilo, id);
+            if (rows > 0) {
+                return findById(id);
+            }
+            return Optional.empty();
+        } catch (DataAccessException ex) {
+            log.error("Error updating utente with id {}", id, ex);
+            return Optional.empty();
+        }
+    }
+
+    @Override
+    public boolean updatePassword(Long id, String newPassword) {
+        try {
+            String hashedPassword = passwordEncoder.encode(newPassword);
+            String sql = "UPDATE utente SET password = ? WHERE id = ?";
+            int rows = jdbc.update(sql, hashedPassword, id);
+            return rows > 0;
+        } catch (DataAccessException ex) {
+            log.error("Error updating password for utente with id {}", id, ex);
+            return false;
+        }
+    }
+
+    @Override
+    public Optional<Boolean> verifyPassword(Long id, String password) {
+        try {
+            Optional<Utente> maybe = findById(id);
+            if (maybe.isEmpty()) {
+                return Optional.empty();
+            }
+            Utente u = maybe.get();
+            String hashed = u.getPassword();
+            if (hashed == null) {
+                return Optional.of(Boolean.FALSE);
+            }
+            return Optional.of(passwordEncoder.matches(password, hashed));
+        } catch (DataAccessException ex) {
+            log.error("Error verifying password for utente with id {}", id, ex);
+            return Optional.empty();
+        }
+    }
 }
