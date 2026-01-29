@@ -2,13 +2,17 @@ package com.critiverse.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import com.critiverse.model.Contenuto;
@@ -117,6 +121,88 @@ public class JdbcRecensioneDao implements RecensioneDao {
         } catch (DataAccessException ex) {
             log.error("Error fetching recensioni for utenteId={}", utenteId, ex);
             return List.of();
+        }
+    }
+
+    @Override
+    public boolean deleteById(Long recensioneId) {
+        try {
+            final String sql = "DELETE FROM recensione WHERE id = ?";
+            int affected = jdbc.update(sql, recensioneId);
+            return affected > 0;
+        } catch (DataAccessException ex) {
+            log.error("Error deleting recensione with id={}", recensioneId, ex);
+            return false;
+        }
+    }
+
+    @Override
+    public Optional<Recensione> createRecensione(String titolo, String testo, Integer voto, java.util.Date data, Long idUtente, Long idContenuto) {
+        try {
+            final String sql = "INSERT INTO recensione (titolo, testo, voto, data, id_utente, id_contenuto) VALUES (?, ?, ?, ?, ?, ?)";
+            KeyHolder keyHolder = new GeneratedKeyHolder();
+            jdbc.update(con -> {
+                var ps = con.prepareStatement(sql, new String[] { "id" });
+                ps.setString(1, titolo);
+                ps.setString(2, testo);
+                if (voto != null) {
+                    ps.setInt(3, voto);
+                } else {
+                    ps.setNull(3, java.sql.Types.INTEGER);
+                }
+                if (data != null) {
+                    ps.setTimestamp(4, new Timestamp(data.getTime()));
+                } else {
+                    ps.setTimestamp(4, new Timestamp(System.currentTimeMillis()));
+                }
+                ps.setLong(5, idUtente);
+                ps.setLong(6, idContenuto);
+                return ps;
+            }, keyHolder);
+
+            Number key = keyHolder.getKey();
+            if (key == null) {
+                return Optional.empty();
+            }
+
+            Recensione created = new Recensione();
+            created.setId(key.longValue());
+            created.setTitolo(titolo);
+            created.setTesto(testo);
+            created.setVoto(voto);
+            created.setData(data != null ? data : new java.util.Date());
+            created.setIdUtente(idUtente);
+            created.setIdContenuto(idContenuto);
+            return Optional.of(created);
+        } catch (DataAccessException ex) {
+            log.error("Error creating recensione for idUtente={} idContenuto={}", idUtente, idContenuto, ex);
+            return Optional.empty();
+        }
+    }
+
+    @Override
+    public boolean updateRecensione(Long idRecensione, String titolo, String testo, Integer voto, java.util.Date data) {
+        try {
+            final String sql = "UPDATE recensione SET titolo = ?, testo = ?, voto = ?, data = ? WHERE id = ?";
+            int affected = jdbc.update(sql, ps -> {
+                ps.setString(1, titolo);
+                ps.setString(2, testo);
+                if (voto != null) {
+                    ps.setInt(3, voto);
+                } else {
+                    ps.setNull(3, java.sql.Types.INTEGER);
+                }
+                if (data != null) {
+                    ps.setTimestamp(4, new Timestamp(data.getTime()));
+                } else {
+                    ps.setTimestamp(4, new Timestamp(System.currentTimeMillis()));
+                }
+                ps.setLong(5, idRecensione);
+            });
+            return affected > 0;
+        } catch (DataAccessException ex) {
+            log.error("Error updating recensione with id={}", idRecensione, ex);
+            return false;
         }
     }
 }
