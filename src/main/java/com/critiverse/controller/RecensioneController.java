@@ -1,6 +1,7 @@
 package com.critiverse.controller;
 
 import java.util.Map;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -145,6 +146,19 @@ public class RecensioneController {
         }
     }
 
-    
+    @GetMapping("/recensioni/latest")
+    public ResponseEntity<?> getMostRecentRecensione() {
+        try {
+            Optional<Recensione> maybe = recensioneDao.findMostRecent();
+            if (maybe.isEmpty()) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of("message", "Nessuna recensione trovata"));
+            }
+            return ResponseEntity.ok(maybe.get());
+        } catch (Exception ex) {
+            log.error("Error fetching most recent recensione", ex);
+            return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
+        }
+    }
+
 
 }

@@ -30,4 +30,6 @@ public interface RecensioneDao{
             String testo,
             Integer voto,
             Date data);
+
+    Optional<Recensione> findMostRecent();
 }

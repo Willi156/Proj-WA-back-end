@@ -205,4 +205,21 @@ public class JdbcRecensioneDao implements RecensioneDao {
             return false;
         }
     }
+
+    @Override
+    public Optional<Recensione> findMostRecent() {
+        try {
+            final String sql = "SELECT r.id, r.titolo, r.testo, r.voto, r.data, r.id_utente, r.id_contenuto, u.username "
+                    + "FROM recensione r LEFT JOIN utente u ON r.id_utente = u.id "
+                    + "ORDER BY r.data DESC LIMIT 1";
+            List<Recensione> results = jdbc.query(sql, new RecensioneRowMapper());
+            if (results.isEmpty()) {
+                return Optional.empty();
+            }
+            return Optional.of(results.get(0));
+        } catch (DataAccessException ex) {
+            log.error("Error fetching most recent recensione", ex);
+            return Optional.empty();
+        }
+    }
 }
