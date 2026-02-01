@@ -11,6 +11,7 @@ public class Recensione{
     private Long idUtente;
     private Long idContenuto;
     private String username;
+    private String immagineProfilo;
     
 
     public Recensione() {}
@@ -38,5 +39,8 @@ public class Recensione{
 
     public String getUsername() { return username; }
     public void setUsername(String username) { this.username = username; }
+
+    public String getImmagineProfilo() { return immagineProfilo; }
+    public void setImmagineProfilo(String immagineProfilo) { this.immagineProfilo = immagineProfilo; }
     
 }

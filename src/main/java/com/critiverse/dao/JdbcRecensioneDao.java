@@ -46,14 +46,18 @@ public class JdbcRecensioneDao implements RecensioneDao {
             long idContenuto = rs.getLong("id_contenuto");
             if (!rs.wasNull()) r.setIdContenuto(idContenuto);
             // read username from joined utente table if present
-            String username = null;
+            String username;
+            String immagineProfilo;
             try {
                 username = rs.getString("username");
+                immagineProfilo = rs.getString("immagine_profilo");
             } catch (SQLException e) {
-                // column may not be present in some queries
+                // joined columns may not be present in some queries
                 username = null;
+                immagineProfilo = null;
             }
             r.setUsername(username);
+            r.setImmagineProfilo(immagineProfilo);
             return r;
         }
     }
@@ -74,6 +78,7 @@ public class JdbcRecensioneDao implements RecensioneDao {
             long idContenuto = rs.getLong("r_id_contenuto");
             if (!rs.wasNull()) recensione.setIdContenuto(idContenuto);
             recensione.setUsername(rs.getString("r_username"));
+            recensione.setImmagineProfilo(rs.getString("r_immagine_profilo"));
 
             Contenuto contenuto = new Contenuto();
             contenuto.setId(rs.getLong("c_id"));
@@ -97,6 +102,7 @@ public class JdbcRecensioneDao implements RecensioneDao {
     public List<Recensione> findByContenutoId(Long contenutoId) {
         try {
                 final String sql = "SELECT r.id, r.titolo, r.testo, r.voto, r.data, r.id_utente, r.id_contenuto, u.username "
+                    + ", u.immagine_profilo "
                     + "FROM recensione r LEFT JOIN utente u ON r.id_utente = u.id "
                     + "WHERE r.id_contenuto = ? ORDER BY r.data DESC";
             return jdbc.query(sql, new RecensioneRowMapper(), contenutoId);
@@ -111,6 +117,7 @@ public class JdbcRecensioneDao implements RecensioneDao {
         try {
             final String sql = "SELECT "
                     + "r.id AS r_id, r.titolo AS r_titolo, r.testo AS r_testo, r.voto AS r_voto, r.data AS r_data, r.id_utente AS r_id_utente, r.id_contenuto AS r_id_contenuto, u.username AS r_username, "
+                    + "u.immagine_profilo AS r_immagine_profilo, "
                     + "c.id AS c_id, c.titolo AS c_titolo, c.descrizione AS c_descrizione, c.genere AS c_genere, c.link AS c_link, c.tipo AS c_tipo, c.anno_pubblicazione AS c_anno_pubblicazione, c.img_link AS c_img_link "
                     + "FROM recensione r "
                     + "LEFT JOIN utente u ON r.id_utente = u.id "
@@ -210,6 +217,7 @@ public class JdbcRecensioneDao implements RecensioneDao {
     public Optional<Recensione> findMostRecent() {
         try {
             final String sql = "SELECT r.id, r.titolo, r.testo, r.voto, r.data, r.id_utente, r.id_contenuto, u.username "
+                    + ", u.immagine_profilo "
                     + "FROM recensione r LEFT JOIN utente u ON r.id_utente = u.id "
                     + "ORDER BY r.data DESC LIMIT 1";
             List<Recensione> results = jdbc.query(sql, new RecensioneRowMapper());
