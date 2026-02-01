@@ -149,4 +149,15 @@ public class JdbcContenutoDao implements ContenutoDao {
             return List.of();
         }
     }
+
+    @Override
+    public List<String> findDistinctGeneriByTipo(String tipo) {
+        try {
+            final String sql = "SELECT DISTINCT c.genere FROM contenuto c WHERE c.tipo = ? AND c.genere IS NOT NULL ORDER BY c.genere";
+            return jdbc.query(sql, (rs, rowNum) -> rs.getString("genere"), tipo);
+        } catch (DataAccessException ex) {
+            log.error("Error fetching distinct generi for tipo={}", tipo, ex);
+            return List.of();
+        }
+    }
 }

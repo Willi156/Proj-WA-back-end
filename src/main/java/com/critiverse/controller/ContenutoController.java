@@ -82,6 +82,16 @@ public class ContenutoController {
         }
     }
 
+    @GetMapping("/contenuti/giochi/generi")
+    public ResponseEntity<?> getGeneriGiochi() {
+        try {
+            return ResponseEntity.ok(contenutoDao.findDistinctGeneriByTipo("GIOCO"));
+        } catch (Exception ex) {
+            log.error("Error fetching generi for giochi", ex);
+            return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
+        }
+    }
+
      @GetMapping("/contenuti/film")
     public ResponseEntity<?> getAllFilm() {
         try {

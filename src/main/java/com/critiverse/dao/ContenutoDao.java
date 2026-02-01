@@ -11,4 +11,5 @@ public interface ContenutoDao {
 
     List<Contenuto> findAll();
     List<Contenuto> findByTipo(String tipo);
+    List<String> findDistinctGeneriByTipo(String tipo);
 }
