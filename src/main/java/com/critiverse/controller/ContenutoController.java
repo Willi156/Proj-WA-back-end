@@ -62,6 +62,49 @@ public class ContenutoController {
         }
     }
 
+    // @DeleteMapping("/contenuto/delete/{id}")
+    // public ResponseEntity<?> deleteContenuto(@PathVariable Long id) {
+    //     try {
+    //         boolean deleted = contenutoDao.deleteContenuto(id);
+    //         if (!deleted) {
+    //             return ResponseEntity.status(404).body(Map.of("message", "Contenuto non trovato"));
+    //         }
+    //         return ResponseEntity.ok(Map.of("message", "Contenuto eliminato"));
+    //     } catch (Exception ex) {
+    //         log.error("Error deleting contenuto id={}", id, ex);
+    //         return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
+    //     }
+    // }
+
+    // @PutMapping("/contenuto/update/{id}")
+    // public ResponseEntity<?> updateContenuto(@PathVariable Long id, @RequestBody Contenuto req) {
+    //     try {
+    //         log.debug("Updating contenuto id={} payload tipo={} titolo={}", id, req.getTipo(), req.getTitolo());
+    //         Optional<Contenuto> updated = contenutoDao.updateContenuto(
+    //             id,
+    //             req.getTitolo(),
+    //             req.getDescrizione(),
+    //             req.getGenere(),
+    //             req.getLink(),
+    //             req.getTipo(),
+    //             req.getAnnoPubblicazione(),
+    //             req.getCasaProduzione(),
+    //             req.getCasaEditrice(),
+    //             req.getInCorso(),
+    //             req.getStagioni(),
+    //             req.getImageLink());
+
+    //         if (updated.isEmpty()) {
+    //             return ResponseEntity.status(404).body(Map.of("message", "Contenuto non trovato"));
+    //         }
+
+    //         return ResponseEntity.ok(updated.get());
+    //     } catch (Exception ex) {
+    //         log.error("Error updating contenuto id={} ", id, ex);
+    //         return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
+    //     }
+    // }
+
     @GetMapping("/contenuti")
     public ResponseEntity<?> getAllContenuti() {
         try {

@@ -66,9 +66,9 @@ public class JdbcContenutoDao implements ContenutoDao {
                 insertIntoSpecificTable(id, tipo, casaProduzione, casaEditrice, inCorso, stagioni);
             }
 
-                final String selectInserted = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, AVG(r.voto) AS avg_voto "
+                final String selectInserted = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, AVG(r.voto) AS avg_voto "
                     + "FROM contenuto c LEFT JOIN recensione r ON c.id = r.id_contenuto "
-                    + "WHERE c.id = ? GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione";
+                    + "WHERE c.id = ? GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link";
                 List<Contenuto> list = jdbc.query(selectInserted, new Object[] { id }, new ContenutoRowMapper());
             return list.stream().findFirst();
         } catch (DataAccessException ex) {
@@ -76,6 +76,32 @@ public class JdbcContenutoDao implements ContenutoDao {
             return Optional.empty();
         }
     }
+
+    // @Override
+    // public Optional<Contenuto> updateContenuto(Long id, String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione,
+    //         String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni, String imageLink) {
+    //     try {
+    //         String currentTipo;
+    //         try {
+    //             currentTipo = jdbc.queryForObject("SELECT tipo FROM contenuto WHERE id = ?", String.class, id);
+    //         } catch (DataAccessException notFound) {
+    //             log.info("Contenuto id={} not found for update", id);
+    //             return Optional.empty();
+    //         }
+
+    //         final String updateSql = "UPDATE contenuto SET titolo = ?, descrizione = ?, genere = ?, link = ?, tipo = ?, anno_pubblicazione = ?, img_link = ? WHERE id = ?";
+    //         int updated = jdbc.update(updateSql, titolo, descrizione, genere, link, tipo, annoPubblicazione, imageLink, id);
+    //         if (updated == 0) {
+    //             return Optional.empty();
+    //         }
+
+    //         updateSpecificTable(id, currentTipo, tipo, casaProduzione, casaEditrice, inCorso, stagioni);
+    //         return fetchById(id);
+    //     } catch (DataAccessException ex) {
+    //         log.error("Error updating contenuto id={} titolo={} tipo={}", id, titolo, tipo, ex);
+    //         return Optional.empty();
+    //     }
+    // }
 
     private void insertIntoSpecificTable(Long idContenuto, String tipo, String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni) {
         try {
@@ -113,6 +139,50 @@ public class JdbcContenutoDao implements ContenutoDao {
         }
     }
 
+    // private void updateSpecificTable(Long idContenuto, String currentTipo, String newTipo, String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni) {
+    //     try {
+    //         String normNewTipo = normalizeTipo(newTipo);
+    //         String normOldTipo = normalizeTipo(currentTipo);
+
+    //         if (normOldTipo != null && !normOldTipo.equals(normNewTipo)) {
+    //             jdbc.update("DELETE FROM film WHERE id_contenuto = ?", idContenuto);
+    //             jdbc.update("DELETE FROM gioco WHERE id_contenuto = ?", idContenuto);
+    //             jdbc.update("DELETE FROM serie_tv WHERE id_contenuto = ?", idContenuto);
+    //         }
+
+    //         if (normNewTipo == null) {
+    //             return;
+    //         }
+
+    //         String normCasaProduzione = normalizeString(casaProduzione);
+    //         String normCasaEditrice = normalizeString(casaEditrice);
+
+    //         switch (normNewTipo) {
+    //             case "film" ->  {
+    //                 int rows = jdbc.update("UPDATE film SET casa_produzione = ? WHERE id_contenuto = ?", normCasaProduzione, idContenuto);
+    //                 if (rows == 0) {
+    //                     jdbc.update("INSERT INTO film (id_contenuto, casa_produzione) VALUES (?, ?)", idContenuto, normCasaProduzione);
+    //                 }
+    //             }
+    //             case "gioco" ->  {
+    //                 int rows = jdbc.update("UPDATE gioco SET casa_editrice = ? WHERE id_contenuto = ?", normCasaEditrice, idContenuto);
+    //                 if (rows == 0) {
+    //                     jdbc.update("INSERT INTO gioco (id_contenuto, casa_editrice) VALUES (?, ?)", idContenuto, normCasaEditrice);
+    //                 }
+    //             }
+    //             case "serie_tv", "serietv" -> {
+    //                 int rows = jdbc.update("UPDATE serie_tv SET in_corso = ?, stagioni = ? WHERE id_contenuto = ?", inCorso, stagioni, idContenuto);
+    //                 if (rows == 0) {
+    //                     jdbc.update("INSERT INTO serie_tv (id_contenuto, in_corso, stagioni) VALUES (?, ?, ?)", idContenuto, inCorso, stagioni);
+    //                 }
+    //             }
+    //             default -> log.warn("Unknown tipo='{}' while updating specific table for id_contenuto={}", newTipo, idContenuto);
+    //         }
+    //     } catch (DataAccessException ex) {
+    //         log.error("Error updating specific table for id_contenuto={} tipo={}", idContenuto, newTipo, ex);
+    //     }
+    // }
+
     private String normalizeString(String s) {
         if (s == null) return null;
         String trimmed = s.trim();
@@ -120,6 +190,42 @@ public class JdbcContenutoDao implements ContenutoDao {
         if ("null".equalsIgnoreCase(trimmed)) return null;
         return s;
     }
+
+    // private String normalizeTipo(String tipo) {
+    //     if (tipo == null) {
+    //         return null;
+    //     }
+    //     String trimmed = tipo.trim().toLowerCase();
+    //     if (trimmed.isEmpty()) {
+    //         return null;
+    //     }
+    //     return trimmed;
+    // }
+
+    // private Optional<Contenuto> fetchById(Long idContenuto) {
+    //     final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, AVG(r.voto) AS avg_voto "
+    //         + "FROM contenuto c LEFT JOIN recensione r ON c.id = r.id_contenuto "
+    //         + "WHERE c.id = ? GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link";
+    //     List<Contenuto> list = jdbc.query(sql, new ContenutoRowMapper(), idContenuto);
+    //     return list.stream().findFirst();
+    // }
+
+    // @Override
+    // public boolean deleteContenuto(Long id) {
+    //     try {
+    //         jdbc.update("DELETE FROM film WHERE id_contenuto = ?", id);
+    //         jdbc.update("DELETE FROM gioco WHERE id_contenuto = ?", id);
+    //         jdbc.update("DELETE FROM serie_tv WHERE id_contenuto = ?", id);
+    //         jdbc.update("DELETE FROM preferiti WHERE id_contenuto = ?", id);
+    //         jdbc.update("DELETE FROM recensione WHERE id_contenuto = ?", id);
+
+    //         int affected = jdbc.update("DELETE FROM contenuto WHERE id = ?", id);
+    //         return affected > 0;
+    //     } catch (DataAccessException ex) {
+    //         log.error("Error deleting contenuto id={}", id, ex);
+    //         return false;
+    //     }
+    // }
 
     @Override
     public List<Contenuto> findAll() {
