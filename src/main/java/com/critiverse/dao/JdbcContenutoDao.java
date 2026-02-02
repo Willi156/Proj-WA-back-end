@@ -1,9 +1,12 @@
 package com.critiverse.dao;
 
+import java.sql.Array;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,6 +49,19 @@ public class JdbcContenutoDao implements ContenutoDao {
             if (!rs.wasNull()) {
                 c.setMediaVoti(avg);
             }
+
+            // piattaforme is populated only for giochi when joined
+            Array piattaformeArray = rs.getArray("piattaforme");
+            if (piattaformeArray != null) {
+                Object raw = piattaformeArray.getArray();
+                if (raw instanceof String[] strings) {
+                    c.setPiattaforme(Arrays.asList(strings));
+                } else if (raw instanceof Object[] arr) {
+                    c.setPiattaforme(Arrays.stream(arr)
+                        .map(Object::toString)
+                        .collect(Collectors.toList()));
+                }
+            }
             return c;
         }
     }
@@ -66,9 +82,14 @@ public class JdbcContenutoDao implements ContenutoDao {
                 insertIntoSpecificTable(id, tipo, casaProduzione, casaEditrice, inCorso, stagioni);
             }
 
-                final String selectInserted = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, AVG(r.voto) AS avg_voto "
-                    + "FROM contenuto c LEFT JOIN recensione r ON c.id = r.id_contenuto "
-                    + "WHERE c.id = ? GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link";
+                final String selectInserted = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, "
+                    + "r.avg_voto AS avg_voto, gp_map.piattaforme AS piattaforme "
+                    + "FROM contenuto c "
+                    + "LEFT JOIN (SELECT id_contenuto, AVG(voto) AS avg_voto FROM recensione GROUP BY id_contenuto) r ON c.id = r.id_contenuto "
+                    + "LEFT JOIN (SELECT gp.id_gioco AS id_contenuto, array_agg(p.nome ORDER BY p.nome) AS piattaforme "
+                    + "           FROM gioco_piattaforma gp JOIN piattaforma p ON gp.id_piattaforma = p.id "
+                    + "           GROUP BY gp.id_gioco) gp_map ON c.id = gp_map.id_contenuto "
+                    + "WHERE c.id = ?";
                 List<Contenuto> list = jdbc.query(selectInserted, new Object[] { id }, new ContenutoRowMapper());
             return list.stream().findFirst();
         } catch (DataAccessException ex) {
@@ -230,9 +251,13 @@ public class JdbcContenutoDao implements ContenutoDao {
     @Override
     public List<Contenuto> findAll() {
         try {
-                final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, AVG(r.voto) AS avg_voto "
-                    + "FROM contenuto c LEFT JOIN recensione r ON c.id = r.id_contenuto "
-                    + "GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link "
+                final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, "
+                    + "r.avg_voto AS avg_voto, gp_map.piattaforme AS piattaforme "
+                    + "FROM contenuto c "
+                    + "LEFT JOIN (SELECT id_contenuto, AVG(voto) AS avg_voto FROM recensione GROUP BY id_contenuto) r ON c.id = r.id_contenuto "
+                    + "LEFT JOIN (SELECT gp.id_gioco AS id_contenuto, array_agg(p.nome ORDER BY p.nome) AS piattaforme "
+                    + "           FROM gioco_piattaforma gp JOIN piattaforma p ON gp.id_piattaforma = p.id "
+                    + "           GROUP BY gp.id_gioco) gp_map ON c.id = gp_map.id_contenuto "
                     + "ORDER BY c.id";
             return jdbc.query(sql, new ContenutoRowMapper());
         } catch (DataAccessException ex) {
@@ -244,10 +269,14 @@ public class JdbcContenutoDao implements ContenutoDao {
     @Override
     public List<Contenuto> findByTipo(String tipo) {
         try {
-                final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, AVG(r.voto) AS avg_voto "
-                    + "FROM contenuto c LEFT JOIN recensione r ON c.id = r.id_contenuto "
+                final String sql = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, "
+                    + "r.avg_voto AS avg_voto, gp_map.piattaforme AS piattaforme "
+                    + "FROM contenuto c "
+                    + "LEFT JOIN (SELECT id_contenuto, AVG(voto) AS avg_voto FROM recensione GROUP BY id_contenuto) r ON c.id = r.id_contenuto "
+                    + "LEFT JOIN (SELECT gp.id_gioco AS id_contenuto, array_agg(p.nome ORDER BY p.nome) AS piattaforme "
+                    + "           FROM gioco_piattaforma gp JOIN piattaforma p ON gp.id_piattaforma = p.id "
+                    + "           GROUP BY gp.id_gioco) gp_map ON c.id = gp_map.id_contenuto "
                     + "WHERE c.tipo = ? "
-                    + "GROUP BY c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link "
                     + "ORDER BY c.id";
             return jdbc.query(sql, new ContenutoRowMapper(), tipo);
         } catch (DataAccessException ex) {

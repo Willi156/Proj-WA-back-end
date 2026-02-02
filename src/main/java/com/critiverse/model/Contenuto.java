@@ -1,5 +1,7 @@
 package com.critiverse.model;
 
+import java.util.List;
+
 public class Contenuto{
      private Long id;
     private String titolo;
@@ -16,6 +18,8 @@ public class Contenuto{
 	private String casaEditrice;
 	private Boolean inCorso;
 	private Integer stagioni;
+
+    private List<String> piattaforme;
 
     private String imageLink;
     
@@ -60,4 +64,7 @@ public class Contenuto{
 
     public String getImageLink() { return imageLink; }
     public void setImageLink(String imageLink) { this.imageLink = imageLink; }
+
+    public List<String> getPiattaforme() { return piattaforme; }
+    public void setPiattaforme(List<String> piattaforme) { this.piattaforme = piattaforme; }
 }
