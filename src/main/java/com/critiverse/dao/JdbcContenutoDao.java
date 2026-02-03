@@ -67,7 +67,7 @@ public class JdbcContenutoDao implements ContenutoDao {
     }
 
     @Override
-    public Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione, String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni, String imageLink) {
+    public Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione, String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni, String imageLink, List<Long> piattaformaIds) {
         try {
             final String insertSql = "INSERT INTO contenuto (titolo, descrizione, genere, link, tipo, anno_pubblicazione, img_link) VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id";
 
@@ -79,7 +79,7 @@ public class JdbcContenutoDao implements ContenutoDao {
 
             // Insert into specific table based on tipo
             if (tipo != null) {
-                insertIntoSpecificTable(id, tipo, casaProduzione, casaEditrice, inCorso, stagioni);
+                insertIntoSpecificTable(id, tipo, casaProduzione, casaEditrice, inCorso, stagioni, piattaformaIds);
             }
 
                 final String selectInserted = "SELECT c.id, c.titolo, c.descrizione, c.genere, c.link, c.tipo, c.anno_pubblicazione, c.img_link, "
@@ -124,7 +124,7 @@ public class JdbcContenutoDao implements ContenutoDao {
     //     }
     // }
 
-    private void insertIntoSpecificTable(Long idContenuto, String tipo, String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni) {
+    private void insertIntoSpecificTable(Long idContenuto, String tipo, String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni, List<Long> piattaformaIds) {
         try {
             String tableName = null;
             String insertSpecificSql = null;
@@ -143,6 +143,7 @@ public class JdbcContenutoDao implements ContenutoDao {
                 tableName = "gioco";
                 insertSpecificSql = "INSERT INTO gioco (id_contenuto, casa_editrice) VALUES (?, ?)";
                 jdbc.update(insertSpecificSql, idContenuto, normCasaEditrice);
+                insertGiocoPiattaforme(idContenuto, piattaformaIds);
             } else if ("serie_tv".equalsIgnoreCase(tipo) || "serietv".equalsIgnoreCase(tipo)) {
                 tableName = "serie_tv";
                 insertSpecificSql = "INSERT INTO serie_tv (id_contenuto, in_corso, stagioni) VALUES (?, ?, ?)";
@@ -157,6 +158,24 @@ public class JdbcContenutoDao implements ContenutoDao {
         } catch (DataAccessException ex) {
             log.error("Error inserting into specific table for tipo='{}', id_contenuto={}", tipo, idContenuto, ex);
             // Non rilanciamo l'eccezione per non bloccare l'inserimento principale
+        }
+    }
+
+    private void insertGiocoPiattaforme(Long idGioco, List<Long> piattaformaIds) {
+        if (piattaformaIds == null || piattaformaIds.isEmpty()) {
+            log.debug("No piattaforma ids provided for gioco id={} - skipping gioco_piattaforma insert", idGioco);
+            return;
+        }
+
+        try {
+            final String sql = "INSERT INTO gioco_piattaforma (id_gioco, id_piattaforma) VALUES (?, ?)";
+            jdbc.batchUpdate(sql, piattaformaIds, piattaformaIds.size(), (ps, platformId) -> {
+                ps.setLong(1, idGioco);
+                ps.setLong(2, platformId);
+            });
+            log.info("Inserted {} piattaforme for gioco id={}", piattaformaIds.size(), idGioco);
+        } catch (DataAccessException ex) {
+            log.error("Error inserting gioco_piattaforma relations for gioco id={}", idGioco, ex);
         }
     }
 

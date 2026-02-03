@@ -20,6 +20,8 @@ public class Contenuto{
 	private Integer stagioni;
 
     private List<String> piattaforme;
+    // IDs delle piattaforme da usare in fase di creazione (per i giochi)
+    private List<Long> piattaformaIds;
 
     private String imageLink;
     
@@ -67,4 +69,7 @@ public class Contenuto{
 
     public List<String> getPiattaforme() { return piattaforme; }
     public void setPiattaforme(List<String> piattaforme) { this.piattaforme = piattaforme; }
+
+    public List<Long> getPiattaformaIds() { return piattaformaIds; }
+    public void setPiattaformaIds(List<Long> piattaformaIds) { this.piattaformaIds = piattaformaIds; }
 }

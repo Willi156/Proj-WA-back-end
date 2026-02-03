@@ -33,9 +33,9 @@ public class ContenutoController {
     public ResponseEntity<?> createContenuto(@RequestBody Contenuto req) {
         try {
             // Diagnostic log: inspect incoming payload mapping
-            log.debug("Received new contenuto payload: titolo={}, descrizione={}, genere={}, link={}, tipo={}, annoPubblicazione={}, casaProduzione={}, casaEditrice={}, inCorso={}, stagioni={}",
+            log.debug("Received new contenuto payload: titolo={}, descrizione={}, genere={}, link={}, tipo={}, annoPubblicazione={}, casaProduzione={}, casaEditrice={}, inCorso={}, stagioni={}, piattaformaIds={}",
                     req.getTitolo(), req.getDescrizione(), req.getGenere(), req.getLink(), req.getTipo(), req.getAnnoPubblicazione(),
-                    req.getCasaProduzione(), req.getCasaEditrice(), req.getInCorso(), req.getStagioni(), req.getImageLink());
+                    req.getCasaProduzione(), req.getCasaEditrice(), req.getInCorso(), req.getStagioni(), req.getPiattaformaIds());
 
                 Optional<Contenuto> created = contenutoDao.newContenuto(
                     req.getTitolo(),
@@ -47,7 +47,9 @@ public class ContenutoController {
                     req.getCasaProduzione(),
                     req.getCasaEditrice(),
                     req.getInCorso(),
-                    req.getStagioni(),req.getImageLink());
+                    req.getStagioni(),
+                    req.getImageLink(),
+                    req.getPiattaformaIds());
 
             return created.<ResponseEntity<?>>map(c -> {
                 try {
