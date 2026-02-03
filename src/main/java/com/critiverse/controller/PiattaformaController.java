@@ -33,7 +33,7 @@ public class PiattaformaController {
         }
     }
 
-    @GetMapping("/piattaforme")
+    @GetMapping("/piattaforme/complete")
     public ResponseEntity<?> getAll() {
         try {
             return ResponseEntity.ok(piattaformaDao.findAll());
