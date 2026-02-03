@@ -8,6 +8,8 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import com.critiverse.model.Piattaforma;
+
 @Repository
 public class JdbcPiattaformaDao implements PiattaformaDao {
 
@@ -25,6 +27,23 @@ public class JdbcPiattaformaDao implements PiattaformaDao {
             return jdbc.queryForList(sql, String.class);
         } catch (DataAccessException ex) {
             log.error("Error fetching piattaforma names", ex);
+            return List.of();
+        }
+    }
+
+    @Override
+    public List<Piattaforma> findAll() {
+        try {
+            final String sql = "SELECT id, nome, versione FROM piattaforma ORDER BY nome";
+            return jdbc.query(sql, (rs, rowNum) -> {
+                Piattaforma piattaforma = new Piattaforma();
+                piattaforma.setId(rs.getLong("id"));
+                piattaforma.setNome(rs.getString("nome"));
+                piattaforma.setVersione(rs.getLong("versione"));
+                return piattaforma;
+            });
+        } catch (DataAccessException ex) {
+            log.error("Error fetching piattaforme", ex);
             return List.of();
         }
     }

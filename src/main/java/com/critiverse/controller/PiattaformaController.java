@@ -32,4 +32,15 @@ public class PiattaformaController {
             return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
         }
     }
+
+    @GetMapping("/piattaforme")
+    public ResponseEntity<?> getAll() {
+        try {
+            return ResponseEntity.ok(piattaformaDao.findAll());
+        } catch (Exception ex) {
+            log.error("Error fetching piattaforme", ex);
+            return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
+        }
+    }
+    
 }
