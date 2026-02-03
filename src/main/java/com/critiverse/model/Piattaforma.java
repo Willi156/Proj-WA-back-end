@@ -1,10 +1,9 @@
 package com.critiverse.model;
 
-public class Piattaforma{
-     private Long id;
+public class Piattaforma {
+    private Long id;
     private String nome;
-    private Long versione;
-    
+    private String versione;
 
     public Piattaforma() {}
 
@@ -14,7 +13,6 @@ public class Piattaforma{
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }
 
-    public Long getVersione() { return versione; }
-    public void setVersione(Long versione) { this.versione = versione; }
-    
+    public String getVersione() { return versione; }
+    public void setVersione(String versione) { this.versione = versione; }
 }

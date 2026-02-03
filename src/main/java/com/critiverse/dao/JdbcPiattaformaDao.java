@@ -6,8 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 import com.critiverse.model.Piattaforma;
 
@@ -21,7 +21,7 @@ public class JdbcPiattaformaDao implements PiattaformaDao {
         Piattaforma piattaforma = new Piattaforma();
         piattaforma.setId(rs.getLong("id"));
         piattaforma.setNome(rs.getString("nome"));
-        piattaforma.setVersione(rs.getLong("versione"));
+        piattaforma.setVersione(rs.getString("versione"));
         return piattaforma;
     };
 
@@ -43,7 +43,7 @@ public class JdbcPiattaformaDao implements PiattaformaDao {
     @Override
     public List<Piattaforma> findAll() {
         try {
-            final String sql = "SELECT id, nome, versione FROM piattaforma ORDER BY nome";
+            final String sql = "SELECT id, nome, versione FROM piattaforma";
             return jdbc.query(sql, PIATTAFORMA_ROW_MAPPER);
         } catch (DataAccessException ex) {
             log.error("Error fetching piattaforme", ex);
