@@ -250,22 +250,22 @@ public class JdbcContenutoDao implements ContenutoDao {
     //     return list.stream().findFirst();
     // }
 
-    // @Override
-    // public boolean deleteContenuto(Long id) {
-    //     try {
-    //         jdbc.update("DELETE FROM film WHERE id_contenuto = ?", id);
-    //         jdbc.update("DELETE FROM gioco WHERE id_contenuto = ?", id);
-    //         jdbc.update("DELETE FROM serie_tv WHERE id_contenuto = ?", id);
-    //         jdbc.update("DELETE FROM preferiti WHERE id_contenuto = ?", id);
-    //         jdbc.update("DELETE FROM recensione WHERE id_contenuto = ?", id);
+    @Override
+    public boolean deleteContenuto(Long id) {
+        try {
+            jdbc.update("DELETE FROM film WHERE id_contenuto = ?", id);
+            jdbc.update("DELETE FROM gioco WHERE id_contenuto = ?", id);
+            jdbc.update("DELETE FROM serie_tv WHERE id_contenuto = ?", id);
+            jdbc.update("DELETE FROM preferiti WHERE id_contenuto = ?", id);
+            jdbc.update("DELETE FROM recensione WHERE id_contenuto = ?", id);
 
-    //         int affected = jdbc.update("DELETE FROM contenuto WHERE id = ?", id);
-    //         return affected > 0;
-    //     } catch (DataAccessException ex) {
-    //         log.error("Error deleting contenuto id={}", id, ex);
-    //         return false;
-    //     }
-    // }
+            int affected = jdbc.update("DELETE FROM contenuto WHERE id = ?", id);
+            return affected > 0;
+        } catch (DataAccessException ex) {
+            log.error("Error deleting contenuto id={}", id, ex);
+            return false;
+        }
+    }
 
     @Override
     public List<Contenuto> findAll() {

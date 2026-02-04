@@ -12,7 +12,7 @@ public interface ContenutoDao {
         // Optional<Contenuto> updateContenuto(Long id, String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione,
         //     String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni, String imageLink);
 
-    // boolean deleteContenuto(Long id);
+    boolean deleteContenuto(Long id);
 
     List<Contenuto> findAll();
     List<Contenuto> findByTipo(String tipo);
