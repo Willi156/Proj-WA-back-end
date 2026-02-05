@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -80,34 +81,35 @@ public class ContenutoController {
         }
     }
 
-    // @PutMapping("/contenuto/update/{id}")
-    // public ResponseEntity<?> updateContenuto(@PathVariable Long id, @RequestBody Contenuto req) {
-    //     try {
-    //         log.debug("Updating contenuto id={} payload tipo={} titolo={}", id, req.getTipo(), req.getTitolo());
-    //         Optional<Contenuto> updated = contenutoDao.updateContenuto(
-    //             id,
-    //             req.getTitolo(),
-    //             req.getDescrizione(),
-    //             req.getGenere(),
-    //             req.getLink(),
-    //             req.getTipo(),
-    //             req.getAnnoPubblicazione(),
-    //             req.getCasaProduzione(),
-    //             req.getCasaEditrice(),
-    //             req.getInCorso(),
-    //             req.getStagioni(),
-    //             req.getImageLink());
+    @PutMapping("/contenuto/update/{id}")
+    public ResponseEntity<?> updateContenuto(@PathVariable Long id, @RequestBody Contenuto req) {
+        try {
+            log.debug("Updating contenuto id={} payload tipo={} titolo={}", id, req.getTipo(), req.getTitolo());
+            Optional<Contenuto> updated = contenutoDao.updateContenuto(
+                id,
+                req.getTitolo(),
+                req.getDescrizione(),
+                req.getGenere(),
+                req.getLink(),
+                req.getTipo(),
+                req.getAnnoPubblicazione(),
+                req.getCasaProduzione(),
+                req.getCasaEditrice(),
+                req.getInCorso(),
+                req.getStagioni(),
+                req.getImageLink(),
+                req.getPiattaformaIds());
 
-    //         if (updated.isEmpty()) {
-    //             return ResponseEntity.status(404).body(Map.of("message", "Contenuto non trovato"));
-    //         }
+            if (updated.isEmpty()) {
+                return ResponseEntity.status(404).body(Map.of("message", "Contenuto non trovato"));
+            }
 
-    //         return ResponseEntity.ok(updated.get());
-    //     } catch (Exception ex) {
-    //         log.error("Error updating contenuto id={} ", id, ex);
-    //         return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
-    //     }
-    // }
+            return ResponseEntity.ok(updated.get());
+        } catch (Exception ex) {
+            log.error("Error updating contenuto id={} ", id, ex);
+            return ResponseEntity.status(500).body(Map.of("message", "Internal server error"));
+        }
+    }
 
     @GetMapping("/contenuti")
     public ResponseEntity<?> getAllContenuti() {

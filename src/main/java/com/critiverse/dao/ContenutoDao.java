@@ -9,8 +9,8 @@ public interface ContenutoDao {
         Optional<Contenuto> newContenuto(String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione,
             String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni, String imageLink, List<Long> piattaformaIds);
 
-        // Optional<Contenuto> updateContenuto(Long id, String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione,
-        //     String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni, String imageLink);
+        Optional<Contenuto> updateContenuto(Long id, String titolo, String descrizione, String genere, String link, String tipo, Integer annoPubblicazione,
+            String casaProduzione, String casaEditrice, Boolean inCorso, Integer stagioni, String imageLink, List<Long> piattaformaIds);
 
     boolean deleteContenuto(Long id);
 
