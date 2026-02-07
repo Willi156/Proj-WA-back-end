@@ -44,27 +44,6 @@ public class UtenteController {
         return ResponseEntity.ok().body(Map.of("serverTime", Instant.now().toString()));
     }
 
-    // @GetMapping("/utente/{id}")
-    // public ResponseEntity<?> getUtenteById(@PathVariable("id") Long id) {
-    //     if (id == null) {
-    //         return ResponseEntity.badRequest().body(Map.of("message", "Missing required path variable 'id'"));
-    //     }
-    //     try {
-    //         Optional<Utente> maybe = utenteDao.findById(id);
-    //         if (maybe.isPresent()) {
-    //             maybe = maybe.map(u -> {
-    //                 u.setPassword(null); // Non espone la password
-    //                 return u;
-    //             });
-    //             return ResponseEntity.ok(maybe.get());
-    //         }
-    //         return ResponseEntity.status(404).body(Map.of("message", "Utente non trovato"));
-    //     } catch (Exception e) {
-    //         log.error("Error fetching utente by id {}", id, e);
-    //         return ResponseEntity.status(500).body(Map.of("message", "Errore interno del server"));
-    //     }
-    // }
-
     @GetMapping("/utente/checkUsernameExists")
     public ResponseEntity<?> checkUsernameExists(@org.springframework.web.bind.annotation.RequestParam(name = "username", required = true) String username) {
         try{
